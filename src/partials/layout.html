@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#183449">
+<meta name="robots" content="noindex, nofollow"><!-- proof-of-concept: not for indexing -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Vollkorn:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+{{jsonld}}
+</head>
+<body class="{{body_class}}">
+<a class="skip" href="#main">Skip to main content</a>
+{{include:header}}
+<main id="main">
+{{content}}
+</main>
+{{include:footer}}
+{{include:mobilebar}}
+{{include:call-sheet}}
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

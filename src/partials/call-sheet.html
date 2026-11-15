@@ -1,0 +1,11 @@
+<dialog class="sheet" id="call-sheet" aria-labelledby="call-sheet-title">
+  <div class="sheet__in">
+    <div class="sheet__head">
+      <div><h2 id="call-sheet-title">Which office would you like to call?</h2><p class="helper">Two specialty lines, one practice at {{ADDR}}.</p></div>
+      <button class="icon-btn" type="button" data-close-call aria-label="Close">{{icon:close}}</button>
+    </div>
+    <a class="call-opt" href="{{TEL_ORTHO}}" data-track="call_ortho_click"><span class="badge badge--ortho">Ortho</span><span><strong>Call Orthodontics</strong><span>{{ORTHO}}</span></span></a>
+    <a class="call-opt" href="{{TEL_PEDO}}" data-track="call_pedo_click"><span class="badge badge--ped">Pediatric</span><span><strong>Call Pediatric Dentistry</strong><span>{{PEDO}}</span></span></a>
+    <p class="helper" style="margin-top:1rem">For a medical emergency, call 911.</p>
+  </div>
+</dialog>
