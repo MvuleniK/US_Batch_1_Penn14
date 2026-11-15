@@ -143,6 +143,21 @@
     render();
   }
 
+  /* ---- Review mode: show or hide owner-review source notes ----
+     ON by default for the owner review (set early by an inline script in <head>).
+     Turn it off for the clean, launch-style view. Preference is remembered per browser. */
+  var root = doc.documentElement;
+  function setReview(on) {
+    root.setAttribute("data-review", on ? "on" : "off");
+    $$("[data-review-switch]").forEach(function (s) { s.setAttribute("aria-checked", String(on)); });
+    try { localStorage.setItem("toth-review", on ? "on" : "off"); } catch (e) { /* storage unavailable */ }
+  }
+  var reviewOn = root.getAttribute("data-review") !== "off";
+  $$("[data-review-switch]").forEach(function (s) {
+    s.setAttribute("aria-checked", String(reviewOn));
+    s.addEventListener("click", function () { setReview(root.getAttribute("data-review") === "off"); });
+  });
+
   /* ---- Footer year ---- */
   $$("[data-year]").forEach(function (n) { n.textContent = String(new Date().getFullYear()); });
 })();

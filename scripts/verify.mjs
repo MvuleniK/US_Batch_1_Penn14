@@ -61,7 +61,29 @@ for (const [f, html] of Object.entries(pages)) {
   for (const re of [/appointment is confirmed/i, /book now/i, /instant(ly)? (confirm|book)/i, /Verified Record/i, /HIPAA Compliant/i]) {
     if (re.test(stripTags(html).replace(/not an instant booking/ig, ""))) fail(`forbidden phrase ${re}`);
   }
+
+  // 8. unslop checklist (github.com/heydamir/unslop) — craft rules for built HTML
+  /\sstyle="/.test(html) ? fail("inline style attribute (use classes on the 4px scale)") : ok("no inline styles");
+  /\p{Extended_Pictographic}/u.test(html.replace(/[©®™]/g, "")) ? fail("emoji in interface") : ok("no emoji");
+  const visible = stripTags(html.replace(/<blockquote>[\s\S]*?<\/blockquote>/g, "")); // testimonials are the practice's own words
+  /!/.test(visible) ? fail("exclamation mark in interface text") : ok("no exclamation marks");
 }
+
+// CSS lint: the slop signs that must never come back
+const css = readFileSync(join(PUB, "assets", "css", "styles.css"), "utf8");
+console.log("styles.css");
+const cssRules = [
+  [/gradient\(/, "gradient"],
+  [/text-transform:\s*uppercase/, "uppercase labels"],
+  [/font(-weight)?:[^;]*\b[789]00\b/, "weight 700 to 900"],
+  [/transition:\s*all/, "transition: all"],
+  [/@keyframes|animation:/, "looping or keyframe animation"],
+  [/backdrop-filter/, "glass blur"],
+  [/hover[^{]*\{[^}]*scale\(1\./, "hover scale up"],
+];
+for (const [re, label] of cssRules) re.test(css) ? fail(`CSS contains ${label}`) : ok(`no ${label}`);
+const offGrid = [...css.matchAll(/(?:margin|padding|gap)[a-z-]*:\s*([^;{}]+);/g)].flatMap((m) => [...m[1].matchAll(/(-?\d+(?:\.\d+)?)px/g)].map((x) => Number(x[1]))).filter((n) => n > 2 && n % 4 !== 0);
+offGrid.length ? fail(`off-grid spacing values: ${[...new Set(offGrid)].join(", ")}`) : ok("all margin, padding and gap values are on the 4px grid");
 
 // Home H1 verbatim
 const h1 = stripTags(pages["index.html"].match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1]);
@@ -69,7 +91,7 @@ h1 === "Welcome to Top of The Hill — Dentistry for Children & Orthodontics for
 
 // Testimonials: every entry from data file rendered on reviews page
 const data = JSON.parse(readFileSync(join(PUB, "..", "src", "data", "testimonials.json"), "utf8"));
-const rendered = (pages["reviews.html"].match(/<figure class="quote">/g) || []).length;
+const rendered = (pages["reviews.html"].match(/<figure class="quote[ "]/g) || []).length;
 rendered === data.length ? console.log(`✓ ${rendered} testimonials rendered (all from current website)`) : fail(`testimonials rendered ${rendered} ≠ ${data.length}`);
 
 console.log(failures ? `\n${failures} check(s) failed` : "\nAll checks passed");

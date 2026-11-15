@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-review="on">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reviews & Office Tour | Top of the Hill Orthodontics & Pediatric Dentistry</title>
 <meta name="description" content="Read patient testimonials from the practice's website, see credentials as stated by the practice, and preview the office tour at Top of the Hill in Chestnut Hill, Philadelphia.">
-<meta name="theme-color" content="#183449">
-<meta name="robots" content="noindex, nofollow"><!-- proof-of-concept: not for indexing -->
+<meta name="theme-color" content="#16293a">
+<meta name="robots" content="noindex, nofollow"><!-- proof of concept: not for indexing -->
+<script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Vollkorn:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Vollkorn:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -19,18 +20,20 @@
   <div class="container topbar__in">
     <div class="topbar__left">
       <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chestnut Hill, Philadelphia · 10 W Gravers Lane, Philadelphia, PA 19118</span></a>
-      <a href="contact.html#visit">Office info &amp; directions</a>
+      <a href="contact.html#visit">Office info and directions</a>
     </div>
-    <div class="topbar__phones">
-      <a class="tb-ortho" href="tel:+12152203777" data-track="call_ortho_click"><span class="badge badge--ortho">Ortho</span> (215) 220-3777</a>
-      <a class="tb-ped" href="tel:+12152203778" data-track="call_pedo_click"><span class="badge badge--ped">Pediatric</span> (215) 220-3778</a>
+    <div class="topbar__right">
+      <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span> <span class="num">(215) 220-3777</span></a>
+      <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric</span> <span class="num">(215) 220-3778</span></a>
+      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+
     </div>
   </div>
 </div>
 <header class="header">
   <div class="container header__in">
-    <a class="brand" href="index.html" aria-label="Top of the Hill Orthodontics &amp; Pediatric Dentistry — home">
-      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+    <a class="brand" href="index.html" aria-label="Top of the Hill Orthodontics and Pediatric Dentistry, home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 
       <span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span>
     </a>
@@ -43,228 +46,232 @@
 </header>
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
   <div class="menu__top">
-    <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+    <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 <span><span class="brand__name">Top of the Hill</span></span></a>
     <button class="icon-btn" id="menu-close" type="button" aria-label="Close menu"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav aria-label="Mobile primary"><ul><li><a href="index.html">Home<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="pediatric-dentistry.html">Pediatric Dentistry<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="orthodontics.html">Orthodontics<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="new-patients.html">New Patients<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="about.html">Meet Our Doctors<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="reviews.html" aria-current="page">Reviews &amp; Office Tour<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="contact.html">Contact<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul></nav>
-  <div class="cta-stack">
+  <div class="cta">
     <a class="btn btn--primary btn--block" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
     <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
   </div>
   <div class="menu__calls">
-    <a class="btn btn--outline btn--block" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Orthodontics: (215) 220-3777</a>
-    <a class="btn btn--outline btn--block" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Pediatric Dentistry: (215) 220-3778</a>
+    <a class="btn btn--secondary btn--block" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Orthodontics <span class="num">(215) 220-3777</span></a>
+    <a class="btn btn--secondary btn--block" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Pediatric Dentistry <span class="num">(215) 220-3778</span></a>
   </div>
 </div>
 
 <main id="main">
-<section class="hero" style="padding-bottom:clamp(2rem,4vw,3.5rem)">
+<section class="hero hero--sub">
   <div class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Reviews &amp; Office Tour</li></ol></nav>
-    <div class="stack" style="max-width:52rem">
-      <span class="eyebrow">Trust &amp; reviews</span>
-      <h1>What families say about Top of the Hill</h1>
-      <p class="lede">Everything the practice currently shows publicly — rating, patient testimonials, affiliations and provider logos — gathered in one place, each labelled with where it came from.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section--tight" style="padding-top:0" aria-labelledby="rate-h">
-  <div class="container">
-    <div class="card">
-      <div class="rating" style="border:0;margin:0;padding:0">
-        <div class="rating__score">
-          <span class="rating__num">4.8 / 5</span>
-          <div><span class="stars" role="img" aria-label="4.8 out of 5 stars"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><h2 id="rate-h" style="font:600 1rem var(--sans);margin:.2rem 0 0;letter-spacing:0">Google rating: 4.8/5 based on 147 reviews</h2></div>
-        </div>
-        <div><span class="src src--snapshot">Assessment snapshot</span><p class="src-note" style="margin:.3rem 0 0;max-width:30rem">Assessment snapshot, 12 Nov 2026. Not a live Google integration; the figure must be re-verified before launch.</p></div>
+    <div class="split split--text-left">
+      <div class="stack">
+        <h1>What families say about Top of the Hill</h1>
+        <p class="lede">Everything the practice currently shows publicly: its Google rating, patient testimonials, affiliations and provider logos.</p>
+      </div>
+      <div class="rating">
+        <span class="rating__num" aria-hidden="true">4.8</span>
+        <p class="rating__meta mb-0"><strong>4.8 out of 5 on Google</strong>147 reviews<br><span class="note">Assessment snapshot, 12 Nov 2026</span></p>
       </div>
     </div>
+    <p class="review-note"><span class="src">Assessment snapshot</span> Not a live Google integration; re-verify before launch.</p>
   </div>
 </section>
 
-<section class="section section--paper" id="testimonials" aria-labelledby="t-h">
+<section class="section section--surface" id="testimonials" aria-labelledby="t-h">
   <div class="container">
     <div class="section-head">
       <div><span class="eyebrow">Patient testimonials</span><h2 id="t-h">In their own words</h2></div>
-      <p>All of these appear on the practice's own <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>, reproduced as written (including spelling), with the attribution shown there. Many come from children, so first names and ages are exactly as the practice displays them.</p>
+      <p>All of these appear on the practice's own <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>, reproduced as written, with the attribution shown there.</p>
     </div>
-    <div class="cred-note" style="margin-bottom:1.5rem"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span> The practice must approve reuse of these quotations, and decide whether minors' names and ages should be shown, before launch. Nothing on this page was written by the design team.</span></div>
-    <div class="field"><label for="quote-search">Search testimonials</label><input id="quote-search" type="search" placeholder="e.g. Dr. Abbey, braces, friendly" autocomplete="off"></div>
-    <p class="src-note" id="quote-count" aria-live="polite"></p>
-    <div class="quote-grid" id="quote-grid">
-<figure class="quote"><blockquote>“We love Dr. Abbey. She is so patient &amp; kind!”</blockquote><figcaption>— Madelyn</figcaption></figure>
-<figure class="quote"><blockquote>“Amazing staff, friendly, thank you!”</blockquote><figcaption>— Meghan</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey was very quick &amp; soothing for my daughter's first dental visit!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“My son had a positive experience at Top of the Hill.”</blockquote><figcaption>— S. Rink</figcaption></figure>
-<figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>— Kerin D.</figcaption></figure>
-<figure class="quote"><blockquote>“I'm happy. I loved the people.”</blockquote><figcaption>— Posey G.</figcaption></figure>
-<figure class="quote"><blockquote>“He flicked out my tooth. It was cool.”</blockquote><figcaption>— Wesley</figcaption></figure>
-<figure class="quote"><blockquote>“It hurt a little bit, but you all did really good.”</blockquote><figcaption>— Kaylee age, 10</figcaption></figure>
-<figure class="quote"><blockquote>“Amazing! Dr. Abbey is the best &lt;3”</blockquote><figcaption>— Ziva</figcaption></figure>
-<figure class="quote"><blockquote>“We had a great experience today. Thank you very much.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Nurse Danielle was amazing with my nervous daughter.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“GREAT JOB!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“I think you did awesoome, but I don't like the sticky stuff you put on my teeth.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“It was great.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“AMAZING”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“We love Dr. Abbey and the whole staff.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“You all did awesome.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“It was aight.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“You guys are hte best in the whole world. Thank you!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Stressed over NOTHING. Everyone's so friendly!”</blockquote><figcaption>— Maeve</figcaption></figure>
-<figure class="quote"><blockquote>“You guys are the best! Always so helpful &amp; friendly.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Loved it! So shiny and clean.”</blockquote><figcaption>— Eva D.</figcaption></figure>
-<figure class="quote"><blockquote>“You're amazing!! So well done. Keep it up!”</blockquote><figcaption>— Nico H.</figcaption></figure>
-<figure class="quote"><blockquote>“Staff is very courteous and professional. My son loves visiting!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Your staff is very friendly and professional. The office is clean &amp; well maintained.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Thank you. Thank you for seeing us on a moment's notice &amp; thank you for being so kind to my baby!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“You guys were very sweet &amp; warm and fun.”</blockquote><figcaption>— Ruby</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey was great. My little guy looks forward to it.”</blockquote><figcaption>— Brian P.</figcaption></figure>
-<figure class="quote"><blockquote>“Everybody was really nice and helpful.”</blockquote><figcaption>— Brooke</figcaption></figure>
-<figure class="quote"><blockquote>“Great experience!”</blockquote><figcaption>— Abby J.</figcaption></figure>
-<figure class="quote"><blockquote>“Great staff and experience every time.”</blockquote><figcaption>— Austin M.</figcaption></figure>
-<figure class="quote"><blockquote>“Crying tears of joy! Very friendly, very stress-free.”</blockquote><figcaption>— Autumn</figcaption></figure>
-<figure class="quote"><blockquote>“The staff is so friendly. Thank you for being so patient.”</blockquote><figcaption>— Jess B.</figcaption></figure>
-<figure class="quote"><blockquote>“I had a very awesome time! My new braces are very odd but nice!”</blockquote><figcaption>— Avery</figcaption></figure>
-<figure class="quote"><blockquote>“You guys are awesome.”</blockquote><figcaption>— Shareeka M.</figcaption></figure>
-<figure class="quote"><blockquote>“It was amazing! Just like always! My teeth are getting better!”</blockquote><figcaption>— Alexis, age 8</figcaption></figure>
-<figure class="quote"><blockquote>“You guys are awesome. Thank you for taking good care of my daughter's teeth.”</blockquote><figcaption>— Sharon L</figcaption></figure>
-<figure class="quote"><blockquote>“Loved the toys!”</blockquote><figcaption>— Maya</figcaption></figure>
-<figure class="quote"><blockquote>“I can't wait to get braces! Love everything about this dentist!!!!”</blockquote><figcaption>— Sofia, age 13</figcaption></figure>
-<figure class="quote"><blockquote>“The girls had an amazing &amp;super friendly experience!”</blockquote><figcaption>— Kathy, Parker, Santana, &amp; Finley</figcaption></figure>
-<figure class="quote"><blockquote>“I got my braces off! I'm so happy!”</blockquote><figcaption>— Hannah, age 13</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey was so calm and patient with my young kids. She made this such a great experience. They didn't want to leave!”</blockquote><figcaption>— Mary Q.</figcaption></figure>
-<figure class="quote"><blockquote>“I got my braces OFF!!!”</blockquote><figcaption>— Penelope, age 8</figcaption></figure>
-<figure class="quote"><blockquote>“My daughter was nervous as always &amp; Dr. Abbey was patient as always. So great with kids!”</blockquote><figcaption>— Amber</figcaption></figure>
-<figure class="quote"><blockquote>“Dr Abbey was gentle and walked us through our son's first check-up.”</blockquote><figcaption>— George C.</figcaption></figure>
-<figure class="quote"><blockquote>“Great spot, great toys, Nice folks!!”</blockquote><figcaption>— Ian D.</figcaption></figure>
-<figure class="quote"><blockquote>“Awesome! Made our son feel at ease. Great service!”</blockquote><figcaption>— Brian P.</figcaption></figure>
-<figure class="quote"><blockquote>“So friendly, very welcoming. Great 1st experience!”</blockquote><figcaption>— Amelia</figcaption></figure>
-<figure class="quote"><blockquote>“Everyone is very nice-easy check-ups!”</blockquote><figcaption>— Laurel C.</figcaption></figure>
-<figure class="quote"><blockquote>“Really clean place. Everyone was super nice and respectful. All my concerns were addressed.”</blockquote><figcaption>— Monica</figcaption></figure>
-<figure class="quote"><blockquote>“Kind, friendly, fast and easy to speak with!”</blockquote><figcaption>— Yvette</figcaption></figure>
-<figure class="quote"><blockquote>“Fine.”</blockquote><figcaption>— Morris, age 9</figcaption></figure>
-<figure class="quote"><blockquote>“I have clean teeth! And I don't have cavities! Really nice place.”</blockquote><figcaption>— Zoe</figcaption></figure>
-<figure class="quote"><blockquote>“Really patient and fast! Great experience.”</blockquote><figcaption>— Danielle H.</figcaption></figure>
-<figure class="quote"><blockquote>“It was very very fast and everyone was really nice.”</blockquote><figcaption>— Brooke, age 12</figcaption></figure>
-<figure class="quote"><blockquote>“I had a great time. I'm even getting braces!”</blockquote><figcaption>— Samuel, age 10</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey is a saint and so patient! She is the best even with a hard patient!”</blockquote><figcaption>— Suzanne D.</figcaption></figure>
-<figure class="quote"><blockquote>“Super fast, efficient and a happy patient!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey is absolutely wonderful! We couldn't have asked for a better experience!”</blockquote><figcaption>— Holly W.</figcaption></figure>
-<figure class="quote"><blockquote>“Terrific!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“That was so cool! Dr. Abbey is so nice. I got a sticker.”</blockquote><figcaption>— Christopher, age 7</figcaption></figure>
-<figure class="quote"><blockquote>“This was so awesome! Dr. kept my son nice and calm.”</blockquote><figcaption>— Philicia D.</figcaption></figure>
-<figure class="quote"><blockquote>“Great dentists! :)”</blockquote><figcaption>— Tracy H.</figcaption></figure>
-<figure class="quote"><blockquote>“Awesome!”</blockquote><figcaption>— Jack, age 9</figcaption></figure>
-<figure class="quote"><blockquote>“I feel good and happy about coming to see Dr. Abbey.”</blockquote><figcaption>— Milo, age 4</figcaption></figure>
-<figure class="quote"><blockquote>“I liked how the dentists had a good sense of humor.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Really clean place. Everyone was super nice and respectful. All my concerns were addressed.”</blockquote><figcaption>— Monica R.</figcaption></figure>
-<figure class="quote"><blockquote>“I didn't even notice when she took my teeth out!”</blockquote><figcaption>— Natalie B., age 12</figcaption></figure>
-<figure class="quote"><blockquote>“We love Dr. Abbey”</blockquote><figcaption>— Minya</figcaption></figure>
-<figure class="quote"><blockquote>“Loved it! Quick, friendly &amp; on time.”</blockquote><figcaption>— Gabriel J.</figcaption></figure>
-<figure class="quote"><blockquote>“Dr Jake was very nice!”</blockquote><figcaption>— Brooke, age 11</figcaption></figure>
-<figure class="quote"><blockquote>“I love this place. It's my favorite dentist place ever!!!”</blockquote><figcaption>— Ana, age 8</figcaption></figure>
-<figure class="quote"><blockquote>“I really like how you don't get your gums ripped out like u do at other places.”</blockquote><figcaption>— Zoe I., age 12</figcaption></figure>
-<figure class="quote"><blockquote>“You guys are awesome!!!”</blockquote><figcaption>— Wendy S</figcaption></figure>
-<figure class="quote"><blockquote>“I like how nice you are.”</blockquote><figcaption>— Maya I., age 9</figcaption></figure>
-<figure class="quote"><blockquote>“Excited about our pretty smiles!”</blockquote><figcaption>— Anna L.</figcaption></figure>
-<figure class="quote"><blockquote>“I like your kinds of toothpast (sic). Love, Dominic S.”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“We had an excellent visit!”</blockquote><figcaption>— Kieanna P.</figcaption></figure>
-<figure class="quote"><blockquote>“I have to say I was nerves (sic) at first but at the end I thought it was really great.”</blockquote><figcaption>— Ella H., age 8</figcaption></figure>
-<figure class="quote"><blockquote>“We love everything about TOTH! So convenient, accommodating, professional and wonderful!”</blockquote><figcaption>— The Powells</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey was warm, wonderful and kind. Great experience!”</blockquote><figcaption>— Caroline F.</figcaption></figure>
-<figure class="quote"><blockquote>“Mrs. Abbey was so nice. Everybody was polite and kind.”</blockquote><figcaption>— Aliah H., age 10</figcaption></figure>
-<figure class="quote"><blockquote>“I enjoyed my visit!”</blockquote><figcaption>— Maya, age 8</figcaption></figure>
-<figure class="quote"><blockquote>“I really like it here. The doctors are soooo nice.”</blockquote><figcaption>— Aliah, age 10</figcaption></figure>
-<figure class="quote"><blockquote>“I did not feel a thing.”</blockquote><figcaption>— Angelina S., age 11</figcaption></figure>
-<figure class="quote"><blockquote>“I really like my new colors for my braces!”</blockquote><figcaption>— Hunter H., age 8</figcaption></figure>
-<figure class="quote"><blockquote>“I think that they were really fast and didn't hurt at all!”</blockquote><figcaption>— Hannah H., age 12</figcaption></figure>
-<figure class="quote"><blockquote>“It was very good.”</blockquote><figcaption>— Dominic S., age 8</figcaption></figure>
-<figure class="quote"><blockquote>“Dr. Abbey rocks!”</blockquote><figcaption>— Dannetta G.</figcaption></figure>
-<figure class="quote"><blockquote>“I really want to go here again!”</blockquote><figcaption>— Kona, age 8</figcaption></figure>
-<figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>— Alice H.</figcaption></figure>
-<figure class="quote"><blockquote>“Excellent visit!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Love our experience with Dr. Abbey! My girls loved their experience &amp; had a blast!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“It's awesome!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Fantastic visit- Love Dr. Abbey &amp; all the staff. Thank you!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Everyone is so nice! My kids had a great experience!”</blockquote><figcaption>— Unattributed on current website</figcaption></figure>
-<figure class="quote"><blockquote>“Thanks for being so patient! Great with kids.”</blockquote><figcaption>— Tamala E.</figcaption></figure>
-<figure class="quote"><blockquote>“Great friendly doctor and staff.”</blockquote><figcaption>— Anonymous</figcaption></figure>
-<figure class="quote"><blockquote>“My toddler does not like going to the doctors, but his crying was no problem for Dr. Abbey. She easily examined him and did it all with a smile! He went home happy and was asking to brush his teeth!”</blockquote><figcaption>— Mary Q.</figcaption></figure>
-<figure class="quote"><blockquote>“I wouldn't want anyone else to work in my daughters's mouths!”</blockquote><figcaption>— Amy G.</figcaption></figure>
-<figure class="quote"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>— Andy F.</figcaption></figure>
-<figure class="quote"><blockquote>“Great experience today!”</blockquote><figcaption>— Anonymous</figcaption></figure>
-<figure class="quote"><blockquote>“Two great people!!”</blockquote><figcaption>— Brooke M.</figcaption></figure>
+    <div class="review-box"><span class="src">From current website</span> <span class="src">Pending practice review</span> The practice must approve reuse of these quotations, and decide whether children's names and ages should be shown, before launch. Spelling is as on the current site. Nothing on this page was written by the design team.</div>
+    <div class="field mt-8"><label for="quote-search">Search testimonials</label><input id="quote-search" type="search" placeholder="Search" autocomplete="off"></div>
+    <p class="note" id="quote-count" aria-live="polite"></p>
+    <div class="wall mt-6" id="quote-grid">
+<figure class="quote quote--feature"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>Kerin D.</figcaption></figure>
+<figure class="quote quote--feature"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>Alice H.</figcaption></figure>
+<figure class="quote quote--feature"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>Andy F.</figcaption></figure>
+<figure class="quote"><blockquote>“We love Dr. Abbey. She is so patient &amp; kind!”</blockquote><figcaption>Madelyn</figcaption></figure>
+<figure class="quote"><blockquote>“Amazing staff, friendly, thank you!”</blockquote><figcaption>Meghan</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey was very quick &amp; soothing for my daughter's first dental visit!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“My son had a positive experience at Top of the Hill.”</blockquote><figcaption>S. Rink</figcaption></figure>
+<figure class="quote"><blockquote>“I'm happy. I loved the people.”</blockquote><figcaption>Posey G.</figcaption></figure>
+<figure class="quote"><blockquote>“He flicked out my tooth. It was cool.”</blockquote><figcaption>Wesley</figcaption></figure>
+<figure class="quote"><blockquote>“It hurt a little bit, but you all did really good.”</blockquote><figcaption>Kaylee age, 10</figcaption></figure>
+<figure class="quote"><blockquote>“Amazing! Dr. Abbey is the best &lt;3”</blockquote><figcaption>Ziva</figcaption></figure>
+<figure class="quote"><blockquote>“We had a great experience today. Thank you very much.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Nurse Danielle was amazing with my nervous daughter.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“GREAT JOB!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“I think you did awesoome, but I don't like the sticky stuff you put on my teeth.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“It was great.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“AMAZING”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“We love Dr. Abbey and the whole staff.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“You all did awesome.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“It was aight.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“You guys are hte best in the whole world. Thank you!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Stressed over NOTHING. Everyone's so friendly!”</blockquote><figcaption>Maeve</figcaption></figure>
+<figure class="quote"><blockquote>“You guys are the best! Always so helpful &amp; friendly.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Loved it! So shiny and clean.”</blockquote><figcaption>Eva D.</figcaption></figure>
+<figure class="quote"><blockquote>“You're amazing!! So well done. Keep it up!”</blockquote><figcaption>Nico H.</figcaption></figure>
+<figure class="quote"><blockquote>“Staff is very courteous and professional. My son loves visiting!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Your staff is very friendly and professional. The office is clean &amp; well maintained.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Thank you. Thank you for seeing us on a moment's notice &amp; thank you for being so kind to my baby!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“You guys were very sweet &amp; warm and fun.”</blockquote><figcaption>Ruby</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey was great. My little guy looks forward to it.”</blockquote><figcaption>Brian P.</figcaption></figure>
+<figure class="quote"><blockquote>“Everybody was really nice and helpful.”</blockquote><figcaption>Brooke</figcaption></figure>
+<figure class="quote"><blockquote>“Great experience!”</blockquote><figcaption>Abby J.</figcaption></figure>
+<figure class="quote"><blockquote>“Great staff and experience every time.”</blockquote><figcaption>Austin M.</figcaption></figure>
+<figure class="quote"><blockquote>“Crying tears of joy! Very friendly, very stress-free.”</blockquote><figcaption>Autumn</figcaption></figure>
+<figure class="quote"><blockquote>“The staff is so friendly. Thank you for being so patient.”</blockquote><figcaption>Jess B.</figcaption></figure>
+<figure class="quote"><blockquote>“I had a very awesome time! My new braces are very odd but nice!”</blockquote><figcaption>Avery</figcaption></figure>
+<figure class="quote"><blockquote>“You guys are awesome.”</blockquote><figcaption>Shareeka M.</figcaption></figure>
+<figure class="quote"><blockquote>“It was amazing! Just like always! My teeth are getting better!”</blockquote><figcaption>Alexis, age 8</figcaption></figure>
+<figure class="quote"><blockquote>“You guys are awesome. Thank you for taking good care of my daughter's teeth.”</blockquote><figcaption>Sharon L</figcaption></figure>
+<figure class="quote"><blockquote>“Loved the toys!”</blockquote><figcaption>Maya</figcaption></figure>
+<figure class="quote"><blockquote>“I can't wait to get braces! Love everything about this dentist!!!!”</blockquote><figcaption>Sofia, age 13</figcaption></figure>
+<figure class="quote"><blockquote>“The girls had an amazing &amp;super friendly experience!”</blockquote><figcaption>Kathy, Parker, Santana, &amp; Finley</figcaption></figure>
+<figure class="quote"><blockquote>“I got my braces off! I'm so happy!”</blockquote><figcaption>Hannah, age 13</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey was so calm and patient with my young kids. She made this such a great experience. They didn't want to leave!”</blockquote><figcaption>Mary Q.</figcaption></figure>
+<figure class="quote"><blockquote>“I got my braces OFF!!!”</blockquote><figcaption>Penelope, age 8</figcaption></figure>
+<figure class="quote"><blockquote>“My daughter was nervous as always &amp; Dr. Abbey was patient as always. So great with kids!”</blockquote><figcaption>Amber</figcaption></figure>
+<figure class="quote"><blockquote>“Dr Abbey was gentle and walked us through our son's first check-up.”</blockquote><figcaption>George C.</figcaption></figure>
+<figure class="quote"><blockquote>“Great spot, great toys, Nice folks!!”</blockquote><figcaption>Ian D.</figcaption></figure>
+<figure class="quote"><blockquote>“Awesome! Made our son feel at ease. Great service!”</blockquote><figcaption>Brian P.</figcaption></figure>
+<figure class="quote"><blockquote>“So friendly, very welcoming. Great 1st experience!”</blockquote><figcaption>Amelia</figcaption></figure>
+<figure class="quote"><blockquote>“Everyone is very nice-easy check-ups!”</blockquote><figcaption>Laurel C.</figcaption></figure>
+<figure class="quote"><blockquote>“Really clean place. Everyone was super nice and respectful. All my concerns were addressed.”</blockquote><figcaption>Monica</figcaption></figure>
+<figure class="quote"><blockquote>“Kind, friendly, fast and easy to speak with!”</blockquote><figcaption>Yvette</figcaption></figure>
+<figure class="quote"><blockquote>“Fine.”</blockquote><figcaption>Morris, age 9</figcaption></figure>
+<figure class="quote"><blockquote>“I have clean teeth! And I don't have cavities! Really nice place.”</blockquote><figcaption>Zoe</figcaption></figure>
+<figure class="quote"><blockquote>“Really patient and fast! Great experience.”</blockquote><figcaption>Danielle H.</figcaption></figure>
+<figure class="quote"><blockquote>“It was very very fast and everyone was really nice.”</blockquote><figcaption>Brooke, age 12</figcaption></figure>
+<figure class="quote"><blockquote>“I had a great time. I'm even getting braces!”</blockquote><figcaption>Samuel, age 10</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey is a saint and so patient! She is the best even with a hard patient!”</blockquote><figcaption>Suzanne D.</figcaption></figure>
+<figure class="quote"><blockquote>“Super fast, efficient and a happy patient!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey is absolutely wonderful! We couldn't have asked for a better experience!”</blockquote><figcaption>Holly W.</figcaption></figure>
+<figure class="quote"><blockquote>“Terrific!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“That was so cool! Dr. Abbey is so nice. I got a sticker.”</blockquote><figcaption>Christopher, age 7</figcaption></figure>
+<figure class="quote"><blockquote>“This was so awesome! Dr. kept my son nice and calm.”</blockquote><figcaption>Philicia D.</figcaption></figure>
+<figure class="quote"><blockquote>“Great dentists! :)”</blockquote><figcaption>Tracy H.</figcaption></figure>
+<figure class="quote"><blockquote>“Awesome!”</blockquote><figcaption>Jack, age 9</figcaption></figure>
+<figure class="quote"><blockquote>“I feel good and happy about coming to see Dr. Abbey.”</blockquote><figcaption>Milo, age 4</figcaption></figure>
+<figure class="quote"><blockquote>“I liked how the dentists had a good sense of humor.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Really clean place. Everyone was super nice and respectful. All my concerns were addressed.”</blockquote><figcaption>Monica R.</figcaption></figure>
+<figure class="quote"><blockquote>“I didn't even notice when she took my teeth out!”</blockquote><figcaption>Natalie B., age 12</figcaption></figure>
+<figure class="quote"><blockquote>“We love Dr. Abbey”</blockquote><figcaption>Minya</figcaption></figure>
+<figure class="quote"><blockquote>“Loved it! Quick, friendly &amp; on time.”</blockquote><figcaption>Gabriel J.</figcaption></figure>
+<figure class="quote"><blockquote>“Dr Jake was very nice!”</blockquote><figcaption>Brooke, age 11</figcaption></figure>
+<figure class="quote"><blockquote>“I love this place. It's my favorite dentist place ever!!!”</blockquote><figcaption>Ana, age 8</figcaption></figure>
+<figure class="quote"><blockquote>“I really like how you don't get your gums ripped out like u do at other places.”</blockquote><figcaption>Zoe I., age 12</figcaption></figure>
+<figure class="quote"><blockquote>“You guys are awesome!!!”</blockquote><figcaption>Wendy S</figcaption></figure>
+<figure class="quote"><blockquote>“I like how nice you are.”</blockquote><figcaption>Maya I., age 9</figcaption></figure>
+<figure class="quote"><blockquote>“Excited about our pretty smiles!”</blockquote><figcaption>Anna L.</figcaption></figure>
+<figure class="quote"><blockquote>“I like your kinds of toothpast (sic). Love, Dominic S.”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“We had an excellent visit!”</blockquote><figcaption>Kieanna P.</figcaption></figure>
+<figure class="quote"><blockquote>“I have to say I was nerves (sic) at first but at the end I thought it was really great.”</blockquote><figcaption>Ella H., age 8</figcaption></figure>
+<figure class="quote"><blockquote>“We love everything about TOTH! So convenient, accommodating, professional and wonderful!”</blockquote><figcaption>The Powells</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey was warm, wonderful and kind. Great experience!”</blockquote><figcaption>Caroline F.</figcaption></figure>
+<figure class="quote"><blockquote>“Mrs. Abbey was so nice. Everybody was polite and kind.”</blockquote><figcaption>Aliah H., age 10</figcaption></figure>
+<figure class="quote"><blockquote>“I enjoyed my visit!”</blockquote><figcaption>Maya, age 8</figcaption></figure>
+<figure class="quote"><blockquote>“I really like it here. The doctors are soooo nice.”</blockquote><figcaption>Aliah, age 10</figcaption></figure>
+<figure class="quote"><blockquote>“I did not feel a thing.”</blockquote><figcaption>Angelina S., age 11</figcaption></figure>
+<figure class="quote"><blockquote>“I really like my new colors for my braces!”</blockquote><figcaption>Hunter H., age 8</figcaption></figure>
+<figure class="quote"><blockquote>“I think that they were really fast and didn't hurt at all!”</blockquote><figcaption>Hannah H., age 12</figcaption></figure>
+<figure class="quote"><blockquote>“It was very good.”</blockquote><figcaption>Dominic S., age 8</figcaption></figure>
+<figure class="quote"><blockquote>“Dr. Abbey rocks!”</blockquote><figcaption>Dannetta G.</figcaption></figure>
+<figure class="quote"><blockquote>“I really want to go here again!”</blockquote><figcaption>Kona, age 8</figcaption></figure>
+<figure class="quote"><blockquote>“Excellent visit!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Love our experience with Dr. Abbey! My girls loved their experience &amp; had a blast!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“It's awesome!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Fantastic visit- Love Dr. Abbey &amp; all the staff. Thank you!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Everyone is so nice! My kids had a great experience!”</blockquote><figcaption>Unattributed on the current website</figcaption></figure>
+<figure class="quote"><blockquote>“Thanks for being so patient! Great with kids.”</blockquote><figcaption>Tamala E.</figcaption></figure>
+<figure class="quote"><blockquote>“Great friendly doctor and staff.”</blockquote><figcaption>Anonymous</figcaption></figure>
+<figure class="quote"><blockquote>“My toddler does not like going to the doctors, but his crying was no problem for Dr. Abbey. She easily examined him and did it all with a smile! He went home happy and was asking to brush his teeth!”</blockquote><figcaption>Mary Q.</figcaption></figure>
+<figure class="quote"><blockquote>“I wouldn't want anyone else to work in my daughters's mouths!”</blockquote><figcaption>Amy G.</figcaption></figure>
+<figure class="quote"><blockquote>“Great experience today!”</blockquote><figcaption>Anonymous</figcaption></figure>
+<figure class="quote"><blockquote>“Two great people!!”</blockquote><figcaption>Brooke M.</figcaption></figure>
     </div>
-    <p style="margin-top:1.5rem"><button class="btn btn--outline" id="quote-more" type="button">Show more testimonials</button></p>
-    <noscript><p class="src-note">Enable JavaScript to page through the list, or read them all on the <a href="https://www.topofthehillsmiles.com/testimonials">current Testimonials page</a>.</p></noscript>
-    <div class="callout" style="margin-top:2.5rem">
-      <h3 style="font-size:1.25rem">Share your experience</h3>
-      <p style="margin:0">The practice invites patients to share kind words by asking the front desk for a comment card at their next appointment. <span class="src-note"><span class="src src--site">From current website</span></span></p>
-    </div>
+    <p class="mt-8"><button class="btn btn--secondary" id="quote-more" type="button">Show more testimonials</button></p>
+    <noscript><p class="note">Enable JavaScript to page through the list, or read them all on the <a href="https://www.topofthehillsmiles.com/testimonials">current Testimonials page</a>.</p></noscript>
+    <p class="note mt-8">The practice invites patients to share kind words by asking the front desk for a comment card at their next appointment.</p>
   </div>
 </section>
 
 <section class="section" id="credentials" aria-labelledby="cred-h">
   <div class="container">
     <div class="section-head">
-      <div><span class="eyebrow">Credentials, affiliations &amp; logos</span><h2 id="cred-h">As stated by the practice</h2></div>
-      <p>These are shown here because they appear on the current website. They have not been independently verified, so each is tagged for the practice to confirm.</p>
+      <div><span class="eyebrow">Credentials, affiliations and logos</span><h2 id="cred-h">As stated by the practice</h2></div>
+      <p>These appear on the current website. Each is tagged so the practice can confirm it before launch.</p>
     </div>
     <div class="grid grid--2">
-      <div class="card card--ped"><h3>Dr. Abbey Sullivan Orozco</h3>
-        <ul class="chips"><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Diplomate, American Board of Pediatric Dentistry</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Academy of Pediatric Dentistry</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Dental Association</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Omicron Kappa Upsilon honor society (2007)</li></ul>
-        <p class="src-note" style="margin-top:1rem"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p></div>
-      <div class="card card--ortho"><h3>Dr. Jacob Orozco</h3>
-        <ul class="chips"><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> David C. Hamilton research award, Pennsylvania Association of Orthodontists</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Dental Association</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Association of Orthodontists</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, Middle Atlantic Society of Orthodontists</li><li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, Greater Philadelphia Society of Orthodontists</li></ul>
-        <p class="src-note" style="margin-top:1rem"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p></div>
+      <div>
+        <span class="spec spec--ped">Dr. Abbey Sullivan Orozco</span>
+        <ul class="creds mt-4">
+          <li>Diplomate, American Board of Pediatric Dentistry</li>
+          <li>Member, American Academy of Pediatric Dentistry</li>
+          <li>Member, American Dental Association</li>
+          <li>Omicron Kappa Upsilon honor society, 2007</li>
+        </ul>
+        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p>
+      </div>
+      <div>
+        <span class="spec spec--ortho">Dr. Jacob Orozco</span>
+        <ul class="creds mt-4">
+          <li>David C. Hamilton research award, Pennsylvania Association of Orthodontists</li>
+          <li>Member, American Dental Association</li>
+          <li>Member, American Association of Orthodontists</li>
+          <li>Member, Middle Atlantic Society of Orthodontists</li>
+          <li>Member, Greater Philadelphia Society of Orthodontists</li>
+        </ul>
+        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p>
+      </div>
     </div>
-    <div class="card card--paper" style="margin-top:var(--gutter)">
-      <h3>Provider logos on the current website</h3>
-      <p>The practice states: “We are also a certified Invisalign Teen® provider.” These two logos appear in the footer of every page of the current site.</p>
-      <div class="logo-row">
+    <div class="mt-12">
+      <p class="creds-title">Provider logos on the current website</p>
+      <p class="measure">The practice states: “We are also a certified Invisalign Teen® provider.” These two logos appear in the footer of every page of the current site.</p>
+      <div class="logos">
         <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website" loading="lazy"></a>
         <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website" loading="lazy"></a>
       </div>
-      <p class="src-note" style="margin-top:1rem"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span> The current site shows no other licence or certification badges. Confirm provider status and logo-use permission before launch.</p>
+      <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> The current site shows no other licence or certification badges. Confirm provider status and logo-use permission before launch.</p>
     </div>
   </div>
 </section>
 
-<section class="section section--paper" id="office-tour" aria-labelledby="tour-h">
+<section class="section section--surface" id="office-tour" aria-labelledby="tour-h">
   <div class="container">
-    <div class="section-head"><div><span class="eyebrow">Office tour</span><h2 id="tour-h">Inside the office</h2></div><p>The practice's current Office Tour page has eight photos. Approved images will replace these placeholders.</p></div>
-    <div class="grid grid--4">
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Exterior — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Exterior — approved photo</figcaption></figure><figure class="ph ph--square" role="img" aria-label="Placeholder image: Waiting area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Waiting area — approved photo</figcaption></figure><figure class="ph ph--square" role="img" aria-label="Placeholder image: Treatment area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M40 210c20-90 90-130 160-130s140 40 160 130"/><path d="M80 210c14-62 62-90 120-90s106 28 120 90" opacity=".6"/><path d="M130 210c8-34 36-50 70-50s62 16 70 50" opacity=".4"/></svg><figcaption>Treatment area — approved photo</figcaption></figure><figure class="ph ph--square ph--ped" role="img" aria-label="Placeholder image: Pediatric area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M110 150c20 60 160 60 180 0"/><path d="M135 172c10 18 120 18 130 0" opacity=".6"/><circle cx="200" cy="150" r="104" opacity=".4"/></svg><figcaption>Pediatric area — approved photo</figcaption></figure>
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Orthodontic area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M40 210c20-90 90-130 160-130s140 40 160 130"/><path d="M80 210c14-62 62-90 120-90s106 28 120 90" opacity=".6"/><path d="M130 210c8-34 36-50 70-50s62 16 70 50" opacity=".4"/></svg><figcaption>Orthodontic area — approved photo</figcaption></figure><figure class="ph ph--square ph--ped" role="img" aria-label="Placeholder image: Ceiling TVs &amp;amp; toy box — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M110 150c20 60 160 60 180 0"/><path d="M135 172c10 18 120 18 130 0" opacity=".6"/><circle cx="200" cy="150" r="104" opacity=".4"/></svg><figcaption>Ceiling TVs &amp; toy box — approved photo</figcaption></figure><figure class="ph ph--square" role="img" aria-label="Placeholder image: Team — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="200" cy="115" r="48"/><path d="M95 270c8-62 52-92 105-92s97 30 105 92"/></svg><figcaption>Team — approved photo</figcaption></figure><figure class="ph ph--square" role="img" aria-label="Placeholder image: Front desk — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Front desk — approved photo</figcaption></figure>
+    <div class="section-head"><div><span class="eyebrow">Office tour</span><h2 id="tour-h">Inside the office</h2></div><p>The practice's current Office Tour page has eight photos. Approved images will replace these frames.</p></div>
+    <div class="gallery">
+      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Exterior, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Exterior, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Waiting area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Waiting area, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Treatment area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg><figcaption class="review-only">Treatment area, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Pediatric area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg><figcaption class="review-only">Pediatric area, approved photo</figcaption></figure>
+      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Orthodontic area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg><figcaption class="review-only">Orthodontic area, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Ceiling TVs and toy box, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Ceiling TVs and toy box, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Team, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Team, approved photo</figcaption></figure><figure class="frame frame--arch" role="img" aria-label="Placeholder image: Front desk, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Front desk, approved photo</figcaption></figure>
     </div>
-    <p style="margin-top:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap"><a class="link-arrow" href="https://www.topofthehillsmiles.com/office-tour" target="_blank" rel="noopener noreferrer">View the current Office Tour <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><a class="link-arrow" href="about.html">Meet the doctors <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="link-arrow" href="new-patients.html">New patients <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    <p class="mt-8"><a class="link-arrow" href="https://www.topofthehillsmiles.com/office-tour" target="_blank" rel="noopener noreferrer">View the current office tour <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
   </div>
 </section>
 
-<section class="section section--navy" aria-labelledby="closing-h">
-  <div class="container split split--wide-left">
+<section class="section section--ink" aria-labelledby="closing-h">
+  <div class="container split split--text-left">
     <div>
-      <span class="eyebrow" style="color:var(--apricot)">Chestnut Hill, Philadelphia</span>
-      <h2 id="closing-h">Ready to plan your visit?</h2>
-      <p class="lede" style="color:#c9d6e0">Choose the office that fits your family, then send an appointment request — or call us directly.</p>
-      <div class="cta-stack on-dark">
+      <span class="eyebrow">Chestnut Hill, Philadelphia</span>
+      <h2 id="closing-h">Plan your visit</h2>
+      <p class="lede">Send an appointment request for pediatric dentistry, orthodontics or both, or call the office directly.</p>
+      <div class="cta">
         <a class="btn btn--light" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
       </div>
-      <div class="hero__call" style="margin-top:1.25rem">
-  <a class="callbtn callbtn--on-dark" href="tel:+12152203777" data-track="call_ortho_click"><span class="dot"></span>Call Orthodontics: (215) 220-3777</a>
-  <a class="callbtn callbtn--on-dark" href="tel:+12152203778" data-track="call_pedo_click"><span class="dot"></span>Call Pediatric Dentistry: (215) 220-3778</a>
+      <div class="calls">
+  <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Call Orthodontics</span> <span class="num">(215) 220-3777</span></a>
+  <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Call Pediatric Dentistry</span> <span class="num">(215) 220-3778</span></a>
 </div>
 
     </div>
-    <div class="callout callout--inverse">
-      <h3 style="font-size:1.25rem">Find us</h3>
-      <p style="color:#e8eef3;margin-bottom:.5rem"><strong>Top of the Hill Orthodontics &amp; Pediatric Dentistry</strong><br>10 W Gravers Lane, Philadelphia, PA 19118</p>
-      <p><a style="color:#fff;font-weight:600" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Get directions <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
-      <p class="src-note" style="color:#c9d6e0;margin:0">Parking and transit details from the current website are on the <a style="color:#fff" href="contact.html#visit">Contact page</a>.</p>
+    <div>
+      <h3 class="h-sm">Top of the Hill Orthodontics &amp; Pediatric Dentistry</h3>
+      <p>10 W Gravers Lane, Philadelphia, PA 19118</p>
+      <p><a class="link-arrow" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Get directions <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
+      <p class="note mb-0">Parking and transit details are on the <a href="contact.html#visit">Contact page</a></p>
     </div>
   </div>
 </section>
@@ -273,20 +280,20 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="poc-note"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. Items tagged “From current website” were taken from topofthehillsmiles.com; items tagged “Placeholder” or “Pending review” need practice approval before launch.</div>
+    <div class="review-box review-box--ink review-only"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. “From current website” notes mark content taken from topofthehillsmiles.com; “Placeholder” and “Pending practice review” notes need practice approval before launch. Use the switch below to hide these notes.</div>
     <div class="footer__grid">
       <div>
-        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 <span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span></a>
         <address>
           <span>10 W Gravers Lane, Philadelphia, PA 19118</span>
-          <a href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Orthodontics: (215) 220-3777</a>
-          <a href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Pediatric Dentistry: (215) 220-3778</a>
+          <a href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Orthodontics <span class="num">(215) 220-3777</span></a>
+          <a href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Pediatric Dentistry <span class="num">(215) 220-3778</span></a>
           <a href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Directions</a>
         </address>
       </div>
       <div>
-        <h2>Pediatric Dentistry</h2>
+        <h2>Pediatric dentistry</h2>
         <ul>
           <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
           <li><a href="pediatric-dentistry.html#first-visit">First Pediatric Dental Visit</a></li>
@@ -299,7 +306,7 @@
         <h2>Orthodontics</h2>
         <ul>
           <li><a href="orthodontics.html">Orthodontics</a></li>
-          <li><a href="orthodontics.html#treatments">Early &amp; Adult Treatment</a></li>
+          <li><a href="orthodontics.html#treatments">Early and Adult Treatment</a></li>
           <li><a href="orthodontics.html#invisalign">Invisalign®</a></li>
           <li><a href="orthodontics.html#emergencies">Orthodontic Emergency Care</a></li>
           <li><a href="faqs.html#orthodontic">Orthodontic FAQs</a></li>
@@ -314,24 +321,26 @@
           <li><a href="reviews.html">Reviews &amp; Office Tour</a></li>
           <li><a href="contact.html">Contact &amp; Appointments</a></li>
         </ul>
-        <div class="cta-stack on-dark" style="margin-top:1.25rem">
+        <div class="cta mt-6">
           <a class="btn btn--light btn--sm" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a>
           <p class="helper">Our scheduling coordinator will contact you to confirm.</p>
         </div>
       </div>
     </div>
     <div class="footer__badges">
-      <span class="src-note" style="color:#9db3c4;max-width:24rem">Provider logos as shown in the footer of the current website. <span class="src src--site">From current website</span></span>
-      <div class="logo-row">
-        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
-        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
+      <span class="note footer__note">Provider logos as shown in the footer of the current website <span class="src">From current website</span></span>
+      <div class="logos">
+        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
+        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
       </div>
     </div>
     <div class="footer__base">
       <span>© <span data-year>2026</span> Top of the Hill Orthodontics &amp; Pediatric Dentistry. Concept design for client review.</span>
       <ul>
-        <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (current site PDF)</a></li>
-        <li><span>Terms &amp; site privacy policy — pending practice approval</span></li>
+        <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
+        <li class="review-only">Terms and site privacy policy pending practice approval</li>
+        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+</li>
       </ul>
     </div>
   </div>
@@ -339,18 +348,18 @@
 
 <div class="mobilebar" role="region" aria-label="Quick actions">
   <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request Appointment</a>
-  <button class="btn btn--outline" type="button" data-open-call><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</button>
+  <button class="btn btn--secondary" type="button" data-open-call><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</button>
 </div>
 
 <dialog class="sheet" id="call-sheet" aria-labelledby="call-sheet-title">
   <div class="sheet__in">
     <div class="sheet__head">
-      <div><h2 id="call-sheet-title">Which office would you like to call?</h2><p class="helper">Two specialty lines, one practice at 10 W Gravers Lane, Philadelphia, PA 19118.</p></div>
+      <div><h2 id="call-sheet-title">Which office would you like to call</h2><p class="helper">Two specialty lines, one practice at 10 W Gravers Lane, Philadelphia, PA 19118</p></div>
       <button class="icon-btn" type="button" data-close-call aria-label="Close"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
-    <a class="call-opt" href="tel:+12152203777" data-track="call_ortho_click"><span class="badge badge--ortho">Ortho</span><span><strong>Call Orthodontics</strong><span>(215) 220-3777</span></span></a>
-    <a class="call-opt" href="tel:+12152203778" data-track="call_pedo_click"><span class="badge badge--ped">Pediatric</span><span><strong>Call Pediatric Dentistry</strong><span>(215) 220-3778</span></span></a>
-    <p class="helper" style="margin-top:1rem">For a medical emergency, call 911.</p>
+    <a class="call-opt" href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span><strong>Call Orthodontics</strong><span class="num">(215) 220-3777</span></a>
+    <a class="call-opt" href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric dentistry</span><strong>Call Pediatric Dentistry</strong><span class="num">(215) 220-3778</span></a>
+    <p class="helper mt-4">For a medical emergency, call 911</p>
   </div>
 </dialog>
 

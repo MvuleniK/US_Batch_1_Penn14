@@ -1,10 +1,9 @@
 # Top of the Hill Orthodontics & Pediatric Dentistry — front-end PoC
 
 Static, dependency-free front end (**HTML, CSS, vanilla JavaScript**) built from the Google Stitch design
-("Chestnut Hill Editorial Clinical") and the *Penn_14 Structured Website Assessment*
-(`docs/`). Philadelphia, PA.
+and the *Penn_14 Structured Website Assessment* (`docs/`). Chestnut Hill, Philadelphia, PA.
 
-> Proof of concept for client review — **not** the practice's live website, and not connected to any
+> Proof of concept for client review. It is **not** the practice's live website and is not connected to any
 > practice system.
 
 ## Run it
@@ -12,77 +11,90 @@ Static, dependency-free front end (**HTML, CSS, vanilla JavaScript**) built from
 ```bash
 npm run serve      # http://localhost:4173  (Node >= 18, no install step)
 npm run build      # regenerate public/ from src/
-npm run verify     # build + run acceptance checks (exit 1 on failure)
+npm run verify     # build + acceptance checks + design lint (exit 1 on failure)
 ```
 
 `public/` is committed, so it can also be hosted as-is on any static host.
 
 ## Pages
 
-| Page | File |
-|---|---|
-| Home | `public/index.html` |
-| Pediatric Dentistry | `public/pediatric-dentistry.html` |
-| Orthodontics | `public/orthodontics.html` |
-| New Patients | `public/new-patients.html` |
-| Meet Our Doctors (About) | `public/about.html` |
-| Reviews & Office Tour | `public/reviews.html` |
-| Contact & Appointments | `public/contact.html` |
-| FAQs (recommended enhancement) | `public/faqs.html` |
+Home · Pediatric Dentistry · Orthodontics · New Patients · Meet Our Doctors (`about.html`) ·
+Reviews & Office Tour · Contact & Appointments · FAQs — each in `public/*.html`.
 
 Edit `src/pages/*.html`, `src/partials/*.html`, `src/data/testimonials.json`, then `npm run build`.
 `public/assets/css/styles.css` and `public/assets/js/main.js` are edited directly.
-Facts that must never drift (booking URL, both phone numbers, address) live **once** in
-`scripts/build.mjs` (`CONST`).
+Facts that must never drift (booking URL, both phone numbers, address) live **once** in `scripts/build.mjs`.
 
 ## Non-negotiables (enforced by `npm run verify`)
 
 - Every "Request an Appointment" CTA → exactly `https://www.topofthehillsmiles.com/appointment-request`.
-- No `cal.com` / Oculeus scheduler anywhere; it appears only as a labelled, non-linked *proposal* note on Contact.
-- Copy says "appointment request … coordinator will contact you to confirm" — never instant or confirmed booking.
-- Two separate `tel:` links: Orthodontics `+12152203777`, Pediatric `+12152203778` (label ↔ number checked).
+- No `cal.com` / Oculeus scheduler anywhere. It appears only as a *proposal* note, hidden in clean view.
+- Copy says "appointment request … coordinator will contact you to confirm", never instant or confirmed booking.
+- Two separate `tel:` links, Orthodontics `+12152203777` and Pediatric `+12152203778`; label and number are checked.
 - Home H1 preserved verbatim; one `h1` per page; alt text; internal links and anchors resolve.
-- No unapproved email shown; no invented hours, prices, or patient data collection.
+- No unapproved email, invented hours or prices, or patient-data collection.
 
-## Provenance: everything the owner needs to see, labelled
+## Design direction (unslop pass)
 
-Every non-obvious item carries a tag so the business owner can see what came from where:
+This pass applies the **unslop** method (see credit below): audit, set a direction, then nine passes
+(spacing, colour, icons, copy, type, layout, details, visuals, motion). Direction was agreed with the owner.
 
-| Tag | Meaning |
+| | |
 |---|---|
-| **From current website** | Taken from topofthehillsmiles.com (read 15 Nov 2026) |
-| **Assessment snapshot** | Google 4.8 / 147 reviews, 12 Nov 2026 — not live |
-| **Pending clinical / practice review** | Needs sign-off before launch |
-| **Placeholder — approved asset needed** | Stands in for real photography |
-| **Proposal — not live** | Idea from the assessment, not implemented |
+| Product | A combined pediatric dental and orthodontic practice for parents of infants to teens, and for adults considering braces or Invisalign |
+| Feeling (owner's choice) | **Confident and premium**, kept calm and neighbourly |
+| World | Chestnut Hill: arched windows, stone and brick, paper and ink |
+| Signature | The **arch**: a dental arch and a Chestnut Hill window at once. Logo mark, hero drawing and image frames |
+| Moments | The arched-façade hero (its two inner arches are the two specialties) and the real testimonial wall on Reviews |
 
-Included from the original site, as requested: all **103 testimonials** (verbatim, `src/data/testimonials.json`,
-including unattributed and first-name-only entries), the doctors' **credentials and affiliations**
-(ABPD diplomate, AAPD/ADA/AAO and society memberships, research award, OKU), the "certified Invisalign Teen®
-provider" statement, the two **Invisalign / Invisalign Teen logos** (`public/assets/img/original/`), the
-team roster, parking/transit, form PDFs and the Notice of Privacy Practices.
-None of these are independently verified — they are flagged for the practice to confirm.
+**Colour and emotion.** Dental sites default to clinical blue and white, which reads cold and generic.
+Parents are anxious, children need to feel safe, adults want to look trustworthy and modern, so:
 
-**Not carried over from the Stitch mock-up** because they do not appear on the current site:
-the three invented "Verified Record" quotes, "Dual Board Leadership", "Invisalign Certified Provider /
-Platinum", "HIPAA Compliant Practice" badge, AI-generated doctor/office photos, an
-"Open Appointment Calendar" panel and a named "scheduling coordinator" avatar.
+| Colour | Role | Feeling |
+|---|---|---|
+| Warm stone `#f6f3ed` / `#fcfaf6` | Surfaces | Human, calm, private-practice |
+| Deep navy ink `#16293a` | Text, primary button, dark bands | Competence, authority, steadiness |
+| Brass `#a67c2e` (`#7a5a1c` as text) | The one accent: current page, the 4.8 figure, the arch keystone | Quiet premium, used rarely |
+| Terracotta `#c0703f` / teal `#2f7777` | **Dots only**, marking pediatric / orthodontics | Warmth for children, precision for orthodontics |
+| Muted red `#9a2f25` | Emergency callouts only | Urgency |
 
-## Adjustments to the Stitch navbar
+Contrast is computed, not eyeballed: body text 13.4:1, secondary 6.7:1, muted 4.8:1, brass-as-text 5.7:1, white on navy 14.9:1.
+Palette values are a concept proposal, not verified brand colours.
 
-- Removed the fake coordinator avatar and the "Requests confirmed by phone" under the CTA (the form says a
-  coordinator will *contact* you; channel isn't specified).
-- Top contact strip scrolls away; only the primary header is sticky (the mock-up fixed both, eating ~110 px).
-- Nav labels fit on one line at 1140 px+ (the mock-up wrapped "Meet Our Doctors"); below that, a labelled
-  **Menu** button opens a full-screen menu with both call buttons and the booking CTA.
-- Added skip link, `aria-current`, focus trap/Esc in the menu, 44 px targets, and a mobile bottom bar
-  (Request Appointment + Call → "which office?" sheet) that hides when the footer is in view.
-- Replaced Tailwind CDN + Material Symbols font with plain CSS and inline SVG icons (mobile LCP concern in the assessment).
+**What changed from the Stitch mock-up:** one accent instead of two (specialties are marked with dots); sentence-case labels
+and weights 400 to 500 instead of uppercase tracked 700s; no radial wash, glass blur or gradients; a text-led asymmetric hero
+with a coded arch drawing instead of a centred stack with placeholder boxes; editorial lists and ruled steps instead of rows of
+identical icon cards; one icon set at one size and stroke; the 4px spacing scale with no inline styles; one easing curve and no
+looping motion; the five-star row (which implied 5.0) replaced with the real 4.8 figure.
+
+**Review-mode switch.** Source tags ("From current website", "Pending practice review", "Placeholder, approved asset needed",
+"Proposal, not live") are now one calm neutral style. A **Source notes for review** switch (top strip and footer) shows or hides them.
+It is ON by default for the owner review so nothing is hidden; switch it off for a clean, launch-style view. Required public
+disclosures, such as the dated rating snapshot, stay visible in both views.
+
+## Provenance: everything the owner needs to see
+
+Included from the original site, as requested: all **103 testimonials** (verbatim, `src/data/testimonials.json`), the doctors'
+**credentials and affiliations** (ABPD diplomate, AAPD / ADA / AAO and society memberships, research award, OKU), the
+"certified Invisalign Teen® provider" statement, the two **Invisalign / Invisalign Teen logos**
+(`public/assets/img/original/`), the team roster, parking and transit, form PDFs and the Notice of Privacy Practices.
+None is independently verified; each is flagged for the practice to confirm.
+
+**Not carried over from Stitch** because it does not appear on the current site: the invented "Verified Record" quotes,
+"Dual Board Leadership", "Invisalign Certified Provider / Platinum", a "HIPAA Compliant" badge, AI-generated doctor and
+office photos, an "Open Appointment Calendar" panel, and a named coordinator avatar.
 
 ## Open items
 
-Approved logo, photos and bios; confirmation of every credential/testimonial reuse (including minors' names/ages);
-opening hours; whether `info@topofthehillsmiles.com` may be public; re-verify Google rating; privacy/analytics
-consent (event hooks `appointment_cta_click`, `call_ortho_click`, `call_pedo_click`, `patient_forms_click`
-are wired but inert until `window.TOTH_CONSENT = true`); re-run Lighthouse after deployment (no performance
-improvement is claimed yet). Note: on the current site, at least one footer link labelled (215) 220-3778 actually dials the orthodontics number (tel:2152203777) — worth telling the practice; the links here are correct.
+Approved logo, photos and bios; confirmation of every credential and testimonial reuse (including children's names and ages);
+opening hours; whether `info@topofthehillsmiles.com` may be public; re-verify the Google rating; privacy and analytics consent
+(events `appointment_cta_click`, `call_ortho_click`, `call_pedo_click`, `patient_forms_click` are wired but inert until
+`window.TOTH_CONSENT = true`); re-run Lighthouse after deployment (no performance improvement is claimed yet). On the current
+site at least one footer link labelled (215) 220-3778 dials the orthodontics number (`tel:2152203777`); worth telling the
+practice. The links here are correct.
+
+## Credits
+
+The design pass follows **unslop** by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed
+[CC BY 4.0](https://github.com/heydamir/unslop/blob/main/LICENSE): <https://github.com/heydamir/unslop>.
+The checks in `scripts/verify.mjs` encode its checklist. This repo adapts the method; it does not copy the skill's text.

@@ -1,10 +1,9 @@
 <!--meta {"title":"Contact & Appointments | Top of the Hill Orthodontics & Pediatric Dentistry","description":"Plan your visit to Top of the Hill at 10 W Gravers Lane, Philadelphia. Submit an appointment request or call Orthodontics (215) 220-3777 or Pediatric Dentistry (215) 220-3778.","nav":"contact"} -->
 
-<section class="hero" style="padding-bottom:clamp(2rem,4vw,3.5rem)">
+<section class="hero hero--sub">
   <div class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact &amp; Appointments</li></ol></nav>
-    <div class="stack" style="max-width:52rem">
-      <span class="eyebrow">Contact &amp; appointments</span>
+    <div class="stack measure">
       <h1>Let's plan your visit</h1>
       <p class="lede">Complete the practice's appointment-request form. A scheduling coordinator will contact you to confirm your appointment.</p>
       {{include:cta}}
@@ -12,83 +11,94 @@
   </div>
 </section>
 
-<section class="section--tight" style="padding-top:0" id="call" aria-labelledby="call-h">
+<section class="section--tight" id="call" aria-labelledby="call-h">
   <div class="container">
     <h2 id="call-h" class="sr-only">Call the office</h2>
     <div class="grid grid--2">
-      <article class="card card--ortho"><span class="badge badge--ortho" style="align-self:flex-start;margin-bottom:1rem">Orthodontics</span><h3>Orthodontics for all ages</h3><p>Evaluations, braces, adult orthodontics and Invisalign®, with Dr. Jacob Orozco.</p><p style="font:700 1.75rem var(--serif);color:var(--navy);margin:0">{{ORTHO}}</p><div class="card__foot"><a class="btn btn--teal" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Call Orthodontics</a></div></article>
-      <article class="card card--ped"><span class="badge badge--ped" style="align-self:flex-start;margin-bottom:1rem">Pediatric Dentistry</span><h3>Pediatric dentistry</h3><p>Checkups, baby dental care and children's dental needs, with Dr. Abbey Sullivan Orozco.</p><p style="font:700 1.75rem var(--serif);color:var(--navy);margin:0">{{PEDO}}</p><div class="card__foot"><a class="btn btn--apricot" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Call Pediatric Dentistry</a></div></article>
+      <article class="card">
+        <span class="spec spec--ortho mb-0">Orthodontics</span>
+        <h3 class="mt-4">Orthodontics for all ages</h3>
+        <p>Evaluations, braces, adult orthodontics and Invisalign®, with Dr. Jacob Orozco.</p>
+        <p class="phone-lg num">{{ORTHO}}</p>
+        <div class="card__foot"><a class="btn btn--primary" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Call Orthodontics</a></div>
+      </article>
+      <article class="card">
+        <span class="spec spec--ped mb-0">Pediatric dentistry</span>
+        <h3 class="mt-4">Pediatric dentistry</h3>
+        <p>Checkups, baby dental care and children's dental needs, with Dr. Abbey Sullivan Orozco.</p>
+        <p class="phone-lg num">{{PEDO}}</p>
+        <div class="card__foot"><a class="btn btn--primary" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Call Pediatric Dentistry</a></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section section--navy" aria-labelledby="flow-h">
-  <div class="container split split--wide-left" style="align-items:start">
+<section class="section section--ink" aria-labelledby="flow-h">
+  <div class="container split split--text-left split--top">
     <div>
-      <span class="eyebrow" style="color:var(--apricot)">How requests work</span>
-      <h2 id="flow-h">An appointment request — not an instant booking</h2>
-      <p class="lede" style="color:#c9d6e0">The practice's online form collects your name, email, phone, appointment type (Ortho, Pedo or Both) and an optional comment. Staff then follow up to confirm. You will not see selectable time slots, and nothing is booked until the office confirms.</p>
-      <ol class="steps" style="margin-top:1.5rem">
-        <li style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">Submit request</h3><p style="color:#c9d6e0">Choose Ortho, Pedo or Both.</p></li>
-        <li style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">Coordinator follows up</h3><p style="color:#c9d6e0">The scheduling coordinator contacts you.</p></li>
-        <li style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">Appointment confirmed</h3><p style="color:#c9d6e0">Your visit is set once the office confirms.</p></li>
+      <span class="eyebrow">How requests work</span>
+      <h2 id="flow-h">An appointment request, not an instant booking</h2>
+      <p class="lede">The practice's online form collects your name, email, phone, appointment type (Ortho, Pedo or Both) and an optional comment. Staff then follow up to confirm. There are no selectable time slots, and nothing is booked until the office confirms.</p>
+      <ol class="steps mt-8">
+        <li><h3>Submit request</h3><p>Choose Ortho, Pedo or Both.</p></li>
+        <li><h3>Coordinator follows up</h3><p>The scheduling coordinator contacts you.</p></li>
+        <li><h3>Appointment confirmed</h3><p>Your visit is set once the office confirms.</p></li>
       </ol>
     </div>
-    <div class="callout" style="background:#fff;color:var(--ink)">
-      <h3 style="font-size:1.375rem">Request an appointment</h3>
+    <div class="cta">
+      <h3>Request an appointment</h3>
       <p>Opens the practice's own request form in a new tab.</p>
-      <div class="cta-stack"><a class="btn btn--primary btn--block" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment {{icon:external}}</a><p class="helper" style="color:var(--muted)">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p></div>
-      <p class="src-note" style="margin-top:1rem">This prototype does not collect any patient or health information.</p>
+      <a class="btn btn--light btn--block" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment {{icon:external}}</a>
+      <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
+      <p class="review-note">This prototype collects no patient or health information.</p>
     </div>
   </div>
 </section>
 
 <section class="section" id="visit" aria-labelledby="visit-h">
-  <div class="container split split--wide-left" style="align-items:start">
+  <div class="container split split--text-left split--top">
     <div>
       <span class="eyebrow">Find us</span>
       <h2 id="visit-h">Conveniently located in Chestnut Hill</h2>
-      <div class="map-ph" role="img" aria-label="Map placeholder for 10 W Gravers Lane, Philadelphia">
-        {{icon:pin}}
+      <div class="map-box" role="img" aria-label="Map placeholder for 10 W Gravers Lane, Philadelphia">
         <strong>Top of the Hill Orthodontics &amp; Pediatric Dentistry</strong>
         <span>{{ADDR}}</span>
-        <a class="btn btn--primary btn--sm" href="{{MAPS}}" target="_blank" rel="noopener noreferrer">Open in Google Maps {{icon:external}}</a>
-        <span class="src-note">{{src:placeholder}} An embedded map can replace this once approved.</span>
+        <a class="btn btn--primary btn--sm mt-2" href="{{MAPS}}" target="_blank" rel="noopener noreferrer">Open in Google Maps {{icon:external}}</a>
+        <span class="review-note">{{src:placeholder}} An embedded map can replace this once approved.</span>
       </div>
     </div>
-    <div class="stack">
-      <div class="card card--paper"><h3>Getting here</h3>
-        <ul class="checks">
-          <li>{{icon:pin}}<span>Metered parking along Gravers Lane and Germantown Ave, and in the lot behind PNC Bank.</span></li>
-          <li>{{icon:train}}<span>Chestnut Hill East and West train stations are a few blocks away.</span></li>
-          <li>{{icon:train}}<span>SEPTA bus Route 23 stops right out front.</span></li>
-        </ul>
-        <p class="src-note">{{src:site}} {{src:review}} <a href="{{ORIG}}/philadelphia-office-location" target="_blank" rel="noopener noreferrer">Original page</a></p></div>
-      <div class="card card--paper"><h3>Office hours</h3><p style="margin:0">Office hours are not listed in the material supplied for this prototype, so none are shown. {{src:placeholder}}</p></div>
-      <div class="card card--paper"><h3>Email</h3><p style="margin:0">An email address appears in the assessment and on the current Philadelphia Office Location page. It is not shown here until the practice confirms it should be public. {{src:review}}</p></div>
+    <div>
+      <h3>Getting here</h3>
+      <ul class="rows">
+        <li>{{icon:pin}}<span>Metered parking along Gravers Lane and Germantown Ave, and in the lot behind PNC Bank</span></li>
+        <li>{{icon:train}}<span>Chestnut Hill East and West train stations are a few blocks away</span></li>
+        <li>{{icon:train}}<span>SEPTA bus Route 23 stops right out front</span></li>
+      </ul>
+      <p class="review-note">{{src:site}} {{src:review}} <a href="{{ORIG}}/philadelphia-office-location" target="_blank" rel="noopener noreferrer">Original page</a></p>
+      <div class="review-box mt-6"><strong>Not shown on purpose.</strong> Office hours were not in the supplied material, so none are displayed. An email address appears in the assessment and on the current Philadelphia Office Location page; it stays hidden until the practice confirms it should be public.</div>
     </div>
   </div>
 </section>
 
-<section class="section--tight" style="padding-top:0" aria-labelledby="urgent-h">
+<section class="section--tight" aria-labelledby="urgent-h">
   <div class="container">
     <div class="callout callout--emergency">
-      <h2 id="urgent-h" style="font-size:1.5rem">Urgent dental or orthodontic problem?</h2>
+      <h2 id="urgent-h">Urgent dental or orthodontic problem</h2>
       <p>Please call the office rather than using the request form. In a life-threatening emergency, call 911.</p>
       <div class="btn-row">
-        <a class="btn btn--danger" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Orthodontics: {{ORTHO}}</a>
-        <a class="btn btn--danger" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Pediatric: {{PEDO}}</a>
+        <a class="btn btn--danger" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Orthodontics <span class="num">{{ORTHO}}</span></a>
+        <a class="btn btn--danger" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Pediatric <span class="num">{{PEDO}}</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--paper section--tight" aria-labelledby="future-h">
+<section class="section--tight review-only" aria-labelledby="future-h">
   <div class="container">
-    <div class="callout callout--note">
-      <span class="src src--proposal">Proposal — not live</span>
-      <h2 id="future-h" style="font-size:1.25rem;margin-top:.75rem">Possible future: a practice-controlled online scheduler</h2>
-      <p style="margin:0">A real-time scheduler with selectable time slots is one optional improvement discussed in the assessment. It would need practice approval, ownership of the calendar, and a privacy and security review first. It is deliberately <strong>not</strong> part of this prototype, and no external scheduler is linked.</p>
+    <div class="review-box">
+      <span class="src">Proposal, not live</span>
+      <h2 id="future-h" class="h-sm mt-2">Possible future: a practice-controlled online scheduler</h2>
+      <p class="mb-0">A real-time scheduler with selectable time slots is one optional improvement discussed in the assessment. It would need practice approval, ownership of the calendar and a privacy and security review first. It is deliberately not part of this prototype, and no external scheduler is linked.</p>
     </div>
   </div>
 </section>

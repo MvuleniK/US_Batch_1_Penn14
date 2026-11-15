@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-review="on">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Top of the Hill Orthodontics & Pediatric Dentistry | Chestnut Hill, Philadelphia</title>
 <meta name="description" content="Pediatric dentistry and orthodontics for children, teens and adults in Chestnut Hill, Philadelphia. Submit an appointment request or call the office.">
-<meta name="theme-color" content="#183449">
-<meta name="robots" content="noindex, nofollow"><!-- proof-of-concept: not for indexing -->
+<meta name="theme-color" content="#16293a">
+<meta name="robots" content="noindex, nofollow"><!-- proof of concept: not for indexing -->
+<script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Vollkorn:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Vollkorn:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script type="application/ld+json">
 {
@@ -39,18 +40,20 @@
   <div class="container topbar__in">
     <div class="topbar__left">
       <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chestnut Hill, Philadelphia · 10 W Gravers Lane, Philadelphia, PA 19118</span></a>
-      <a href="contact.html#visit">Office info &amp; directions</a>
+      <a href="contact.html#visit">Office info and directions</a>
     </div>
-    <div class="topbar__phones">
-      <a class="tb-ortho" href="tel:+12152203777" data-track="call_ortho_click"><span class="badge badge--ortho">Ortho</span> (215) 220-3777</a>
-      <a class="tb-ped" href="tel:+12152203778" data-track="call_pedo_click"><span class="badge badge--ped">Pediatric</span> (215) 220-3778</a>
+    <div class="topbar__right">
+      <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span> <span class="num">(215) 220-3777</span></a>
+      <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric</span> <span class="num">(215) 220-3778</span></a>
+      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+
     </div>
   </div>
 </div>
 <header class="header">
   <div class="container header__in">
-    <a class="brand" href="index.html" aria-label="Top of the Hill Orthodontics &amp; Pediatric Dentistry — home">
-      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+    <a class="brand" href="index.html" aria-label="Top of the Hill Orthodontics and Pediatric Dentistry, home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 
       <span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span>
     </a>
@@ -63,259 +66,240 @@
 </header>
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
   <div class="menu__top">
-    <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+    <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 <span><span class="brand__name">Top of the Hill</span></span></a>
     <button class="icon-btn" id="menu-close" type="button" aria-label="Close menu"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav aria-label="Mobile primary"><ul><li><a href="index.html" aria-current="page">Home<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="pediatric-dentistry.html">Pediatric Dentistry<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="orthodontics.html">Orthodontics<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="new-patients.html">New Patients<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="about.html">Meet Our Doctors<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="reviews.html">Reviews &amp; Office Tour<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="contact.html">Contact<svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul></nav>
-  <div class="cta-stack">
+  <div class="cta">
     <a class="btn btn--primary btn--block" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
     <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
   </div>
   <div class="menu__calls">
-    <a class="btn btn--outline btn--block" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Orthodontics: (215) 220-3777</a>
-    <a class="btn btn--outline btn--block" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Pediatric Dentistry: (215) 220-3778</a>
+    <a class="btn btn--secondary btn--block" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Orthodontics <span class="num">(215) 220-3777</span></a>
+    <a class="btn btn--secondary btn--block" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Pediatric Dentistry <span class="num">(215) 220-3778</span></a>
   </div>
 </div>
 
 <main id="main">
-<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero__center">
-      <span class="pill">Chestnut Hill, Philadelphia · Pediatric Dentistry &amp; Orthodontics</span>
+  <div class="container hero__grid">
+    <div>
       <h1>Welcome to Top of The Hill — Dentistry for Children &amp; Orthodontics for All Ages</h1>
-      <p class="lede">Gentle pediatric dental care and orthodontic treatment for infants, children, teens and adults — together under one roof at 10 W Gravers Lane.</p>
-      <div class="cta-stack cta-stack--center">
+      <p class="lede">Pediatric dentistry for infants, children and teens, and orthodontics for children, teens and adults, together under one roof in Chestnut Hill.</p>
+      <div class="cta">
   <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
 </div>
 
-      <div class="hero__call">
-  <a class="callbtn callbtn--ortho" href="tel:+12152203777" data-track="call_ortho_click"><span class="dot"></span>Call Orthodontics: (215) 220-3777</a>
-  <a class="callbtn callbtn--ped" href="tel:+12152203778" data-track="call_pedo_click"><span class="dot"></span>Call Pediatric Dentistry: (215) 220-3778</a>
+      <div class="calls">
+  <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Call Orthodontics</span> <span class="num">(215) 220-3777</span></a>
+  <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Call Pediatric Dentistry</span> <span class="num">(215) 220-3778</span></a>
 </div>
 
     </div>
-
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));margin-top:clamp(2.5rem,5vw,4rem)">
-      <div style="grid-column:span 2;min-width:0" class="hero-mosaic-main"><figure class="ph ph--wide" role="img" aria-label="Placeholder image: Office photo — approved image needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Office photo — approved image needed</figcaption></figure></div>
-      <div style="display:grid;gap:var(--gutter);min-width:0">
-        <figure class="ph ph--wide ph--ped" role="img" aria-label="Placeholder image: Pediatric care photo — approved image needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M110 150c20 60 160 60 180 0"/><path d="M135 172c10 18 120 18 130 0" opacity=".6"/><circle cx="200" cy="150" r="104" opacity=".4"/></svg><figcaption>Pediatric care photo — approved image needed</figcaption></figure>
-        <figure class="ph ph--wide" role="img" aria-label="Placeholder image: Orthodontic care photo — approved image needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M40 210c20-90 90-130 160-130s140 40 160 130"/><path d="M80 210c14-62 62-90 120-90s106 28 120 90" opacity=".6"/><path d="M130 210c8-34 36-50 70-50s62 16 70 50" opacity=".4"/></svg><figcaption>Orthodontic care photo — approved image needed</figcaption></figure>
+    <div class="hero__art">
+      <svg class="arch-art" viewBox="0 0 520 540" aria-hidden="true" focusable="false"><path class="a-outer" d="M8 532V228a252 208 0 0 1 504 0v304z"/><path class="a-mould" d="M22 532V228a238 194 0 0 1 476 0v304"/><path class="a-win" d="M44 532V340a90 90 0 0 1 180 0v192"/><path class="a-lines" d="M134 250v170M44 340h180M44 420h180"/><rect class="a-lines" x="64" y="444" width="140" height="72" rx="4"/><path class="a-win" d="M296 532V340a90 90 0 0 1 180 0v192"/><path class="a-lines" d="M386 250v170M296 340h180M296 420h180"/><rect class="a-lines" x="316" y="444" width="140" height="72" rx="4"/><circle class="a-dot-ped" cx="134" cy="232" r="6"/><circle class="a-dot-ortho" cx="386" cy="232" r="6"/><circle class="a-key" cx="260" cy="64" r="7"/><path class="a-ground" d="M0 532.5h520"/></svg>
+      <div class="arch-links">
+        <a href="pediatric-dentistry.html"><span class="spec spec--ped">Pediatric</span><strong>Pediatric Dentistry</strong></a>
+        <a href="orthodontics.html"><span class="spec spec--ortho">Orthodontics</span><strong>Orthodontics for All Ages</strong></a>
       </div>
+      <p class="review-note"><span class="src">Placeholder, approved asset needed</span> The arch drawing stands in for approved office photography.</p>
     </div>
-    <p class="src-note center" style="text-align:center;margin-top:1rem"><span class="src src--placeholder">Placeholder — approved asset needed</span> Clearly marked placeholders stand in for the practice's own office and team photography.</p>
   </div>
 </section>
 
-<!-- TWO SPECIALTY PATHWAYS -->
-<section class="section section--paper" aria-labelledby="paths-h">
+<section class="section section--surface" aria-labelledby="paths-h">
   <div class="container">
     <div class="section-head">
       <div><span class="eyebrow">Two specialties, one practice</span><h2 id="paths-h">Choose the care your family needs</h2></div>
-      <p>A combined specialty practice: your child's dental needs and orthodontic needs can be met with one team.</p>
+      <p>A combined specialty practice means your child's dental and orthodontic needs can be met by one team.</p>
     </div>
     <div class="grid grid--2">
-      <article class="card card--ped">
-        <div class="card__top"><span class="badge badge--ped">Pediatric Dentistry</span><span class="card__meta">Infants, children &amp; adolescents</span></div>
+      <article class="card">
+        <div class="card__top"><span class="spec spec--ped">Pediatric dentistry</span><span class="note">Infants, children and adolescents</span></div>
         <h3>Gentle dental care, from baby's first tooth</h3>
-        <p>Dr. Abbey and the team focus on prevention and on explaining every step in kid-friendly terms, so visits feel calm and positive.</p>
-        <ul class="checks">
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>First pediatric dental visit &amp; regular checkups</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Dental care for your baby</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Thumb-sucking guidance &amp; sports dentistry</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Pediatric dental emergency information</span></li>
+        <p>Dr. Abbey and the team focus on prevention and explain every step in kid-friendly terms, so visits feel calm and positive.</p>
+        <ul class="list">
+          <li>First pediatric dental visit and regular checkups</li>
+          <li>Dental care for your baby</li>
+          <li>Thumb-sucking guidance and sports dentistry</li>
+          <li>Pediatric dental emergency information</li>
         </ul>
-        <div class="card__foot">
-          <a class="btn btn--apricot" href="pediatric-dentistry.html">Explore Pediatric Care</a>
-          <a class="link-arrow" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> (215) 220-3778</a>
-        </div>
+        <div class="card__foot"><a class="btn btn--secondary" href="pediatric-dentistry.html">Explore pediatric care</a><a class="link-arrow" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> <span class="num">(215) 220-3778</span></a></div>
       </article>
-      <article class="card card--ortho">
-        <div class="card__top"><span class="badge badge--ortho">Orthodontics for All Ages</span><span class="card__meta">Children, teens &amp; adults</span></div>
+      <article class="card">
+        <div class="card__top"><span class="spec spec--ortho">Orthodontics for all ages</span><span class="note">Children, teens and adults</span></div>
         <h3>Braces, early treatment and Invisalign®</h3>
-        <p>Dr. Jake offers the full spectrum of orthodontic services, with treatment plans tailored to each patient.</p>
-        <ul class="checks">
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Early evaluation and Phase I early treatment</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Traditional metal &amp; clear (ceramic) braces</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Adult orthodontics — “it's never too late”</span></li>
-          <li><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Invisalign® &amp; Invisalign Teen®</span></li>
+        <p>Dr. Jake offers the full spectrum of orthodontic services, with a treatment plan tailored to each patient.</p>
+        <ul class="list">
+          <li>Early evaluation and Phase I early treatment</li>
+          <li>Traditional metal and clear (ceramic) braces</li>
+          <li>Adult orthodontics: it's never too late</li>
+          <li>Invisalign® and Invisalign Teen®</li>
         </ul>
-        <div class="card__foot">
-          <a class="btn btn--teal" href="orthodontics.html">Explore Orthodontic Care</a>
-          <a class="link-arrow" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> (215) 220-3777</a>
-        </div>
+        <div class="card__foot"><a class="btn btn--secondary" href="orthodontics.html">Explore orthodontic care</a><a class="link-arrow" href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> <span class="num">(215) 220-3777</span></a></div>
       </article>
     </div>
-    <p class="src-note" style="margin-top:1rem"><span class="src src--site">From current website</span> Service lines and descriptions follow the practice's current website.</p>
+    <p class="review-note"><span class="src">From current website</span> Service lines and descriptions follow the practice's current website.</p>
   </div>
 </section>
 
-<!-- DIFFERENCE -->
 <section class="section" aria-labelledby="diff-h">
-  <div class="container split">
+  <div class="container split split--top">
     <div class="stack">
       <span class="eyebrow">The Top of the Hill difference</span>
-      <h2 id="diff-h">Your family's smiles, thoughtfully cared for.</h2>
-      <p class="lede">Dr. Abbey and Dr. Jake are a husband-and-wife team who understand the oral health needs of children and teens — and the practice brings pediatric dentistry and orthodontics together under one roof.</p>
-      <div class="grid grid--2" style="margin-top:1.5rem">
-        <div class="card card--paper"><span class="icon-tile"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><h4>One roof, two specialties</h4><p style="margin:0;font-size:.9375rem">With both doctors in the office, a child's growth and development can be monitored so orthodontics can start at the optimum time.</p></div>
-        <div class="card card--paper"><span class="icon-tile icon-tile--ped"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14a5 5 0 0 0 8 0M9 9h.01M15 9h.01"/></svg></span><h4>Comfort for kids</h4><p style="margin:0;font-size:.9375rem">Ceiling-mounted TVs show family-friendly shows and movies, and children can visit the toy box after a job well done.</p></div>
-      </div>
-      <p class="src-note"><span class="src src--site">From current website</span> From the “What Sets Us Apart” page. <a href="https://www.topofthehillsmiles.com/what-sets-us-apart" target="_blank" rel="noopener noreferrer">Read the original</a></p>
+      <h2 id="diff-h">Your family's smiles, thoughtfully cared for</h2>
+      <p class="lede">Dr. Abbey and Dr. Jake are a husband-and-wife team who understand the oral health needs of children and teens. Their practice brings pediatric dentistry and orthodontics under one roof.</p>
       <a class="link-arrow" href="about.html">Meet the doctors <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="review-note"><span class="src">From current website</span> From the “What Sets Us Apart” page. <a href="https://www.topofthehillsmiles.com/what-sets-us-apart" target="_blank" rel="noopener noreferrer">Read the original</a></p>
     </div>
-    <div style="position:relative">
-      <figure class="ph ph--tall" role="img" aria-label="Placeholder image: Waiting area / office photo — approved image needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Waiting area / office photo — approved image needed</figcaption></figure>
-      <div class="card" style="position:absolute;left:1rem;right:1rem;bottom:1rem;max-width:22rem;padding:1.1rem;box-shadow:var(--shadow)">
-        <div style="display:flex;gap:.6rem;align-items:center;margin-bottom:.4rem;color:var(--teal-ink)"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><strong style="color:var(--navy)">Board-certified pediatric dentist</strong></div>
-        <p style="margin:0 0 .5rem;font-size:.875rem">The current website refers to “our board-certified pediatric dentist, Dr. Abbey Sullivan Orozco.”</p>
-        <span class="src src--site">From current website</span>
-      </div>
-    </div>
+    <ul class="rows">
+      <li><div><h4>One roof, two specialties</h4><p class="mb-0 note">With both doctors in the office, a child's growth and development can be monitored so orthodontics can begin at the optimum time.</p></div></li>
+      <li><div><h4>Comfort for kids</h4><p class="mb-0 note">Ceiling-mounted TVs show family-friendly shows and movies, and children can visit the toy box after a job well done.</p></div></li>
+      <li><div><h4>A board-certified pediatric dentist</h4><p class="mb-0 note">The current website refers to “our board-certified pediatric dentist, Dr. Abbey Sullivan Orozco.”</p><p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p></div></li>
+    </ul>
   </div>
 </section>
 
-<!-- DOCTORS -->
-<section class="section section--paper" aria-labelledby="docs-h">
+<section class="section section--surface" aria-labelledby="docs-h">
   <div class="container">
     <div class="section-head">
       <div><span class="eyebrow">Clinical leadership</span><h2 id="docs-h">Meet the specialists</h2></div>
-      <p>Real, named clinicians. Credentials below are listed as stated on the practice's current website.</p>
+      <p>Real, named clinicians. Credentials are listed as stated on the practice's current website.</p>
     </div>
     <div class="grid grid--2">
       <article class="doctor">
         <div class="doctor__body">
           <div class="doctor__head">
-            <figure class="ph ph--round ph--ped" role="img" aria-label="Placeholder image: Dr. Abbey portrait — approved photo needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="200" cy="115" r="48"/><path d="M95 270c8-62 52-92 105-92s97 30 105 92"/></svg><figcaption>Dr. Abbey portrait — approved photo needed</figcaption></figure>
-            <div><span class="badge badge--ped">Pediatric Dentistry</span><h3>Dr. Abbey Sullivan Orozco</h3><p class="doctor__role">Pediatric dentist · DMD</p></div>
+            <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Dr. Abbey portrait, approved photo needed"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Dr. Abbey portrait, approved photo needed</figcaption></figure>
+            <div><span class="spec spec--ped">Pediatric dentistry</span><h3>Dr. Abbey Sullivan Orozco</h3><p class="doctor__role">Pediatric dentist, DMD</p></div>
           </div>
-          <p style="margin:0">Dr. Abbey believes every child should get to experience a healthy smile, and loves showing children that dentistry can be fun.</p>
-          <ul class="chips">
-            <li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Diplomate, American Board of Pediatric Dentistry</li>
-            <li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Academy of Pediatric Dentistry</li>
-          </ul>
-          <p class="src-note" style="margin:0"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p>
+          <p class="mb-0">Dr. Abbey believes every child should get to experience a healthy smile, and she loves showing children that dentistry can be fun.</p>
+          <div>
+            <p class="creds-title">Credentials and affiliations</p>
+            <ul class="creds">
+              <li>Diplomate, American Board of Pediatric Dentistry</li>
+              <li>Member, American Academy of Pediatric Dentistry</li>
+            </ul>
+            <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p>
+          </div>
           <a class="link-arrow" href="about.html#dr-abbey">Read Dr. Abbey's profile <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="doctor__foot"><span>Pediatric appointments</span><a href="tel:+12152203778" data-track="call_pedo_click">(215) 220-3778</a></div>
+        <div class="doctor__foot"><span>Pediatric appointments</span><a href="tel:+12152203778" data-track="call_pedo_click"><span class="num">(215) 220-3778</span></a></div>
       </article>
       <article class="doctor">
         <div class="doctor__body">
           <div class="doctor__head">
-            <figure class="ph ph--round" role="img" aria-label="Placeholder image: Dr. Jacob portrait — approved photo needed"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="200" cy="115" r="48"/><path d="M95 270c8-62 52-92 105-92s97 30 105 92"/></svg><figcaption>Dr. Jacob portrait — approved photo needed</figcaption></figure>
-            <div><span class="badge badge--ortho">Orthodontics</span><h3>Dr. Jacob Orozco</h3><p class="doctor__role">Orthodontist · DMD, MS</p></div>
+            <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Dr. Jacob portrait, approved photo needed"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Dr. Jacob portrait, approved photo needed</figcaption></figure>
+            <div><span class="spec spec--ortho">Orthodontics</span><h3>Dr. Jacob Orozco</h3><p class="doctor__role">Orthodontist, DMD, MS</p></div>
           </div>
-          <p style="margin:0">Dr. Jake combines cutting-edge technology with treatment plans tailored to each patient, for children and adults.</p>
-          <ul class="chips">
-            <li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Member, American Association of Orthodontists</li>
-            <li class="chip"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Practice: certified Invisalign Teen® provider</li>
-          </ul>
-          <p class="src-note" style="margin:0"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p>
+          <p class="mb-0">Dr. Jake combines cutting-edge technology with treatment plans tailored to each patient, for children and adults.</p>
+          <div>
+            <p class="creds-title">Credentials and affiliations</p>
+            <ul class="creds">
+              <li>Member, American Association of Orthodontists</li>
+              <li>The practice is a certified Invisalign Teen® provider</li>
+            </ul>
+            <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p>
+          </div>
           <a class="link-arrow" href="about.html#dr-jacob">Read Dr. Jacob's profile <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="doctor__foot"><span>Orthodontic appointments</span><a href="tel:+12152203777" data-track="call_ortho_click">(215) 220-3777</a></div>
+        <div class="doctor__foot"><span>Orthodontic appointments</span><a href="tel:+12152203777" data-track="call_ortho_click"><span class="num">(215) 220-3777</span></a></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- JOURNEY -->
 <section class="section" aria-labelledby="journey-h">
   <div class="container">
     <div class="section-head">
-      <div><span class="eyebrow">New patient journey</span><h2 id="journey-h">Four simple steps to your first visit</h2></div>
-      <p>The practice's online form is an <strong>appointment request</strong>, not a live calendar — a coordinator follows up to confirm.</p>
+      <div><span class="eyebrow">New patient journey</span><h2 id="journey-h">Four steps to your first visit</h2></div>
+      <p>The practice's online form is an appointment request, not a live calendar. A coordinator follows up to confirm.</p>
     </div>
     <ol class="steps">
-      <li><h3>Choose care</h3><p>Pediatric dentistry (infants through teens) or orthodontics (children, teens or adults) — or both.</p></li>
-      <li><h3>Request an appointment</h3><p>Send the practice's request form with your name, contact details and appointment type.</p><p style="margin-top:.75rem"><a href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Open the request form</a></p></li>
-      <li><h3>We contact you to confirm</h3><p>Our scheduling coordinator will contact you to confirm your appointment. Nothing is booked until then.</p></li>
-      <li><h3>Prepare for your visit</h3><p>Print and complete the patient forms and bring them with your insurance card.</p><p style="margin-top:.75rem"><a href="new-patients.html">See what to bring</a></p></li>
+      <li><h3>Choose care</h3><p>Pediatric dentistry for infants through teens, orthodontics for children, teens or adults, or both.</p></li>
+      <li><h3>Request an appointment</h3><p>Send the practice's request form with your name, contact details and appointment type.</p><p class="mt-4 mb-0"><a href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Open the request form</a></p></li>
+      <li><h3>We contact you to confirm</h3><p>Our scheduling coordinator will contact you to confirm. Nothing is booked until then.</p></li>
+      <li><h3>Prepare for your visit</h3><p>Print and complete the patient forms and bring them with your insurance card.</p><p class="mt-4 mb-0"><a href="new-patients.html">See what to bring</a></p></li>
     </ol>
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="section section--paper section--tight" aria-labelledby="trust-h">
-  <div class="container">
-    <div class="card" style="padding:clamp(1.25rem,1rem+2vw,2.5rem)">
-      <div class="rating">
-        <div class="rating__score">
-          <span class="rating__num">4.8 / 5</span>
-          <div>
-            <span class="stars" role="img" aria-label="4.8 out of 5 stars"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
-            <p class="src-note" style="margin:.2rem 0 0" id="trust-h">Google rating: 4.8/5 based on 147 reviews</p>
-          </div>
-        </div>
-        <div><span class="src src--snapshot">Assessment snapshot</span><p class="src-note" style="margin:.3rem 0 0">Assessment snapshot, 12 Nov 2026 — not a live integration; to be re-verified before launch.</p></div>
-      </div>
-      <div class="grid grid--3">
-        <figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>— Alice H.</figcaption></figure>
-        <figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>— Kerin D.</figcaption></figure>
-        <figure class="quote"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>— Andy F.</figcaption></figure>
-      </div>
-      <p class="src-note" style="margin-top:1.25rem"><span class="src src--site">From current website</span> Quoted verbatim from the practice's own <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>, with the attribution shown there. Practice approval for reuse is still required. <a href="reviews.html#testimonials">Read all testimonials</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- OFFICE TOUR -->
-<section class="section" aria-labelledby="tour-h">
+<section class="section section--surface" aria-labelledby="trust-h">
   <div class="container">
     <div class="section-head">
-      <div><span class="eyebrow">The office</span><h2 id="tour-h">Take a look inside</h2></div>
-      <p>The practice's current website has an eight-photo office tour. Approved photography will be placed here.</p>
+      <div><span class="eyebrow">What families say</span><h2 id="trust-h">Rated 4.8 out of 5 on Google</h2></div>
+      <div class="rating">
+        <span class="rating__num" aria-hidden="true">4.8</span>
+        <p class="rating__meta mb-0"><strong>147 Google reviews</strong><span class="note">Assessment snapshot, 12 Nov 2026</span></p>
+      </div>
     </div>
-    <div class="grid grid--4">
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Exterior — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Exterior — approved photo</figcaption></figure>
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Treatment area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M40 210c20-90 90-130 160-130s140 40 160 130"/><path d="M80 210c14-62 62-90 120-90s106 28 120 90" opacity=".6"/><path d="M130 210c8-34 36-50 70-50s62 16 70 50" opacity=".4"/></svg><figcaption>Treatment area — approved photo</figcaption></figure>
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Waiting area — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M120 250V110a80 80 0 0 1 160 0v140z"/><path d="M200 30v220M120 140h160"/><path d="M40 250h320" opacity=".6"/></svg><figcaption>Waiting area — approved photo</figcaption></figure>
-      <figure class="ph ph--square" role="img" aria-label="Placeholder image: Team — approved photo"><svg class="ph__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="200" cy="115" r="48"/><path d="M95 270c8-62 52-92 105-92s97 30 105 92"/></svg><figcaption>Team — approved photo</figcaption></figure>
+    <div class="grid grid--3">
+      <figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>Alice H.</figcaption></figure>
+      <figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>Kerin D.</figcaption></figure>
+      <figure class="quote"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>Andy F.</figcaption></figure>
     </div>
-    <p style="margin-top:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap"><a class="link-arrow" href="reviews.html#office-tour">Explore Our Office <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="link-arrow" href="https://www.topofthehillsmiles.com/office-tour" target="_blank" rel="noopener noreferrer">View the current Office Tour <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
+    <p class="mt-8"><a class="link-arrow" href="reviews.html#testimonials">Read all testimonials <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    <p class="review-note"><span class="src">Assessment snapshot</span> Not a live Google integration; re-verify before launch. <span class="src">From current website</span> Quotes appear verbatim on the practice's <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>; practice approval for reuse is still required.</p>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section section--paper" aria-labelledby="faq-h">
-  <div class="container split split--wide-left" style="align-items:start">
-    <div>
+<section class="section" aria-labelledby="tour-h">
+  <div class="container split split--text-left">
+    <div class="stack">
+      <span class="eyebrow">The office</span>
+      <h2 id="tour-h">Take a look inside</h2>
+      <p class="lede">The practice's current website has an eight-photo office tour. Visitors are also welcome to stop by to meet the team and see the treatment areas.</p>
+      <p><a class="link-arrow" href="reviews.html#office-tour">Explore our office <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      <p><a class="link-arrow" href="https://www.topofthehillsmiles.com/office-tour" target="_blank" rel="noopener noreferrer">View the current office tour <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
+    </div>
+    <div class="gallery">
+      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Exterior, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Exterior, approved photo</figcaption></figure>
+      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Treatment area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg><figcaption class="review-only">Treatment area, approved photo</figcaption></figure>
+      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Waiting area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Waiting area, approved photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface" aria-labelledby="faq-h">
+  <div class="container split split--text-right split--top">
+    <div class="stack">
       <span class="eyebrow">Common questions</span>
       <h2 id="faq-h">Questions new families ask</h2>
-      <p class="lede">Short answers adapted from the practice's FAQs. Clinical wording requires practice review.</p>
+      <p class="lede">Short answers adapted from the practice's FAQs.</p>
       <a class="link-arrow" href="faqs.html">All FAQs <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="review-note"><span class="src">Pending practice review</span> Clinical wording requires practice review.</p>
     </div>
     <div class="faq">
-      <details><summary>When should my child first see a dentist?</summary><div><p>The practice recommends booking as soon as your child gets a first tooth. The American Academy of Pediatric Dentistry advises a visit within six months of the first tooth appearing, or by age one, whichever comes first.</p><p class="src-note"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p></div></details>
-      <details><summary>When is the right time for an orthodontic evaluation?</summary><div><p>The American Association of Orthodontists recommends a first visit around age seven. Orthodontic treatment isn't only for children and teens — adults are welcome too.</p><p class="src-note"><span class="src src--site">From current website</span> <span class="src src--review">Pending clinical / practice review</span></p></div></details>
-      <details><summary>How does booking an appointment work?</summary><div><p>Use the practice's appointment request form (Ortho, Pedo or Both). It is a request, not an instant booking — the scheduling coordinator will contact you to confirm. You can also call the office directly.</p><p class="src-note"><span class="src src--site">From current website</span></p></div></details>
+      <details><summary>When should my child first see a dentist?</summary><div><p>The practice recommends booking as soon as your child gets a first tooth. The American Academy of Pediatric Dentistry advises a visit within six months of the first tooth appearing, or by age one, whichever comes first.</p></div></details>
+      <details><summary>When is the right time for an orthodontic evaluation?</summary><div><p>The American Association of Orthodontists recommends a first visit around age seven. Orthodontic treatment isn't only for children and teens, and adults are welcome too.</p></div></details>
+      <details><summary>How does booking an appointment work?</summary><div><p>Use the practice's appointment request form (Ortho, Pedo or Both). It is a request, not an instant booking, and the scheduling coordinator will contact you to confirm. You can also call the office directly.</p></div></details>
     </div>
   </div>
 </section>
 
-<section class="section section--navy" aria-labelledby="closing-h">
-  <div class="container split split--wide-left">
+<section class="section section--ink" aria-labelledby="closing-h">
+  <div class="container split split--text-left">
     <div>
-      <span class="eyebrow" style="color:var(--apricot)">Chestnut Hill, Philadelphia</span>
-      <h2 id="closing-h">Ready to plan your visit?</h2>
-      <p class="lede" style="color:#c9d6e0">Choose the office that fits your family, then send an appointment request — or call us directly.</p>
-      <div class="cta-stack on-dark">
+      <span class="eyebrow">Chestnut Hill, Philadelphia</span>
+      <h2 id="closing-h">Plan your visit</h2>
+      <p class="lede">Send an appointment request for pediatric dentistry, orthodontics or both, or call the office directly.</p>
+      <div class="cta">
         <a class="btn btn--light" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
       </div>
-      <div class="hero__call" style="margin-top:1.25rem">
-  <a class="callbtn callbtn--on-dark" href="tel:+12152203777" data-track="call_ortho_click"><span class="dot"></span>Call Orthodontics: (215) 220-3777</a>
-  <a class="callbtn callbtn--on-dark" href="tel:+12152203778" data-track="call_pedo_click"><span class="dot"></span>Call Pediatric Dentistry: (215) 220-3778</a>
+      <div class="calls">
+  <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Call Orthodontics</span> <span class="num">(215) 220-3777</span></a>
+  <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Call Pediatric Dentistry</span> <span class="num">(215) 220-3778</span></a>
 </div>
 
     </div>
-    <div class="callout callout--inverse">
-      <h3 style="font-size:1.25rem">Find us</h3>
-      <p style="color:#e8eef3;margin-bottom:.5rem"><strong>Top of the Hill Orthodontics &amp; Pediatric Dentistry</strong><br>10 W Gravers Lane, Philadelphia, PA 19118</p>
-      <p><a style="color:#fff;font-weight:600" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Get directions <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
-      <p class="src-note" style="color:#c9d6e0;margin:0">Parking and transit details from the current website are on the <a style="color:#fff" href="contact.html#visit">Contact page</a>.</p>
+    <div>
+      <h3 class="h-sm">Top of the Hill Orthodontics &amp; Pediatric Dentistry</h3>
+      <p>10 W Gravers Lane, Philadelphia, PA 19118</p>
+      <p><a class="link-arrow" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Get directions <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
+      <p class="note mb-0">Parking and transit details are on the <a href="contact.html#visit">Contact page</a></p>
     </div>
   </div>
 </section>
@@ -324,20 +308,20 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="poc-note"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. Items tagged “From current website” were taken from topofthehillsmiles.com; items tagged “Placeholder” or “Pending review” need practice approval before launch.</div>
+    <div class="review-box review-box--ink review-only"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. “From current website” notes mark content taken from topofthehillsmiles.com; “Placeholder” and “Pending practice review” notes need practice approval before launch. Use the switch below to hide these notes.</div>
     <div class="footer__grid">
       <div>
-        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 36c2-14 10-22 18-22s16 8 18 22"/><path d="M13 36c1.6-8 5.6-12 11-12s9.4 4 11 12" opacity=".65"/><path d="M20 36c.8-3.4 2.2-5 4-5s3.2 1.6 4 5" opacity=".4"/><circle cx="24" cy="9" r="2" fill="currentColor" stroke="none"/></svg>
+        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 28V15a12 12 0 0 1 24 0v13"/><path d="M10 28V16a6 6 0 0 1 12 0v12" opacity=".6"/><circle class="k" cx="16" cy="7" r="2"/></svg>
 <span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span></a>
         <address>
           <span>10 W Gravers Lane, Philadelphia, PA 19118</span>
-          <a href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Orthodontics: (215) 220-3777</a>
-          <a href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Pediatric Dentistry: (215) 220-3778</a>
+          <a href="tel:+12152203777" data-track="call_ortho_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Orthodontics <span class="num">(215) 220-3777</span></a>
+          <a href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Pediatric Dentistry <span class="num">(215) 220-3778</span></a>
           <a href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Directions</a>
         </address>
       </div>
       <div>
-        <h2>Pediatric Dentistry</h2>
+        <h2>Pediatric dentistry</h2>
         <ul>
           <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
           <li><a href="pediatric-dentistry.html#first-visit">First Pediatric Dental Visit</a></li>
@@ -350,7 +334,7 @@
         <h2>Orthodontics</h2>
         <ul>
           <li><a href="orthodontics.html">Orthodontics</a></li>
-          <li><a href="orthodontics.html#treatments">Early &amp; Adult Treatment</a></li>
+          <li><a href="orthodontics.html#treatments">Early and Adult Treatment</a></li>
           <li><a href="orthodontics.html#invisalign">Invisalign®</a></li>
           <li><a href="orthodontics.html#emergencies">Orthodontic Emergency Care</a></li>
           <li><a href="faqs.html#orthodontic">Orthodontic FAQs</a></li>
@@ -365,24 +349,26 @@
           <li><a href="reviews.html">Reviews &amp; Office Tour</a></li>
           <li><a href="contact.html">Contact &amp; Appointments</a></li>
         </ul>
-        <div class="cta-stack on-dark" style="margin-top:1.25rem">
+        <div class="cta mt-6">
           <a class="btn btn--light btn--sm" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a>
           <p class="helper">Our scheduling coordinator will contact you to confirm.</p>
         </div>
       </div>
     </div>
     <div class="footer__badges">
-      <span class="src-note" style="color:#9db3c4;max-width:24rem">Provider logos as shown in the footer of the current website. <span class="src src--site">From current website</span></span>
-      <div class="logo-row">
-        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
-        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
+      <span class="note footer__note">Provider logos as shown in the footer of the current website <span class="src">From current website</span></span>
+      <div class="logos">
+        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
+        <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
       </div>
     </div>
     <div class="footer__base">
       <span>© <span data-year>2026</span> Top of the Hill Orthodontics &amp; Pediatric Dentistry. Concept design for client review.</span>
       <ul>
-        <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (current site PDF)</a></li>
-        <li><span>Terms &amp; site privacy policy — pending practice approval</span></li>
+        <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
+        <li class="review-only">Terms and site privacy policy pending practice approval</li>
+        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+</li>
       </ul>
     </div>
   </div>
@@ -390,18 +376,18 @@
 
 <div class="mobilebar" role="region" aria-label="Quick actions">
   <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request Appointment</a>
-  <button class="btn btn--outline" type="button" data-open-call><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</button>
+  <button class="btn btn--secondary" type="button" data-open-call><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</button>
 </div>
 
 <dialog class="sheet" id="call-sheet" aria-labelledby="call-sheet-title">
   <div class="sheet__in">
     <div class="sheet__head">
-      <div><h2 id="call-sheet-title">Which office would you like to call?</h2><p class="helper">Two specialty lines, one practice at 10 W Gravers Lane, Philadelphia, PA 19118.</p></div>
+      <div><h2 id="call-sheet-title">Which office would you like to call</h2><p class="helper">Two specialty lines, one practice at 10 W Gravers Lane, Philadelphia, PA 19118</p></div>
       <button class="icon-btn" type="button" data-close-call aria-label="Close"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
-    <a class="call-opt" href="tel:+12152203777" data-track="call_ortho_click"><span class="badge badge--ortho">Ortho</span><span><strong>Call Orthodontics</strong><span>(215) 220-3777</span></span></a>
-    <a class="call-opt" href="tel:+12152203778" data-track="call_pedo_click"><span class="badge badge--ped">Pediatric</span><span><strong>Call Pediatric Dentistry</strong><span>(215) 220-3778</span></span></a>
-    <p class="helper" style="margin-top:1rem">For a medical emergency, call 911.</p>
+    <a class="call-opt" href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span><strong>Call Orthodontics</strong><span class="num">(215) 220-3777</span></a>
+    <a class="call-opt" href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric dentistry</span><strong>Call Pediatric Dentistry</strong><span class="num">(215) 220-3778</span></a>
+    <p class="helper mt-4">For a medical emergency, call 911</p>
   </div>
 </dialog>
 

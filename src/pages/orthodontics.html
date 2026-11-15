@@ -1,64 +1,65 @@
-<!--meta {"title":"Orthodontics & Invisalign in Chestnut Hill, Philadelphia | Top of the Hill","description":"Orthodontic care for children, teens and adults in Chestnut Hill, Philadelphia — early treatment, braces and Invisalign® with Dr. Jacob Orozco. Request an appointment or call (215) 220-3777.","nav":"ortho"} -->
+<!--meta {"title":"Orthodontics & Invisalign in Chestnut Hill, Philadelphia | Top of the Hill","description":"Orthodontic care for children, teens and adults in Chestnut Hill, Philadelphia: early treatment, braces and Invisalign® with Dr. Jacob Orozco. Request an appointment or call (215) 220-3777.","nav":"ortho"} -->
 
-<section class="hero" style="padding-bottom:clamp(2.5rem,5vw,4.5rem)">
+<section class="hero hero--sub">
   <div class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Orthodontics</li></ol></nav>
-    <div class="hero-split">
-      <div class="stack">
-        <span class="badge badge--ortho">Orthodontics for all ages</span>
-        <h1>Orthodontics for children, teens and adults</h1>
+    <div class="hero__grid">
+      <div>
+        <span class="spec spec--ortho mb-0">Orthodontics for all ages</span>
+        <h1 class="mt-4">Orthodontics for children, teens and adults</h1>
         <p class="lede">From an early evaluation to braces and Invisalign®, Dr. Jake combines cutting-edge technology with a treatment plan tailored to you.</p>
         {{include:cta}}
-        <div class="btn-row"><a class="btn btn--outline" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Call Orthodontics: {{ORTHO}}</a></div>
+        <div class="calls"><a href="{{TEL_ORTHO}}" data-track="call_ortho_click"><span class="spec spec--ortho">Call Orthodontics</span> <span class="num">{{ORTHO}}</span></a></div>
       </div>
-      {{ph:Orthodontic office photo — approved image needed|wide|arch}}
+      <div class="hero__art">{{arch:ortho}}<p class="review-note">{{src:placeholder}} Stands in for approved office photography.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section section--paper" id="treatments" aria-labelledby="tx-h">
+<section class="section section--surface" id="treatments" aria-labelledby="tx-h">
   <div class="container">
     <div class="section-head">
       <div><span class="eyebrow">Treatment paths</span><h2 id="tx-h">Find the right path</h2></div>
-      <p>Descriptions are summarised from the practice's website. No prices, treatment-time promises or outcome guarantees are made here.</p>
+      <p>Summarised from the practice's website. No prices, treatment-time promises or outcome guarantees are made here.</p>
     </div>
-    <div class="grid grid--3">
-      <a class="card card--ortho" href="{{ORIG}}/early-treatment" target="_blank" rel="noopener noreferrer"><span class="icon-tile">{{icon:baby}}</span><h3>Early treatment</h3><p>The American Association of Orthodontists recommends evaluating children no later than age seven.</p><span class="card__foot link-arrow">Read on current site {{icon:external}}</span></a>
-      <a class="card card--ortho" href="{{ORIG}}/treatment-options" target="_blank" rel="noopener noreferrer"><span class="icon-tile">{{icon:layers}}</span><h3>Braces &amp; treatment options</h3><p>Traditional metal braces and clear (ceramic) braces, chosen to suit the patient.</p><span class="card__foot link-arrow">Read on current site {{icon:external}}</span></a>
-      <a class="card card--ortho" href="{{ORIG}}/adult-treatment" target="_blank" rel="noopener noreferrer"><span class="icon-tile">{{icon:user}}</span><h3>Adult orthodontics</h3><p>“It's never too late” — if gums and bone structure are healthy, realignment is possible at any age.</p><span class="card__foot link-arrow">Read on current site {{icon:external}}</span></a>
-      <a class="card card--ortho" id="invisalign" href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><span class="icon-tile">{{icon:smile}}</span><h3>Invisalign® &amp; Invisalign Teen®</h3><p>Removable clear aligners. The practice states it is a certified Invisalign Teen® provider.</p><span class="card__foot link-arrow">Read on current site {{icon:external}}</span></a>
-      <a class="card card--ortho" href="{{ORIG}}/life-with-braces" target="_blank" rel="noopener noreferrer"><span class="icon-tile">{{icon:heart}}</span><h3>Life with braces</h3><p>Eating, brushing and caring for your appliances through treatment.</p><span class="card__foot link-arrow">Read on current site {{icon:external}}</span></a>
-      <a class="card card--ortho" href="#emergencies"><span class="icon-tile">{{icon:alert}}</span><h3>Orthodontic emergency care</h3><p>Call the office first. Original guidance is linked below.</p><span class="card__foot link-arrow">See below {{icon:arrow}}</span></a>
+    <ul class="toc">
+      <li><a href="{{ORIG}}/early-treatment" target="_blank" rel="noopener noreferrer"><div><h3>Early treatment</h3><p>The American Association of Orthodontists recommends evaluating children no later than age seven</p></div>{{icon:external}}</a></li>
+      <li><a href="{{ORIG}}/treatment-options" target="_blank" rel="noopener noreferrer"><div><h3>Braces and treatment options</h3><p>Traditional metal braces and clear (ceramic) braces, chosen to suit the patient</p></div>{{icon:external}}</a></li>
+      <li><a href="{{ORIG}}/adult-treatment" target="_blank" rel="noopener noreferrer"><div><h3>Adult orthodontics</h3><p>If gums and bone structure are healthy, realignment is possible at any age</p></div>{{icon:external}}</a></li>
+      <li><a id="invisalign" href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><div><h3>Invisalign® and Invisalign Teen®</h3><p>Removable clear aligners. The practice states it is a certified Invisalign Teen® provider</p></div>{{icon:external}}</a></li>
+      <li><a href="{{ORIG}}/life-with-braces" target="_blank" rel="noopener noreferrer"><div><h3>Life with braces</h3><p>Eating, brushing and caring for your appliances through treatment</p></div>{{icon:external}}</a></li>
+      <li><a href="#emergencies"><div><h3>Orthodontic emergency care</h3><p>Call the office first. The practice's guidance is linked below</p></div>{{icon:arrow}}</a></li>
+    </ul>
+    <div class="logos mt-8">
+      <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website" loading="lazy"></a>
+      <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website" loading="lazy"></a>
     </div>
-    <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center">
-      <div class="logo-row">
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website" loading="lazy"></a>
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website" loading="lazy"></a>
-      </div>
-      <p class="src-note" style="max-width:34rem">{{src:site}} {{src:review}} Logos appear in the footer of every page of the current site. Confirm provider status and logo-use terms with the practice before launch.</p>
-    </div>
+    <p class="review-note">{{src:site}} {{src:review}} Logos appear in the footer of every page of the current site. Confirm provider status and logo-use terms with the practice before launch.</p>
   </div>
 </section>
 
 <section class="section" aria-labelledby="jake-h">
-  <div class="container split">
+  <div class="container split split--text-left">
     <div class="stack">
       <span class="eyebrow">Meet Dr. Jake</span>
       <h2 id="jake-h">Dr. Jacob Orozco, DMD, MS</h2>
       <p>Dr. Jacob Orozco understands the confidence that comes with a beautiful smile. He completed specialty training in orthodontics and a master's degree in oral biology, and offers a full spectrum of orthodontic services for children and adults.</p>
-      <ul class="chips">
-        <li class="chip">{{icon:shield}} Member, American Association of Orthodontists</li>
-        <li class="chip">{{icon:shield}} Member, American Dental Association</li>
-        <li class="chip">{{icon:shield}} David C. Hamilton research award, Pennsylvania Association of Orthodontists</li>
-      </ul>
-      <p class="src-note">{{src:site}} {{src:review}} Listed as stated on the practice's current website; not independently verified.</p>
-      <div class="btn-row"><a class="btn btn--outline" href="about.html#dr-jacob">Full profile</a><a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a></div>
+      <div>
+        <p class="creds-title">Credentials and affiliations</p>
+        <ul class="creds">
+          <li>David C. Hamilton research award, Pennsylvania Association of Orthodontists</li>
+          <li>Member, American Association of Orthodontists</li>
+          <li>Member, American Dental Association</li>
+        </ul>
+        <p class="review-note">{{src:site}} {{src:review}} Listed as stated on the practice's website; not independently verified.</p>
+      </div>
+      <div class="btn-row"><a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a><a class="btn btn--secondary" href="about.html#dr-jacob">Full profile</a></div>
     </div>
-    {{ph:Dr. Jacob photo — approved portrait needed|tall|person}}
+    {{ph:Dr. Jacob portrait, approved photo needed|arch|person}}
   </div>
 </section>
 
-<section class="section section--paper" aria-labelledby="oj-h">
+<section class="section section--surface" aria-labelledby="oj-h">
   <div class="container">
     <div class="section-head">
       <div><span class="eyebrow">The orthodontic journey</span><h2 id="oj-h">What to expect at your first visit</h2></div>
@@ -66,30 +67,30 @@
     </div>
     <ol class="steps">
       <li><h3>Request your consultation</h3><p>Send an appointment request (choose “Ortho”) or call the office. The scheduling coordinator will contact you to confirm.</p></li>
-      <li><h3>Meet the team &amp; exam</h3><p>Review dental and medical history forms and receive a complete oral exam, with X-rays, to determine whether treatment is necessary.</p></li>
-      <li><h3>A customised plan</h3><p>Create a treatment plan with Dr. Jake, and discuss financial information, insurance options and payment plans.</p></li>
-      <li><h3>Appliance placement &amp; visits</h3><p>Your first appointment places the appliance. Visits then happen about every four to eight weeks, scheduled around your life.</p></li>
+      <li><h3>Meet the team and have an exam</h3><p>Review dental and medical history forms and receive a complete oral exam, with X-rays, to determine whether treatment is necessary.</p></li>
+      <li><h3>A customized plan</h3><p>Create a treatment plan with Dr. Jake, and discuss financial information, insurance options and payment plans.</p></li>
+      <li><h3>Appliance placement and visits</h3><p>Your first appointment places the appliance. Visits then happen about every four to eight weeks.</p></li>
     </ol>
-    <p class="src-note" style="margin-top:1rem">{{src:site}} The current site also describes a complimentary initial exam — confirm that offer is still current before featuring it. Source: <a href="{{ORIG}}/first-orthodontic-visit" target="_blank" rel="noopener noreferrer">First Orthodontic Visit</a></p>
+    <p class="review-note">{{src:site}} The current site also describes a complimentary initial exam; confirm that offer is still current before featuring it. Source: <a href="{{ORIG}}/first-orthodontic-visit" target="_blank" rel="noopener noreferrer">First Orthodontic Visit</a></p>
   </div>
 </section>
 
 <section class="section" id="emergencies" aria-labelledby="oem-h">
   <div class="container">
     <div class="callout callout--emergency">
-      <h2 id="oem-h" style="font-size:1.75rem">Orthodontic emergency care: call first</h2>
+      <h2 id="oem-h">Orthodontic emergency care: call first</h2>
       <p>For severe pain or an appliance problem, call the office rather than waiting for a reply to an online request. The practice's home-care tips are on its current site.</p>
       <div class="btn-row">
-        <a class="btn btn--danger" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Call Orthodontics: {{ORTHO}}</a>
-        <a class="btn btn--outline" href="{{ORIG}}/emergency-care" target="_blank" rel="noopener noreferrer">Practice's emergency guidance {{icon:external}}</a>
+        <a class="btn btn--danger" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Call Orthodontics <span class="num">{{ORTHO}}</span></a>
+        <a class="btn btn--secondary" href="{{ORIG}}/emergency-care" target="_blank" rel="noopener noreferrer">The practice's emergency guidance {{icon:external}}</a>
       </div>
     </div>
-    <div class="split" style="margin-top:3rem;align-items:start">
+    <div class="split split--text-right split--top mt-12">
       <div><span class="eyebrow">Common questions</span><h2>Orthodontic FAQs</h2><a class="link-arrow" href="faqs.html#orthodontic">All orthodontic FAQs {{icon:arrow}}</a></div>
       <div class="faq">
-        <details><summary>What's the best age to visit the orthodontist?</summary><div><p>Any age can be a great time. The AAO recommends children first visit around age seven, and about one in five orthodontic patients is over 21.</p><p class="src-note">{{src:site}}</p></div></details>
-        <details><summary>Do braces hurt?</summary><div><p>Braces do not often hurt, though you may feel a small amount of discomfort for a couple of days as your mouth gets used to them.</p><p class="src-note">{{src:site}} {{src:review}}</p></div></details>
-        <details><summary>What about costs?</summary><div><p>Cost varies with the treatment plan. The practice offers various finance plans — ask during your consultation. No prices are published in this prototype.</p><p class="src-note">{{src:site}}</p></div></details>
+        <details><summary>What's the best age to visit the orthodontist?</summary><div><p>Any age can be a great time. The AAO recommends children first visit around age seven, and about one in five orthodontic patients is over 21.</p></div></details>
+        <details><summary>Do braces hurt?</summary><div><p>Braces do not often hurt, though you may feel a small amount of discomfort for a couple of days as your mouth gets used to them.</p></div></details>
+        <details><summary>What about costs?</summary><div><p>Cost varies with the treatment plan, and the practice offers various finance plans. Ask during your consultation. No prices are published here.</p></div></details>
       </div>
     </div>
   </div>

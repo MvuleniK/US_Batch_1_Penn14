@@ -1,18 +1,18 @@
 <footer class="footer">
   <div class="container">
-    <div class="poc-note"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. Items tagged “From current website” were taken from topofthehillsmiles.com; items tagged “Placeholder” or “Pending review” need practice approval before launch.</div>
+    <div class="review-box review-box--ink review-only"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. “From current website” notes mark content taken from topofthehillsmiles.com; “Placeholder” and “Pending practice review” notes need practice approval before launch. Use the switch below to hide these notes.</div>
     <div class="footer__grid">
       <div>
         <a class="brand" href="index.html">{{include:brandmark}}<span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span></a>
         <address>
           <span>{{ADDR}}</span>
-          <a href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Orthodontics: {{ORTHO}}</a>
-          <a href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Pediatric Dentistry: {{PEDO}}</a>
+          <a href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Orthodontics <span class="num">{{ORTHO}}</span></a>
+          <a href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Pediatric Dentistry <span class="num">{{PEDO}}</span></a>
           <a href="{{MAPS}}" target="_blank" rel="noopener noreferrer">{{icon:pin}} Directions</a>
         </address>
       </div>
       <div>
-        <h2>Pediatric Dentistry</h2>
+        <h2>Pediatric dentistry</h2>
         <ul>
           <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
           <li><a href="pediatric-dentistry.html#first-visit">First Pediatric Dental Visit</a></li>
@@ -25,7 +25,7 @@
         <h2>Orthodontics</h2>
         <ul>
           <li><a href="orthodontics.html">Orthodontics</a></li>
-          <li><a href="orthodontics.html#treatments">Early &amp; Adult Treatment</a></li>
+          <li><a href="orthodontics.html#treatments">Early and Adult Treatment</a></li>
           <li><a href="orthodontics.html#invisalign">Invisalign®</a></li>
           <li><a href="orthodontics.html#emergencies">Orthodontic Emergency Care</a></li>
           <li><a href="faqs.html#orthodontic">Orthodontic FAQs</a></li>
@@ -40,24 +40,25 @@
           <li><a href="reviews.html">Reviews &amp; Office Tour</a></li>
           <li><a href="contact.html">Contact &amp; Appointments</a></li>
         </ul>
-        <div class="cta-stack on-dark" style="margin-top:1.25rem">
+        <div class="cta mt-6">
           <a class="btn btn--light btn--sm" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a>
           <p class="helper">Our scheduling coordinator will contact you to confirm.</p>
         </div>
       </div>
     </div>
     <div class="footer__badges">
-      <span class="src-note" style="color:#9db3c4;max-width:24rem">Provider logos as shown in the footer of the current website. {{src:site}}</span>
-      <div class="logo-row">
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen — shown on current website; opens the practice's Invisalign page" loading="lazy"></a>
+      <span class="note footer__note">Provider logos as shown in the footer of the current website <span class="src">From current website</span></span>
+      <div class="logos">
+        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
+        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
       </div>
     </div>
     <div class="footer__base">
       <span>© <span data-year>2026</span> Top of the Hill Orthodontics &amp; Pediatric Dentistry. Concept design for client review.</span>
       <ul>
-        <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (current site PDF)</a></li>
-        <li><span>Terms &amp; site privacy policy — pending practice approval</span></li>
+        <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
+        <li class="review-only">Terms and site privacy policy pending practice approval</li>
+        <li>{{include:review-switch}}</li>
       </ul>
     </div>
   </div>
