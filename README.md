@@ -16,6 +16,26 @@ npm run verify     # build + acceptance checks + design lint (exit 1 on failure)
 
 `public/` is committed, so it can also be hosted as-is on any static host.
 
+## Live proof of concept
+
+**https://topofthehillsmiles.oculeusltd.com** — a Cloudflare Worker named `topofthehillsmiles-poc`, following the existing
+`<client>-poc` convention on the Oculeus zone. It is `noindex` (header and meta tag), served over HTTPS, with a restrictive
+Content-Security-Policy from `public/_headers`. Cloudflare's auto-injected Web Analytics beacon is blocked by that policy, so no
+analytics run on the PoC until the practice's consent approach is decided.
+
+Redeploy after any change (Node >= 18, no install step):
+
+```bash
+npm run verify
+CLOUDFLARE_API_TOKEN=... node scripts/deploy-cloudflare.mjs \
+  --account <cloudflare-account-id> --zone <zone-id> \
+  --name topofthehillsmiles-poc --domain topofthehillsmiles.oculeusltd.com
+```
+
+The script uploads to Workers Static Assets and, if the asset-upload token is rejected (as behind a credential-injecting proxy),
+falls back to embedding the site in the Worker (`--mode inline`). To take the PoC down, remove the custom domain and the
+Worker `topofthehillsmiles-poc` in the Cloudflare dashboard. The Oculeus apex site and other client PoCs are not touched.
+
 ## Pages
 
 Home · Pediatric Dentistry · Orthodontics · New Patients · Meet Our Doctors (`about.html`) ·
