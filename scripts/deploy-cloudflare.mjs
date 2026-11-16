@@ -34,7 +34,7 @@ async function cf(path, init = {}, bearer = TOKEN) {
 }
 
 function walk(dir) {
-  return readdirSync(dir).flatMap((f) => {
+  return readdirSync(dir).filter((f) => !f.startsWith(".")).flatMap((f) => { // never ship dot-folders (tool caches, checker crops)
     const p = join(dir, f);
     return statSync(p).isDirectory() ? walk(p) : [p];
   });
