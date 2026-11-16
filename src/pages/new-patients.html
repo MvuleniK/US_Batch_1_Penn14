@@ -1,78 +1,90 @@
-<!--meta {"title":"New Patients | Top of the Hill Orthodontics & Pediatric Dentistry","description":"Everything for your first visit to Top of the Hill in Chestnut Hill, Philadelphia: pediatric and orthodontic first visits, patient forms and how appointment requests work.","nav":"new"} -->
+<!--meta {"title":"New patients: your first visit to Top of the Hill in Chestnut Hill","description":"How a first visit works at Top of the Hill: send an appointment request, wait for the coordinator's confirmation, then print the patient form for pediatric or orthodontic care.","nav":"new","moments":["word-highlight"]} -->
 
-<section class="hero hero--sub">
-  <div class="container">
-    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">New Patients</li></ol></nav>
-    <div class="hero__grid">
-      <div class="stack">
-        <h1>Welcome. Here is how your first visit works</h1>
-        <p class="lede">Choose your path, send an appointment request, and our scheduling coordinator will contact you to confirm. This page asks for no health information.</p>
-        {{include:cta}}
-      </div>
-      <div class="hero__art">{{img:exterior|hero|eager}}</div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--surface" aria-labelledby="steps-h">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow">Four steps</span><h2 id="steps-h">From request to first visit</h2></div><p>The practice's form is an appointment request. Your appointment is not confirmed until the office contacts you.</p></div>
-    <ol class="steps">
-      <li><h3>Select your specialty</h3><p>Pediatric dentistry, orthodontics or both. The practice's form offers Ortho, Pedo or Both.</p></li>
-      <li><h3>Send an appointment request</h3><p>Name, email, phone, appointment type and an optional comment, on the practice's own form.</p><p class="mt-4 mb-0"><a href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Open the request form</a></p></li>
-      <li><h3>Receive confirmation from the office</h3><p>Our scheduling coordinator will contact you to confirm.</p></li>
-      <li><h3>Complete the patient forms</h3><p>Print and fill out the applicable form before your first appointment.</p><p class="mt-4 mb-0"><a href="#forms">Go to the forms</a></p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="paths-h">
-  <div class="container tabs" data-tabs>
-    <div class="section-head"><div><span class="eyebrow">Choose your path</span><h2 id="paths-h">What to expect</h2></div></div>
-    <div role="tablist" aria-label="First visit type">
-      <button role="tab" id="tab-ped" aria-controls="panel-ped" aria-selected="true" type="button">Pediatric first visit</button>
-      <button role="tab" id="tab-ortho" aria-controls="panel-ortho" aria-selected="false" tabindex="-1" type="button">Orthodontic first visit</button>
-    </div>
-    <div role="tabpanel" id="panel-ped" aria-labelledby="tab-ped">
-      <div class="grid grid--2">
-        <div class="card"><span class="spec spec--ped mb-0">Pediatric dentistry</span><h3 class="mt-4">Your first visit is all about your child</h3>
-          <p>The team reviews your child's dental and medical history, Dr. Abbey gently “counts” their teeth, and children under 3 usually have a comforting “lap exam”. Cleaning, fluoride and digital X-rays happen if necessary, followed by an individual plan and time for your questions.</p>
-          <div class="card__foot"><a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request a pediatric visit</a><a class="link-arrow" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} <span class="num">{{PEDO}}</span></a></div></div>
-        <div class="card"><h3>Please bring</h3><ul class="list"><li>Your completed patient information form</li><li>Your insurance card</li></ul><p class="review-note">{{src:site}} {{src:review}} <a href="{{ORIG}}/first-pediatric-dental-visit" target="_blank" rel="noopener noreferrer">Original page</a></p></div>
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero-split">
+        <div class="hero-copy span-6">
+          <h1 id="hero-h">First visits for pediatric dentistry and orthodontics: 4 steps</h1>
+          <p class="t-lead">Choose pediatric dentistry, orthodontics or both, send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">{{ACTION}}{{arrow}}</a>
+            <button class="btn btn--secondary" type="button" data-open-call>Call the office</button>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Form fields</dt><dd>Name, email, phone</dd></div>
+            <div><dt>Appointment type</dt><dd>Ortho, Pedo or Both</dd></div>
+            <div><dt>Reply from</dt><dd>The coordinator</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual frame frame--photo span-6 start-7">{{pic:exterior|eager}}</div>
       </div>
     </div>
-    <div role="tabpanel" id="panel-ortho" aria-labelledby="tab-ortho" hidden>
-      <div class="grid grid--2">
-        <div class="card"><span class="spec spec--ortho mb-0">Orthodontics</span><h3 class="mt-4">Every smile starts with an initial consultation</h3>
-          <p>Meet the team, learn about orthodontics, receive a complete initial exam and find out which treatment options may suit you. The team reviews your history forms, performs an oral exam with X-rays, helps create a customized plan and discusses financial information and payment plans.</p>
-          <div class="card__foot"><a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an orthodontic visit</a><a class="link-arrow" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} <span class="num">{{ORTHO}}</span></a></div></div>
-        <div class="card"><h3>Good to know</h3><ul class="list"><li>Visits during treatment are about every four to eight weeks</li><li>Regular dental checkups every six months continue during treatment</li></ul><p class="review-note">{{src:site}} {{src:review}} <a href="{{ORIG}}/first-orthodontic-visit" target="_blank" rel="noopener noreferrer">Original page</a></p></div>
+  </section>
+
+  <section class="section" id="steps" aria-labelledby="steps-h">
+    <div class="wrap grid grid--top fill">
+      <div class="span-6">
+        <div class="section-head"><h2 id="steps-h">Four steps. <span class="muted">From request to first visit.</span></h2></div>
+        <p class="t-lead">There is no online calendar. You send a request, and the office schedules the visit with you.</p>
+        <ul class="rows">
+          <li><span class="rows__name">1. Choose your care<small>Pediatric dentistry, orthodontics or both. The form offers Ortho, Pedo or Both.</small></span></li>
+          <li><span class="rows__name">2. Send the request<small>Your name, email, phone and an optional comment, on the practice's own form.</small></span></li>
+          <li><span class="rows__name">3. Wait for the confirmation<small>The scheduling coordinator will contact you to confirm a time.</small></span></li>
+          <li><span class="rows__name">4. Bring the patient form<small>Print and complete the form for your visit and bring your insurance card.</small></span></li>
+        </ul>
+        <p class="review-note">{{src:site}} {{src:review}} This site collects no health information.</p>
+      </div>
+      <div class="frame frame--photo frame--fill span-6 start-7">{{pic:room-bright}}</div>
+    </div>
+  </section>
+
+  <section class="section" id="paths" aria-labelledby="paths-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="paths-h">Two kinds of first visit. <span class="muted">Pick the one that matches your appointment type.</span></h2></div>
+      <div class="grid">
+        <div class="tile tile--portrait span-3">
+          <div class="tile__media">{{pic:abbey-portrait}}</div>
+          <div class="tile__head"><h3>Pediatric first visit</h3></div>
+          <p>The team reviews history, Dr. Abbey counts your child's teeth, and a cleaning, fluoride and X-rays follow if needed.</p>
+        </div>
+        <div class="tile tile--portrait span-3">
+          <div class="tile__media">{{pic:jake-portrait}}</div>
+          <div class="tile__head"><h3>Orthodontic first visit</h3></div>
+          <p>You meet the team, receive an exam with X-rays, and review a treatment plan and payment options with Dr. Jake.</p>
+        </div>
+        <div class="span-6 stack-4">
+          <p class="t-lead">Bring your insurance card to either visit. Cost depends on the treatment plan, and payment options are discussed before treatment starts.</p>
+          <p><a class="link" href="pediatric-dentistry.html#first-visit">Read about the pediatric first visit</a></p>
+          <p><a class="link" href="orthodontics.html#visit">Read about the orthodontic first visit</a></p>
+          <p class="review-note">{{src:site}} {{src:review}}</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section section--surface" id="forms" aria-labelledby="res-h">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow">Patient resources</span><h2 id="res-h">Forms and financial information</h2></div><p>These open the practice's own documents and pages. This site collects no patient information.</p></div>
-    <div class="grid grid--2">
-      <div class="card"><h3>New patient forms</h3><p>Printable PDFs from the current website. Print and complete before your first appointment.</p>
-        <ul class="plain-list">
-          <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Complete%20Peds%20Registration%20Packet(1).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">{{icon:file}} Pediatric dental patients (PDF)</a></li>
-          <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Patient%20Registration%20-%20Ortho(4).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">{{icon:file}} Orthodontic patients (PDF)</a></li>
-          <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">{{icon:file}} Notice of Privacy Practices (PDF)</a></li>
-        </ul><p class="review-note">{{src:site}} <a href="{{ORIG}}/new-patient-forms" target="_blank" rel="noopener noreferrer">Forms page</a></p></div>
-      <div class="card"><h3>Financial information</h3><p>The current site states that cost varies by treatment plan, that payment options are discussed before treatment starts, and that “our practice accepts most major credit cards and insurance plans.”</p>
-        <ul class="plain-list">
-          <li><a href="{{ORIG}}/pediatric-financial-information" target="_blank" rel="noopener noreferrer">{{icon:card}} Pediatric financial information</a></li>
-          <li><a href="{{ORIG}}/investing-in-your-smile" target="_blank" rel="noopener noreferrer">{{icon:card}} Investing in your smile (orthodontics)</a></li>
-        </ul><p class="review-note">{{src:site}} {{src:review}} No insurance networks or financing terms are listed here.</p></div>
+  <section class="section" id="forms" aria-labelledby="forms-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+      <div class="span-6">
+        <div class="section-head"><h2 id="forms-h">Forms for your first visit. <span class="muted">Printable PDFs and financial pages on the practice's own site.</span></h2></div>
+        <ul class="rows">
+          <li><span class="rows__name"><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Complete%20Peds%20Registration%20Packet(1).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">Pediatric patient form</a><small>Registration packet for pediatric dentistry</small></span><span class="rows__value">PDF</span></li>
+          <li><span class="rows__name"><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Patient%20Registration%20-%20Ortho(4).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">Orthodontic patient form</a><small>Registration form for orthodontics</small></span><span class="rows__value">PDF</span></li>
+          <li><span class="rows__name"><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices</a><small>How the practice handles your information</small></span><span class="rows__value">PDF</span></li>
+          <li><span class="rows__name"><a href="{{ORIG}}/pediatric-financial-information" target="_blank" rel="noopener noreferrer">Pediatric financial information</a><small>The practice accepts most major credit cards and insurance plans</small></span><span class="rows__value">Page</span></li>
+          <li><span class="rows__name"><a href="{{ORIG}}/investing-in-your-smile" target="_blank" rel="noopener noreferrer">Orthodontic financial information</a><small>Payment options are discussed before treatment starts</small></span><span class="rows__value">Page</span></li>
+        </ul>
+        <p class="review-note">{{src:site}} {{src:review}} No insurance networks or financing terms are listed here.</p>
+      </div>
+      <div class="tile tile--portrait span-3"><div class="tile__media">{{pic:first-visit}}</div></div>
+        <div class="tile tile--portrait span-3"><div class="tile__media">{{pic:office-sign}}</div></div>
+      </div>
     </div>
-    <ul class="toc mt-8">
-      <li><a href="pediatric-dentistry.html#first-visit"><div><h3>First pediatric dental visit</h3><p>What happens at your child's first appointment</p></div>{{icon:arrow}}</a></li>
-      <li><a href="orthodontics.html#oj-h"><div><h3>First orthodontic visit</h3><p>What happens at an initial consultation</p></div>{{icon:arrow}}</a></li>
-    </ul>
-  </div>
-</section>
+  </section>
 
-{{include:closing}}
+  <section class="section statement" id="request" data-moment="word-highlight" aria-label="How requests work">
+    <div class="wrap">
+      <p class="t-label">How requests work</p>
+      <p class="mo-wh__text">The practice's online form sends a request, not a booking. The scheduling coordinator contacts you, and your appointment is only set once the office <strong>confirms</strong> it.</p>
+    </div>
+  </section>

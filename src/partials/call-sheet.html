@@ -1,11 +1,9 @@
 <dialog class="sheet" id="call-sheet" aria-labelledby="call-sheet-title">
   <div class="sheet__in">
-    <div class="sheet__head">
-      <div><h2 id="call-sheet-title">Which office would you like to call</h2><p class="helper">Two specialty lines, one practice at {{ADDR}}</p></div>
-      <button class="icon-btn" type="button" data-close-call aria-label="Close">{{icon:close}}</button>
-    </div>
-    <a class="call-opt" href="{{TEL_ORTHO}}" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span><strong>Call Orthodontics</strong><span class="num">{{ORTHO}}</span></a>
-    <a class="call-opt" href="{{TEL_PEDO}}" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric dentistry</span><strong>Call Pediatric Dentistry</strong><span class="num">{{PEDO}}</span></a>
-    <p class="helper mt-4">For a medical emergency, call 911</p>
+    <h2 id="call-sheet-title">Call the office</h2>
+    <p>Two lines, one practice at {{ADDR}}. For a medical emergency, call 911.</p>
+    <a class="btn btn--secondary btn--block" href="{{TEL_ORTHO}}" data-track="call_ortho_click">Call Orthodontics {{ORTHO}}</a>
+    <a class="btn btn--secondary btn--block" href="{{TEL_PEDO}}" data-track="call_pedo_click">Call Pediatric Dentistry {{PEDO}}</a>
+    <button class="btn btn--secondary btn--block" type="button" data-close-call>Close</button>
   </div>
 </dialog>

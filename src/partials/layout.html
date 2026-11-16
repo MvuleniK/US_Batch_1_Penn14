@@ -1,28 +1,66 @@
 <!doctype html>
-<html lang="en" data-review="on">
+<!-- type: service (a dental clinic: people are hired). site-kind other: photographs, type and flat colour.
+     deal: hero split (dealt), nav nav-mega, close close-type, footer footer-visit, rhythm surface-pairs,
+     buttons solid, mark arc, palette: the practice's own (start.mjs brand) with the dealt pairing red-hat.
+     The practice's colours are the logo's navy-teal ink and leaf green; the dealt clinic palettes (teal on paper,
+     frost and slate) are cool and clinical too. moments: pinned-chapters (steps), word-highlight (statement). -->
+<html lang="en" data-type="service" data-radius="soft" data-buttons="solid" data-motion data-review="off">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{title}}</title>
 <meta name="description" content="{{description}}">
-<meta name="theme-color" content="#16293a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3f7f6">
 <meta name="robots" content="noindex, nofollow"><!-- proof of concept: not for indexing -->
-<script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
+<!-- <link rel="canonical" href="https://[the practice's domain]/"> until the domain is known -->
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<style>
+:root {
+  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
+  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
+  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
+  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
+  --font-display: "Red Hat Display", system-ui, sans-serif;
+  --font-text: "Red Hat Text", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.025em;
+  --display-tracking-xl: -0.035em;
+}
+</style>
+<link rel="stylesheet" href="assets/page.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+{{moment_links}}
 {{jsonld}}
 </head>
 <body class="{{body_class}}">
-<a class="skip" href="#main">Skip to main content</a>
-{{include:header}}
-<main id="main">
+{{include:nav}}
+<main id="top">
 {{content}}
 </main>
 {{include:footer}}
-{{include:mobilebar}}
+{{include:actionbar}}
 {{include:call-sheet}}
-<script src="assets/js/main.js" defer></script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script src="assets/page.js" defer></script>
 </body>
 </html>

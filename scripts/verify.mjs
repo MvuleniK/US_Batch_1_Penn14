@@ -35,6 +35,9 @@ for (const [f, html] of Object.entries(pages)) {
   const badTel = tels.filter((a) => !phones.has(a.href) || (/pediatric|pedo/i.test(a.text) && a.href !== CONST.TEL_PEDO) || (/ortho/i.test(a.text) && !/pediatric/i.test(a.text) && a.href !== CONST.TEL_ORTHO));
   badTel.length ? badTel.forEach((a) => fail(`tel mismatch: "${a.text}" → ${a.href}`)) : ok(`${tels.length} tel link(s) correct`);
 
+  const pair = anchors.filter((a) => a.href.startsWith("tel:") && ((a.text.includes(CONST.ORTHO) && a.href !== CONST.TEL_ORTHO) || (a.text.includes(CONST.PEDO) && a.href !== CONST.TEL_PEDO)));
+  pair.length ? pair.forEach((a) => fail(`number/link mismatch: "${a.text}" → ${a.href}`)) : ok("each visible number dials its own line");
+
   // 4. structure / a11y basics
   const h1s = html.match(/<h1[\s>]/g) || [];
   h1s.length === 1 ? ok("exactly one h1") : fail(`${h1s.length} h1 elements`);
@@ -45,7 +48,7 @@ for (const [f, html] of Object.entries(pages)) {
   const imgs = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => m[0]);
   const badImg = imgs.filter((t) => { const src = (t.match(/src="([^"]+)"/) || [])[1]; return !src || !existsSync(join(PUB, src)) || !/\bwidth="\d+"/.test(t) || !/\bheight="\d+"/.test(t) || /alt=""/.test(t); });
   badImg.length ? badImg.forEach((t) => fail(`image problem: ${t.slice(0, 90)}`)) : ok(`${imgs.length} image(s) exist, sized, with alt text`);
-  /class="frame|placeholder image/i.test(html) ? fail("leftover image placeholder") : ok("no image placeholders");
+  /placeholder image|class="ph\b/i.test(html) ? fail("leftover image placeholder") : ok("no image placeholders");
 
   // 5. internal links + fragments resolve
   let broken = 0;
@@ -68,15 +71,15 @@ for (const [f, html] of Object.entries(pages)) {
   }
 
   // 8. unslop checklist (github.com/heydamir/unslop) — craft rules for built HTML
-  /\sstyle="/.test(html) ? fail("inline style attribute (use classes on the 4px scale)") : ok("no inline styles");
+  /\sstyle="(?!--h: ?[12](; --hm: ?[12])?")/.test(html) ? fail("inline style attribute (only the kit's --h section height is allowed)") : ok("no inline styles");
   /\p{Extended_Pictographic}/u.test(html.replace(/[©®™]/g, "")) ? fail("emoji in interface") : ok("no emoji");
   const visible = stripTags(html.replace(/<blockquote>[\s\S]*?<\/blockquote>/g, "")); // testimonials are the practice's own words
   /!/.test(visible) ? fail("exclamation mark in interface text") : ok("no exclamation marks");
 }
 
 // CSS lint: the slop signs that must never come back
-const css = readFileSync(join(PUB, "assets", "css", "styles.css"), "utf8");
-console.log("styles.css");
+const css = readFileSync(join(PUB, "assets", "page.css"), "utf8");
+console.log("page.css (our own CSS; the kit's files are unmodified)");
 const cssRules = [
   [/gradient\(/, "gradient"],
   [/text-transform:\s*uppercase/, "uppercase labels"],

@@ -10,11 +10,74 @@ and the *Penn_14 Structured Website Assessment* (`docs/`). Chestnut Hill, Philad
 
 ```bash
 npm run serve      # http://localhost:4173  (Node >= 18, no install step)
-npm run build      # regenerate public/ from src/
+npm run build      # regenerate public/ from src/  (or: node scripts/build.mjs index about)
 npm run verify     # build + acceptance checks + design lint (exit 1 on failure)
 ```
 
 `public/` is committed, so it can also be hosted as-is on any static host.
+
+## Pages
+
+Home · Pediatric Dentistry · Orthodontics · New Patients · Doctors (`about.html`) · Reviews (with the office photos) ·
+Contact · FAQs, each in `public/*.html`. The nav uses one-word nouns (Children, Orthodontics, Patients, Doctors, Reviews, Contact)
+with hover panels for the two specialties.
+
+Edit `src/pages/*.html`, `src/partials/*.html`, `src/data/*.json`, then `npm run build`. `public/assets/page.css` and
+`page.js` are the only hand-written CSS and JS (review mode, call sheet, testimonial wall, badges). Facts that must never drift
+(booking URL, both phone numbers, address) live **once** in `scripts/build.mjs`.
+
+## Built on the taste-skill kit
+
+This round applies **taste-skill** (github.com/leonxlnx/taste-skill, MIT) to the site. The kit's `system.css`, `layout.css`,
+`motion.css`, scripts and two dealt moments are copied **unmodified** into `public/assets/` (licence in `assets/KIT-LICENSE.txt`);
+the pages follow its markup contract, and its own checker (`consistency.mjs`) and copy linter were run against every page.
+
+What the skill's dealers and rules decided, and what that changed:
+
+| Deal | Result |
+|---|---|
+| Page kind | **service** (a clinic: people are hired), site-kind other: photographs, type and flat colour, no shaders or scenes |
+| Hero | **split** (the dealt layout): the words left, the practice's own photograph whole on the right; a `photo` hero was dealt first and rejected because it needs 1920px photographs and the practice's are 600px |
+| Type | **Red Hat Display / Red Hat Text** (dealt for clinics: steady, approachable), display weight 400 |
+| Colour | The practice's own: navy-teal ink `#12303b`, leaf green `#1f7a33` from its logo, cool surfaces (the skill's own dealt clinic palettes were cool teal too) |
+| Moments | **pinned-chapters** (first-visit steps) and **word-highlight** (type-led statements); the photo-based `photo-chapters` was dealt but needs 1800px photographs, so it was not used |
+| Rules applied | One section per screen (every section exactly one or two screens, hero alone on the first); equal edges; the kit's hover and press layer; hero entrance on load; FAQs open in full (no accordions or tabs); no captions under images; plain, noun-led headings; buttons as a verb and an object; 16px text; one credits line in the footer |
+
+
+
+### Checker and gate results
+
+The skill's browser checker (`consistency.mjs`, run at 1440 and 390 with its rhythm checks, `--address-allow` for the practice's real contacts) was
+run on every page. On the first run the **home page had 35 FAIL and 17 WARN**.
+
+| Page | FAIL now (1440 + 390) |
+|---|---|
+| Home, Doctors, New patients, Reviews, Contact, FAQs | **0** |
+| Pediatric dentistry, Orthodontics | 1 each, the same kit behaviour: the closing button's brief colour change at 390px (the kit's phone bar hiding as that button scrolls into view), which the checker reads as a scroll reveal |
+
+The finish gate (`gate.mjs`) on the home page ended **OPEN** with its three rounds used up. Its open findings are:
+
+- **8 × street-number, postcode, phone-number**: the skill's house rule 9 expects stand-in contacts. The practice's verified address and two specialty
+  phone numbers are mandatory in the Penn_14 assessment (and are the whole point of the site), the gate has no allow-list, and it caps waivers
+  at five, so these stay open and are reported rather than hidden. The checker itself accepts them via `--address-allow`.
+- **1 × neighbour at 390**: the pinned-steps section left 141px of the next section showing. Fixed after the gate's last round (a two-screen
+  phone height in `page.css`) and confirmed by measuring (2.0 screens); not re-gated.
+- **1 waiver**: `hero-lines`. The home h1 is the practice's current headline, required verbatim by the assessment, at 13 words and 5 lines against the
+  skill's 3-line limit (`.taste-skill/waivers.json`, not committed).
+
+What I deliberately did not take from the skill: its **one-page** navigation (the assessment requires separate pages), its **dealt full-bleed
+photo hero and photo moment** (they need 1920px and 1800px photographs; the practice's are 600px), and its **no-phone-number rule** (see above).
+Every photograph is shown at or below 1.33× its natural width, the skill's own limit.
+
+## Non-negotiables (enforced by `npm run verify`)
+
+- Every "Request an Appointment" CTA → exactly `https://www.topofthehillsmiles.com/appointment-request`.
+- No `cal.com` / Oculeus scheduler anywhere. It appears only as a *proposal* note, hidden in clean view.
+- Copy says "appointment request … coordinator will contact you to confirm", never instant or confirmed booking.
+- Two separate `tel:` links, Orthodontics `+12152203777` and Pediatric `+12152203778`; label and number are checked.
+- Home H1 preserved verbatim; one `h1` per page; alt text; internal links and anchors resolve.
+- No unapproved email, invented hours or prices, or patient-data collection.
+
 
 ## Live proof of concept
 
@@ -36,73 +99,23 @@ The script uploads to Workers Static Assets and, if the asset-upload token is re
 falls back to embedding the site in the Worker (`--mode inline`). To take the PoC down, remove the custom domain and the
 Worker `topofthehillsmiles-poc` in the Cloudflare dashboard. The Oculeus apex site and other client PoCs are not touched.
 
-## Pages
-
-Home · Pediatric Dentistry · Orthodontics · New Patients · Meet Our Doctors (`about.html`) ·
-Reviews & Office Tour · Contact & Appointments · FAQs — each in `public/*.html`.
-
-Edit `src/pages/*.html`, `src/partials/*.html`, `src/data/testimonials.json`, then `npm run build`.
-`public/assets/css/styles.css` and `public/assets/js/main.js` are edited directly.
-Facts that must never drift (booking URL, both phone numbers, address) live **once** in `scripts/build.mjs`.
-
-## Non-negotiables (enforced by `npm run verify`)
-
-- Every "Request an Appointment" CTA → exactly `https://www.topofthehillsmiles.com/appointment-request`.
-- No `cal.com` / Oculeus scheduler anywhere. It appears only as a *proposal* note, hidden in clean view.
-- Copy says "appointment request … coordinator will contact you to confirm", never instant or confirmed booking.
-- Two separate `tel:` links, Orthodontics `+12152203777` and Pediatric `+12152203778`; label and number are checked.
-- Home H1 preserved verbatim; one `h1` per page; alt text; internal links and anchors resolve.
-- No unapproved email, invented hours or prices, or patient-data collection.
-
-## Design direction
-
-A clean, clinical medical site in **the practice's own colours**, using its own photography. The first pass used a warm
-cream, terracotta and brass palette that came from the Stitch mock-up's concept colours, not from the practice, and it read
-as boutique rather than medical. It was replaced after the owner questioned it. The real logo (a navy-teal tooth with a
-leaf-green hill, pale sky and a sun) and the green treatment rooms give a better, verifiable palette.
-
-| | |
-|---|---|
-| Feeling | Clean, trustworthy, clinical, still friendly for children |
-| Colour source | Sampled from the practice's logo and treatment rooms (confirm exact brand values with the practice) |
-| Signature | The hill (an arch) with a sun dot, echoing the logo; used as the logo mark |
-| Moments | The real photo of the two doctors in the hero, and the real testimonial wall on Reviews |
-| Type | One family, Source Sans 3 (400 to 600). The serif was dropped: it read as editorial, and one family loads faster |
-
-| Colour | Value | Role |
-|---|---|---|
-| Cool white and pale green-grey | `#ffffff` / `#f3f7f6` | Surfaces, a clinical feel |
-| Navy-teal ink | `#12303b` | Text and dark bands (the logo wordmark colour) |
-| Leaf green | `#1f7a33` | The one accent: primary buttons, current page, key figure (the logo's green) |
-| Sun amber / teal | `#b97b08` / `#1b7f87` | Dots only, marking pediatric / orthodontics |
-| Muted red | `#9a2f25` | Emergency callouts only |
-
-Contrast is computed, not eyeballed: body text 12.9:1, secondary 7.3:1, muted 5.3:1, green-as-text 6.7:1, white on the green button 5.4:1.
-
-**Photography.** Every image is one of the practice's own photographs from topofthehillsmiles.com (doctors, treatment rooms,
-building entrance, sign); no stock or AI images. They are processed to WebP with metadata stripped, with alt text and the
-original URL recorded in `src/data/images.json` and `docs/IMAGE-SOURCES.md`. Permission, patient releases and higher-resolution
-originals are open items (the current site's files are small, so they look soft on large screens).
-
-The design pass follows the **unslop** method (see Credits): one accent, sentence-case labels, weights 400 to 600, the 4px
-spacing scale with no inline styles, hairline borders, no gradients, glass or looping motion, one icon set at one size and stroke.
-
-**Review-mode switch.** Source tags ("From current website", "Pending practice review", "Proposal, not live", and a small
-"From practice site, permission pending" tag on every photo) are one calm neutral style. A **Source notes** switch (top strip
-and footer) shows or hides them. It is ON by default for the owner review so nothing is hidden; switch it off for a clean,
-launch-style view. Required public disclosures, such as the dated rating snapshot, stay visible in both views.
 
 ## Provenance: everything the owner needs to see
 
-Included from the original site, as requested: all **103 testimonials** (verbatim, `src/data/testimonials.json`), the doctors'
-**credentials and affiliations** (ABPD diplomate, AAPD / ADA / AAO and society memberships, research award, OKU), the
-"certified Invisalign Teen® provider" statement, the two **Invisalign / Invisalign Teen logos**
-(`public/assets/img/original/`), the team roster, parking and transit, form PDFs and the Notice of Privacy Practices.
-None is independently verified; each is flagged for the practice to confirm.
+Included from the original site, as requested: all **103 testimonials** (verbatim, `src/data/testimonials.json`; quotes the
+practice shows with no name stay unnamed), the doctors' **credentials and affiliations**, the "certified Invisalign Teen®
+provider" statement, the two **Invisalign / Invisalign Teen logos**, the team roster, parking and transit, form PDFs, the Notice
+of Privacy Practices and **13 of the practice's own photographs** (`docs/IMAGE-SOURCES.md`). None is independently verified;
+each is flagged for the practice to confirm.
+
+**Review mode.** Owner-review notes ("From current website", "Pending practice review", "Placeholder", "Proposal, not live")
+are hidden by default so the page reads as it would at launch. Turn them on with the **Source notes** control in the footer, or
+open any page with `?review=on` (`?review=off` turns them off again); the choice is remembered per browser. Required public
+disclosures, such as the dated Google rating, stay visible either way.
 
 **Not carried over from Stitch** because it does not appear on the current site: the invented "Verified Record" quotes,
-"Dual Board Leadership", "Invisalign Certified Provider / Platinum", a "HIPAA Compliant" badge, AI-generated doctor and
-office photos (replaced by the practice's real photographs), an "Open Appointment Calendar" panel, and a named coordinator avatar.
+"Dual Board Leadership", "Invisalign Certified Provider / Platinum", a "HIPAA Compliant" badge, AI-generated photos, an
+"Open Appointment Calendar" panel, and a named coordinator avatar.
 
 ## Open items
 
@@ -115,6 +128,8 @@ practice. The links here are correct.
 
 ## Credits
 
-The design pass follows **unslop** by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed
-[CC BY 4.0](https://github.com/heydamir/unslop/blob/main/LICENSE): <https://github.com/heydamir/unslop>.
-The checks in `scripts/verify.mjs` encode its checklist, plus image checks (file exists, sized, alt text). This repo adapts the method; it does not copy the skill's text.
+- Layout, motion layer and moments: **taste-skill** by Leonxlnx, MIT, <https://github.com/leonxlnx/taste-skill>. The kit files in
+  `public/assets/` are unmodified; its licence is kept in `public/assets/KIT-LICENSE.txt`.
+- The earlier design pass used **unslop** by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), CC BY 4.0,
+  <https://github.com/heydamir/unslop>. `scripts/verify.mjs` encodes parts of its checklist.
+- Photographs and Invisalign logos belong to the practice (from its own website); see `docs/IMAGE-SOURCES.md`.

@@ -1,65 +1,29 @@
-<footer class="footer">
-  <div class="container">
-    <div class="review-box review-box--ink review-only"><strong>Proof-of-concept redesign.</strong> This is not the practice's live website and does not connect to the practice's records or a scheduling system. “From current website” notes mark content taken from topofthehillsmiles.com; “Placeholder” and “Pending practice review” notes need practice approval before launch. Use the switch below to hide these notes.</div>
-    <div class="footer__grid">
-      <div>
-        <a class="brand" href="index.html">{{include:brandmark}}<span><span class="brand__name">Top of the Hill</span><span class="brand__sub">Orthodontics &amp; Pediatric Dentistry</span></span></a>
-        <address>
-          <span>{{ADDR}}</span>
-          <a href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} Orthodontics <span class="num">{{ORTHO}}</span></a>
-          <a href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} Pediatric Dentistry <span class="num">{{PEDO}}</span></a>
-          <a href="{{MAPS}}" target="_blank" rel="noopener noreferrer">{{icon:pin}} Directions</a>
-        </address>
+<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Request an appointment</h2>
+        <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <div>
-        <h2>Pediatric dentistry</h2>
-        <ul>
-          <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
-          <li><a href="pediatric-dentistry.html#first-visit">First Pediatric Dental Visit</a></li>
-          <li><a href="pediatric-dentistry.html#topics">Baby Dental Care</a></li>
-          <li><a href="pediatric-dentistry.html#emergencies">Pediatric Dental Emergencies</a></li>
-          <li><a href="faqs.html#pediatric">Pediatric FAQs</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Orthodontics</h2>
-        <ul>
-          <li><a href="orthodontics.html">Orthodontics</a></li>
-          <li><a href="orthodontics.html#treatments">Early and Adult Treatment</a></li>
-          <li><a href="orthodontics.html#invisalign">Invisalign®</a></li>
-          <li><a href="orthodontics.html#emergencies">Orthodontic Emergency Care</a></li>
-          <li><a href="faqs.html#orthodontic">Orthodontic FAQs</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Patients</h2>
-        <ul>
-          <li><a href="new-patients.html">New Patients</a></li>
-          <li><a href="{{ORIG}}/new-patient-forms" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">New Patient Forms {{icon:external}}</a></li>
-          <li><a href="about.html">Meet Our Doctors</a></li>
-          <li><a href="reviews.html">Reviews &amp; Office Tour</a></li>
-          <li><a href="contact.html">Contact &amp; Appointments</a></li>
-        </ul>
-        <div class="cta mt-6">
-          <a class="btn btn--light btn--sm" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a>
-          <p class="helper">Our scheduling coordinator will contact you to confirm.</p>
+      <a class="btn btn--primary btn--xl btn--wide" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">{{ACTION}}{{arrow}}</a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <address class="footer__address">10 W Gravers Lane<br>Philadelphia, PA 19118</address>
+          <p><a class="link" href="{{MAPS}}" target="_blank" rel="noopener noreferrer">Get directions</a></p>
+        </div>
+        <div class="span-6 start-7 stack-4">
+          <h3>Call the office</h3>
+          <p><a class="link" href="{{TEL_ORTHO}}" data-track="call_ortho_click">Orthodontics {{ORTHO}}</a></p>
+          <p><a class="link" href="{{TEL_PEDO}}" data-track="call_pedo_click">Pediatric dentistry {{PEDO}}</a></p>
         </div>
       </div>
-    </div>
-    <div class="footer__badges">
-      <span class="note footer__note">Provider logos as shown in the footer of the current website <span class="src">From current website</span></span>
-      <div class="logos">
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
-        <a href="{{ORIG}}/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website. Opens the practice's Invisalign page." loading="lazy"></a>
+      <div class="footer__legal">
+        <span>&copy; 2026 Top of the Hill Orthodontics &amp; Pediatric Dentistry &nbsp; <a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Privacy</a></span>
+        <button class="link review-switch" type="button" role="switch" aria-checked="false" data-review-switch>Source notes</button>
+        <details class="credits"><summary>Photographs and logos</summary><p>All photographs and the Invisalign logos are from the practice's own website, topofthehillsmiles.com, used for this prototype pending the practice's permission. Design built on the MIT-licensed taste-skill kit.</p></details>
       </div>
-    </div>
-    <div class="footer__base">
-      <span>© <span data-year>2026</span> Top of the Hill Orthodontics &amp; Pediatric Dentistry. Concept design for client review.</span>
-      <ul>
-        <li><a href="{{ORIG}}/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
-        <li class="review-only">Terms and site privacy policy pending practice approval</li>
-        <li>{{include:review-switch}}</li>
-      </ul>
     </div>
   </div>
 </footer>

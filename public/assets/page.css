@@ -1,0 +1,57 @@
+/* Page CSS: only what the kit lacks. Review mode (owner notes), the call sheet, the testimonial wall,
+   the credentials list. Everything else comes from the kit's system.css, cards.css, motion.css and layout.css. */
+
+/* ---- Review mode: owner-review notes are hidden by default; the footer switch (or ?review=on) shows them ---- */
+.src { display: inline-block; font: 400 var(--t-label)/1.4 var(--font-text); color: var(--muted); border: 1px solid var(--line-strong); border-radius: 4px; padding: 2px var(--s-2); margin-right: var(--s-1); }
+.review-note { font-size: var(--t-label); line-height: 1.5; color: var(--muted); margin: var(--s-3) 0 0; max-width: 64ch; }
+html[data-review="off"] :is(.src, .review-note, .review-only) { display: none !important; }
+.review-switch { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+.review-switch[aria-checked="true"]::after { content: ": on"; }
+.review-switch[aria-checked="false"]::after { content: ": off"; }
+
+/* ---- Call sheet (native dialog) ---- */
+dialog.sheet { border: 0; padding: 0; width: min(480px, calc(100vw - 32px)); border-radius: var(--r-lg); background: var(--bg); color: var(--ink); }
+dialog.sheet::backdrop { background: color-mix(in oklab, var(--p-inv-bg) 60%, transparent); }
+.sheet__in { padding: var(--s-5); display: grid; gap: var(--s-3); }
+.sheet__in h2 { font-size: var(--t-h3); margin: 0; }
+.sheet__in p { margin: 0; color: var(--muted); }
+.btn--block { width: 100%; }
+
+/* ---- Credentials: plain ruled lines, no icons ---- */
+.creds { list-style: none; margin: var(--s-4) 0 0; padding: 0; border-bottom: 1px solid var(--line); }
+.creds li { border-top: 1px solid var(--line); padding: var(--s-3) 0; }
+.badges { display: flex; flex-wrap: wrap; gap: var(--s-4); align-items: center; }
+.badges a { display: flex; line-height: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s-2) var(--s-3); }
+.badges img { display: block; height: 48px; width: auto; }
+
+/* ---- Testimonial wall (all of the practice's own, verbatim; compact so each section stays within two screens) ---- */
+.quotes { display: grid; gap: var(--s-5); grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.quotes .quote { margin: 0; }
+.quotes .quote blockquote { font-size: var(--t-body); line-height: 1.45; }
+.quotes--tail .quote:last-child { grid-column: span 2; }   /* the final row has three quotes: the last takes the rest of the row */
+.tile--band { --tile-ratio: 628 / 200; }
+@media (max-width: 1023px) { .quotes { grid-template-columns: repeat(2, minmax(0, 1fr)); } .quotes--tail .quote:last-child { grid-column: auto; } }
+@media (max-width: 639px) { .quotes { grid-template-columns: 1fr; } }
+.team { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 var(--s-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.team li { border-top: 1px solid var(--line); padding: var(--s-3) 0; display: grid; }
+.team span { color: var(--muted); }
+
+/* ---- Rows: the line under a name sits on its own line, in ink at body size (the kit's demo supplied this rule) ---- */
+.rows__name small { display: block; margin-top: var(--s-1); font-size: var(--t-body); font-weight: 400; color: var(--ink); line-height: 1.5; }
+.rows__name a { text-decoration: none; }
+
+/* ---- Hero photo: the practice's photographs are 600px wide, so the frame keeps their own 4:3 shape
+   instead of stretching to the full height of the hero (a 1.57x blow-up). The kit's phone layout is unchanged. ---- */
+@media (min-width: 1024px) { .hero-split > .hero-visual { height: auto; aspect-ratio: 4 / 3; align-self: start; } }
+
+/* ---- Picture wall (the kit's sanctioned layout for many photographs): 2px gap, each photograph its own size ---- */
+.wall { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; }
+.wall img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+@media (max-width: 639px) { .wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---- Narrow phones: the long main-action label in the closing footer wraps instead of pushing the page past 320px ---- */
+@media (max-width: 380px) { .closing__cta .btn--xl { white-space: normal; text-wrap: balance; line-height: 1.25; padding-block: var(--s-3); height: auto; min-height: 56px; } }
+
+/* ---- Phones: the pinned-steps moment sizes itself to its content (the kit's moment.css wins over --hm), which leaves the next
+   section's heading showing at the foot of its screen. Give it its two whole phone screens, as the section box does elsewhere. ---- */
+@media (max-width: 639px) { main > section[data-moment="pinned-chapters"][data-moment][data-moment]:not(.is-live) { min-height: calc(2 * 100lvh); } }

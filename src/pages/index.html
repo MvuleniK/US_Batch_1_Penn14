@@ -1,210 +1,121 @@
-<!--meta {"title":"Top of the Hill Orthodontics & Pediatric Dentistry | Chestnut Hill, Philadelphia","description":"Pediatric dentistry and orthodontics for children, teens and adults in Chestnut Hill, Philadelphia. Submit an appointment request or call the office.","nav":"home"} -->
+<!--meta {"title":"Top of the Hill: pediatric dentistry and orthodontics in Chestnut Hill, Philadelphia","description":"Pediatric dentist and orthodontist at 10 W Gravers Lane in Chestnut Hill, Philadelphia. Send an appointment request and the scheduling coordinator will contact you to confirm.","nav":"home","moments":["pinned-chapters","word-highlight"]} -->
 
-<section class="hero">
-  <div class="container hero__grid">
-    <div>
-      <h1>{{H1}}</h1>
-      <p class="lede">Pediatric dentistry for infants, children and teens, and orthodontics for children, teens and adults, together under one roof in Chestnut Hill.</p>
-      {{include:cta}}
-      {{include:calls}}
-    </div>
-    <div class="hero__art">
-      {{img:office-doctors|hero|eager}}
-      <div class="spec-links">
-        <a href="pediatric-dentistry.html"><span class="spec spec--ped">Pediatric</span><strong>Pediatric Dentistry</strong></a>
-        <a href="orthodontics.html"><span class="spec spec--ortho">Orthodontics</span><strong>Orthodontics for All Ages</strong></a>
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero-split">
+        <div class="hero-copy span-6">
+          <h1 id="hero-h">{{H1}}</h1>
+          <p class="t-lead">Two doctors, two specialties, one office at 10 W Gravers Lane in Chestnut Hill: pediatric dentistry for infants through teens, and orthodontics for children, teens and adults.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">{{ACTION}}{{arrow}}</a>
+            <button class="btn btn--secondary" type="button" data-open-call>Call the office</button>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Orthodontics</dt><dd><a class="link" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{ORTHO}}</a></dd></div>
+            <div><dt>Pediatric dentistry</dt><dd><a class="link" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{PEDO}}</a></dd></div>
+            <div><dt>Google, 12 Nov 2026</dt><dd>4.8 from 147 reviews</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual frame frame--photo span-6 start-7">
+          {{pic:office-doctors|eager}}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="trust" aria-label="Why families choose the practice">
-  <div class="container trust__in">
-    <div class="trust__item">{{icon:shield}}<div><strong>Board-certified pediatric dentist</strong><span>Dr. Abbey, as stated on the practice's website</span></div></div>
-    <div class="trust__item">{{icon:layers}}<div><strong>Two specialties, one team</strong><span>Pediatric dentistry and orthodontics under one roof</span></div></div>
-    <div class="trust__item">{{icon:check}}<div><strong>Invisalign Teen® provider</strong><span>Certified, as stated on the practice's website</span></div></div>
-    <div class="trust__item">{{icon:star}}<div><strong>4.8 on Google, 147 reviews</strong><span>Assessment snapshot, 12 Nov 2026</span></div></div>
-  </div>
-  <div class="container"><p class="review-note">{{src:site}} {{src:review}} Credentials and certification are listed as stated on the current website and are not independently verified. {{src:snapshot}} The rating is not a live Google integration.</p></div>
-</section>
-
-<section class="section section--surface" aria-labelledby="paths-h">
-  <div class="container">
-    <div class="section-head">
-      <div><span class="eyebrow">Two specialties, one practice</span><h2 id="paths-h">Choose the care your family needs</h2></div>
-      <p>A combined specialty practice means your child's dental and orthodontic needs can be met by one team.</p>
-    </div>
-    <div class="grid grid--2">
-      <article class="card card--media">
-        {{img:abbey-child|card}}
-        <div class="card__body">
-        <div class="card__top"><span class="spec spec--ped">Pediatric dentistry</span><span class="note">Infants, children and adolescents</span></div>
-        <h3>Gentle dental care, from baby's first tooth</h3>
-        <p>Dr. Abbey and the team focus on prevention and explain every step in kid-friendly terms, so visits feel calm and positive.</p>
-        <ul class="list">
-          <li>First pediatric dental visit and regular checkups</li>
-          <li>Dental care for your baby</li>
-          <li>Thumb-sucking guidance and sports dentistry</li>
-          <li>Pediatric dental emergency information</li>
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="wrap grid grid--top fill">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="services-h">Services. <span class="muted">Pediatric dentistry and orthodontics under one roof.</span></h2>
+        </div>
+        <ul class="rows">
+          <li><span class="rows__name"><a href="pediatric-dentistry.html">Pediatric dentistry</a><small>Checkups, baby dental care, sports dentistry and emergencies with Dr. Abbey</small></span><span class="rows__value">Infants to teens</span></li>
+          <li><span class="rows__name"><a href="orthodontics.html">Orthodontics</a><small>Early treatment, metal and clear braces and adult treatment with Dr. Jake</small></span><span class="rows__value">All ages</span></li>
+          <li><span class="rows__name"><a href="orthodontics.html#invisalign">Invisalign®</a><small>Removable clear aligners, including Invisalign Teen®</small></span><span class="rows__value">Teens and adults</span></li>
+          <li><span class="rows__name"><a href="pediatric-dentistry.html#urgent">Dental emergencies</a><small>Call the office first, on the pediatric or orthodontic line</small></span><span class="rows__value">Call first</span></li>
         </ul>
-        <div class="card__foot"><a class="btn btn--secondary" href="pediatric-dentistry.html">Explore pediatric care</a><a class="link-arrow" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} <span class="num">{{PEDO}}</span></a></div>
-        </div>
-      </article>
-      <article class="card card--media">
-        {{img:jake-portrait|card top}}
-        <div class="card__body">
-        <div class="card__top"><span class="spec spec--ortho">Orthodontics for all ages</span><span class="note">Children, teens and adults</span></div>
-        <h3>Braces, early treatment and Invisalign®</h3>
-        <p>Dr. Jake offers the full spectrum of orthodontic services, with a treatment plan tailored to each patient.</p>
-        <ul class="list">
-          <li>Early evaluation and Phase I early treatment</li>
-          <li>Traditional metal and clear (ceramic) braces</li>
-          <li>Adult orthodontics: it's never too late</li>
-          <li>Invisalign® and Invisalign Teen®</li>
-        </ul>
-        <div class="card__foot"><a class="btn btn--secondary" href="orthodontics.html">Explore orthodontic care</a><a class="link-arrow" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} <span class="num">{{ORTHO}}</span></a></div>
-        </div>
-      </article>
-    </div>
-    <p class="review-note">{{src:site}} Service lines and descriptions follow the practice's current website.</p>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="diff-h">
-  <div class="container split split--top">
-    <div class="stack">
-      <span class="eyebrow">The Top of the Hill difference</span>
-      <h2 id="diff-h">Your family's smiles, thoughtfully cared for</h2>
-      <p class="lede">Dr. Abbey and Dr. Jake are a husband-and-wife team who understand the oral health needs of children and teens. Their practice brings pediatric dentistry and orthodontics under one roof.</p>
-      <a class="link-arrow" href="about.html">Meet the doctors {{icon:arrow}}</a>
-      <p class="review-note">{{src:site}} From the “What Sets Us Apart” page. <a href="{{ORIG}}/what-sets-us-apart" target="_blank" rel="noopener noreferrer">Read the original</a></p>
-    </div>
-    <div class="stack">
-    {{img:room-windows|wide}}
-    <ul class="rows">
-      <li><div><h4>One roof, two specialties</h4><p class="mb-0 note">With both doctors in the office, a child's growth and development can be monitored so orthodontics can begin at the optimum time.</p></div></li>
-      <li><div><h4>Comfort for kids</h4><p class="mb-0 note">Ceiling-mounted TVs show family-friendly shows and movies, and children can visit the toy box after a job well done.</p></div></li>
-      <li><div><h4>A board-certified pediatric dentist</h4><p class="mb-0 note">The current website refers to “our board-certified pediatric dentist, Dr. Abbey Sullivan Orozco.”</p><p class="review-note">{{src:site}} {{src:review}}</p></div></li>
-    </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section section--surface" aria-labelledby="docs-h">
-  <div class="container">
-    <div class="section-head">
-      <div><span class="eyebrow">Clinical leadership</span><h2 id="docs-h">Meet the specialists</h2></div>
-      <p>Real, named clinicians. Credentials are listed as stated on the practice's current website.</p>
-    </div>
-    <div class="grid grid--2">
-      <article class="doctor">
-        <div class="doctor__body">
-          <div class="doctor__head">
-            {{img:abbey-portrait|portrait top}}
-            <div><span class="spec spec--ped">Pediatric dentistry</span><h3>Dr. Abbey Sullivan Orozco</h3><p class="doctor__role">Pediatric dentist, DMD</p></div>
-          </div>
-          <p class="mb-0">Dr. Abbey believes every child should get to experience a healthy smile, and she loves showing children that dentistry can be fun.</p>
-          <div>
-            <p class="creds-title">Credentials and affiliations</p>
-            <ul class="creds">
-              <li>Diplomate, American Board of Pediatric Dentistry</li>
-              <li>Member, American Academy of Pediatric Dentistry</li>
-            </ul>
-            <p class="review-note">{{src:site}} {{src:review}}</p>
-          </div>
-          <a class="link-arrow" href="about.html#dr-abbey">Read Dr. Abbey's profile {{icon:arrow}}</a>
-        </div>
-        <div class="doctor__foot"><span>Pediatric appointments</span><a href="{{TEL_PEDO}}" data-track="call_pedo_click"><span class="num">{{PEDO}}</span></a></div>
-      </article>
-      <article class="doctor">
-        <div class="doctor__body">
-          <div class="doctor__head">
-            {{img:jake-portrait|portrait top}}
-            <div><span class="spec spec--ortho">Orthodontics</span><h3>Dr. Jacob Orozco</h3><p class="doctor__role">Orthodontist, DMD, MS</p></div>
-          </div>
-          <p class="mb-0">Dr. Jake combines cutting-edge technology with treatment plans tailored to each patient, for children and adults.</p>
-          <div>
-            <p class="creds-title">Credentials and affiliations</p>
-            <ul class="creds">
-              <li>Member, American Association of Orthodontists</li>
-              <li>The practice is a certified Invisalign Teen® provider</li>
-            </ul>
-            <p class="review-note">{{src:site}} {{src:review}}</p>
-          </div>
-          <a class="link-arrow" href="about.html#dr-jacob">Read Dr. Jacob's profile {{icon:arrow}}</a>
-        </div>
-        <div class="doctor__foot"><span>Orthodontic appointments</span><a href="{{TEL_ORTHO}}" data-track="call_ortho_click"><span class="num">{{ORTHO}}</span></a></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="journey-h">
-  <div class="container">
-    <div class="section-head">
-      <div><span class="eyebrow">New patient journey</span><h2 id="journey-h">Four steps to your first visit</h2></div>
-      <p>The practice's online form is an appointment request, not a live calendar. A coordinator follows up to confirm.</p>
-    </div>
-    <ol class="steps">
-      <li><h3>Choose care</h3><p>Pediatric dentistry for infants through teens, orthodontics for children, teens or adults, or both.</p></li>
-      <li><h3>Request an appointment</h3><p>Send the practice's request form with your name, contact details and appointment type.</p><p class="mt-4 mb-0"><a href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Open the request form</a></p></li>
-      <li><h3>We contact you to confirm</h3><p>Our scheduling coordinator will contact you to confirm. Nothing is booked until then.</p></li>
-      <li><h3>Prepare for your visit</h3><p>Print and complete the patient forms and bring them with your insurance card.</p><p class="mt-4 mb-0"><a href="new-patients.html">See what to bring</a></p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="section section--surface" aria-labelledby="trust-h">
-  <div class="container">
-    <div class="section-head">
-      <div><span class="eyebrow">What families say</span><h2 id="trust-h">Rated 4.8 out of 5 on Google</h2></div>
-      <div class="rating">
-        <span class="rating__num" aria-hidden="true">4.8</span>
-        <p class="rating__meta mb-0"><strong>147 Google reviews</strong><span class="note">Assessment snapshot, 12 Nov 2026</span></p>
+        <p class="review-note">{{src:site}} Service lines follow the practice's current website.</p>
+      </div>
+      <div class="frame frame--photo frame--fill span-6 start-7">
+        {{pic:abbey-child}}
       </div>
     </div>
-    <div class="grid grid--3">
-      <figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>Alice H.</figcaption></figure>
-      <figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>Kerin D.</figcaption></figure>
-      <figure class="quote"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>Andy F.</figcaption></figure>
-    </div>
-    <p class="mt-8"><a class="link-arrow" href="reviews.html#testimonials">Read all testimonials {{icon:arrow}}</a></p>
-    <p class="review-note">{{src:snapshot}} Not a live Google integration; re-verify before launch. {{src:site}} Quotes appear verbatim on the practice's <a href="{{ORIG}}/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>; practice approval for reuse is still required.</p>
-  </div>
-</section>
+  </section>
 
-<section class="section" aria-labelledby="tour-h">
-  <div class="container split split--text-left">
-    <div class="stack">
-      <span class="eyebrow">The office</span>
-      <h2 id="tour-h">Take a look inside</h2>
-      <p class="lede">Photos from the practice's own office tour. Visitors are also welcome to stop by to meet the team and see the treatment areas.</p>
-      <p><a class="link-arrow" href="reviews.html#office-tour">Explore our office {{icon:arrow}}</a></p>
-      <p><a class="link-arrow" href="{{ORIG}}/office-tour" target="_blank" rel="noopener noreferrer">View the current office tour {{icon:external}}</a></p>
+  <section class="section" id="doctors" aria-labelledby="doctors-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="doctors-h">Meet the team. <span class="muted">Dr. Abbey and Dr. Jake are a husband-and-wife team.</span></h2>
+      </div>
+      <div class="grid">
+        <div class="tile tile--portrait span-3">
+          <div class="tile__media">{{pic:abbey-portrait}}</div>
+          <div class="tile__head"><h3>Dr. Abbey Sullivan Orozco, pediatric dentist</h3></div>
+          <p>Diplomate of the American Board of Pediatric Dentistry.</p>
+        </div>
+        <div class="tile tile--portrait span-3">
+          <div class="tile__media">{{pic:jake-portrait}}</div>
+          <div class="tile__head"><h3>Dr. Jacob Orozco, orthodontist</h3></div>
+          <p>DMD, MS. Member of the American Association of Orthodontists.</p>
+        </div>
+        <div class="span-6 stack-4">
+          <p class="t-lead">They met at Temple University School of Dentistry. Dr. Abbey sees children from their first tooth, and Dr. Jake treats children, teens and adults.</p>
+          <p><a class="link" href="about.html">Meet the doctors and team</a></p>
+          <p class="review-note">{{src:site}} {{src:review}} Credentials are listed as stated on the practice's website and are not independently verified.</p>
+        </div>
+      </div>
     </div>
-    <div class="gallery">
-      {{img:exterior|wide}}
-      {{img:room-green|wide}}
-      {{img:office-sign|wide}}
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section section--surface" aria-labelledby="faq-h">
-  <div class="container split split--text-right split--top">
-    <div class="stack">
-      <span class="eyebrow">Common questions</span>
-      <h2 id="faq-h">Questions new families ask</h2>
-      <p class="lede">Short answers adapted from the practice's FAQs.</p>
-      <a class="link-arrow" href="faqs.html">All FAQs {{icon:arrow}}</a>
-      <p class="review-note">{{src:review}} Clinical wording requires practice review.</p>
+  <section class="section" id="steps" style="--h: 2; --hm: 2" data-moment="pinned-chapters" aria-labelledby="steps-h">
+    <div class="wrap mo-pc__grid">
+      <div class="mo-pc__text">
+        <h2 id="steps-h">Three steps to your first visit</h2>
+        <ol class="mo-pc__steps">
+          <li class="mo-pc__step">
+            <h3>Request your visit</h3>
+            <p>Fill in the practice's form with your name, email and phone, and choose Ortho, Pedo or Both.</p>
+            <figure class="mo-pc__visual">{{pic:office-sign}}</figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3>Get the visit confirmed</h3>
+            <p>The scheduling coordinator will contact you to confirm a time. Nothing is booked until then.</p>
+            <figure class="mo-pc__visual">{{pic:room-bright}}</figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3>Prepare for your visit</h3>
+            <p>Print the pediatric or orthodontic form from the practice's site and bring it with your insurance card.</p>
+            <figure class="mo-pc__visual">{{pic:exterior}}</figure>
+          </li>
+        </ol>
+        <p><a class="link" href="{{BOOK}}" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Open the request form</a></p>
+      </div>
+      <div class="mo-pc__visuals frame"></div>
     </div>
-    <div class="faq">
-      <details><summary>When should my child first see a dentist?</summary><div><p>The practice recommends booking as soon as your child gets a first tooth. The American Academy of Pediatric Dentistry advises a visit within six months of the first tooth appearing, or by age one, whichever comes first.</p></div></details>
-      <details><summary>When is the right time for an orthodontic evaluation?</summary><div><p>The American Association of Orthodontists recommends a first visit around age seven. Orthodontic treatment isn't only for children and teens, and adults are welcome too.</p></div></details>
-      <details><summary>How does booking an appointment work?</summary><div><p>Use the practice's appointment request form (Ortho, Pedo or Both). It is a request, not an instant booking, and the scheduling coordinator will contact you to confirm. You can also call the office directly.</p></div></details>
-    </div>
-  </div>
-</section>
+  </section>
 
-{{include:closing}}
+  <section class="section" id="reviews" aria-labelledby="reviews-h">
+    <div class="wrap grid grid--top fill">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="reviews-h">4.8 on Google. <span class="muted">from 147 reviews, 12 Nov 2026.</span></h2>
+        </div>
+        <figure class="quote"><blockquote>“Saved me a lot of pain and talked me through an emergency situation on a Sunday night. Highly recommend!”</blockquote><figcaption>Andy F.</figcaption></figure>
+        <figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>Kerin D.</figcaption></figure>
+        <figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>Alice H.</figcaption></figure>
+        <p><a class="link" href="reviews.html">Read all testimonials</a></p>
+        <p class="review-note">{{src:snapshot}} The rating is not a live Google integration. {{src:site}} Quotes are verbatim from the practice's Testimonials page; practice approval for reuse is still required.</p>
+      </div>
+      <div class="frame frame--photo frame--fill span-6 start-7">
+        {{pic:room-green}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section statement" id="roof" data-moment="word-highlight" aria-label="Under one roof">
+    <div class="wrap">
+      <p class="t-label">Under one roof</p>
+      <p class="mo-wh__text">Children's checkups and orthodontics happen in the same office, so a child's growth and development can be watched and treatment can start at the <strong>right time</strong>, with both doctors in the building.</p>
+    </div>
+  </section>
