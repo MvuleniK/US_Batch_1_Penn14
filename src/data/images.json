@@ -1,0 +1,93 @@
+{
+ "office-doctors": {
+  "file": "assets/img/practice/office-doctors.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "Dr. Abbey and Dr. Jake standing together in a treatment room",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-04.jpg"
+ },
+ "office-sign": {
+  "file": "assets/img/practice/office-sign.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "The Top of the Hill sign on the office wall: a tooth containing a green hill, sky and sun, above the practice name",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-02.jpg"
+ },
+ "room-bright": {
+  "file": "assets/img/practice/room-bright.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "A bright treatment room with several chairs and tall windows",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-05.jpg"
+ },
+ "room-windows": {
+  "file": "assets/img/practice/room-windows.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "A treatment room with wood floors, dental chairs and large windows",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-06.jpg"
+ },
+ "room-green": {
+  "file": "assets/img/practice/room-green.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "A treatment room with a deep green accent wall and a dental chair",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-07.jpg"
+ },
+ "room-chair": {
+  "file": "assets/img/practice/room-chair.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "A dental chair, cabinetry and equipment in a treatment room",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-08.jpg"
+ },
+ "abbey-child": {
+  "file": "assets/img/practice/abbey-child.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "Dr. Abbey examining a young patient in a dental chair",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-09.jpg"
+ },
+ "exterior": {
+  "file": "assets/img/practice/exterior.webp",
+  "w": 600,
+  "h": 457,
+  "alt": "The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign",
+  "source": "https://www.topofthehillsmiles.com/assets/images/office-tour/image-10.jpg"
+ },
+ "abbey-portrait": {
+  "file": "assets/img/practice/abbey-portrait.webp",
+  "w": 400,
+  "h": 432,
+  "alt": "Dr. Abbey Sullivan Orozco smiling beside a young patient in the dental chair",
+  "source": "https://www.topofthehillsmiles.com/assets/uploads/images/meet-dr-abbey-orozco.jpg"
+ },
+ "jake-portrait": {
+  "file": "assets/img/practice/jake-portrait.webp",
+  "w": 400,
+  "h": 432,
+  "alt": "Dr. Jacob Orozco smiling above a patient reclining in the chair",
+  "source": "https://www.topofthehillsmiles.com/assets/uploads/images/meet-dr-jacob-orozco.jpg"
+ },
+ "first-visit": {
+  "file": "assets/img/practice/first-visit.webp",
+  "w": 400,
+  "h": 432,
+  "alt": "Dr. Abbey examining a young child during a dental visit",
+  "source": "https://www.topofthehillsmiles.com/assets/uploads/images/first-pediatric-dental-visit.jpg"
+ },
+ "abbey-age-11": {
+  "file": "assets/img/practice/abbey-age-11.webp",
+  "w": 428,
+  "h": 604,
+  "alt": "Dr. Abbey at age 11, smiling with braces",
+  "source": "https://www.topofthehillsmiles.com/assets/uploads/images/young-dr-abbey.jpg"
+ },
+ "jake-age-13": {
+  "file": "assets/img/practice/jake-age-13.webp",
+  "w": 428,
+  "h": 604,
+  "alt": "Dr. Jake at age 13, smiling with braces",
+  "source": "https://www.topofthehillsmiles.com/assets/uploads/images/young-dr-jake.jpg"
+ }
+}

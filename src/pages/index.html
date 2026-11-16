@@ -9,14 +9,23 @@
       {{include:calls}}
     </div>
     <div class="hero__art">
-      {{arch:both}}
-      <div class="arch-links">
+      {{img:office-doctors|hero|eager}}
+      <div class="spec-links">
         <a href="pediatric-dentistry.html"><span class="spec spec--ped">Pediatric</span><strong>Pediatric Dentistry</strong></a>
         <a href="orthodontics.html"><span class="spec spec--ortho">Orthodontics</span><strong>Orthodontics for All Ages</strong></a>
       </div>
-      <p class="review-note">{{src:placeholder}} The arch drawing stands in for approved office photography.</p>
     </div>
   </div>
+</section>
+
+<section class="trust" aria-label="Why families choose the practice">
+  <div class="container trust__in">
+    <div class="trust__item">{{icon:shield}}<div><strong>Board-certified pediatric dentist</strong><span>Dr. Abbey, as stated on the practice's website</span></div></div>
+    <div class="trust__item">{{icon:layers}}<div><strong>Two specialties, one team</strong><span>Pediatric dentistry and orthodontics under one roof</span></div></div>
+    <div class="trust__item">{{icon:check}}<div><strong>Invisalign Teen® provider</strong><span>Certified, as stated on the practice's website</span></div></div>
+    <div class="trust__item">{{icon:star}}<div><strong>4.8 on Google, 147 reviews</strong><span>Assessment snapshot, 12 Nov 2026</span></div></div>
+  </div>
+  <div class="container"><p class="review-note">{{src:site}} {{src:review}} Credentials and certification are listed as stated on the current website and are not independently verified. {{src:snapshot}} The rating is not a live Google integration.</p></div>
 </section>
 
 <section class="section section--surface" aria-labelledby="paths-h">
@@ -26,7 +35,9 @@
       <p>A combined specialty practice means your child's dental and orthodontic needs can be met by one team.</p>
     </div>
     <div class="grid grid--2">
-      <article class="card">
+      <article class="card card--media">
+        {{img:abbey-child|card}}
+        <div class="card__body">
         <div class="card__top"><span class="spec spec--ped">Pediatric dentistry</span><span class="note">Infants, children and adolescents</span></div>
         <h3>Gentle dental care, from baby's first tooth</h3>
         <p>Dr. Abbey and the team focus on prevention and explain every step in kid-friendly terms, so visits feel calm and positive.</p>
@@ -37,8 +48,11 @@
           <li>Pediatric dental emergency information</li>
         </ul>
         <div class="card__foot"><a class="btn btn--secondary" href="pediatric-dentistry.html">Explore pediatric care</a><a class="link-arrow" href="{{TEL_PEDO}}" data-track="call_pedo_click">{{icon:phone}} <span class="num">{{PEDO}}</span></a></div>
+        </div>
       </article>
-      <article class="card">
+      <article class="card card--media">
+        {{img:jake-portrait|card top}}
+        <div class="card__body">
         <div class="card__top"><span class="spec spec--ortho">Orthodontics for all ages</span><span class="note">Children, teens and adults</span></div>
         <h3>Braces, early treatment and Invisalign®</h3>
         <p>Dr. Jake offers the full spectrum of orthodontic services, with a treatment plan tailored to each patient.</p>
@@ -49,6 +63,7 @@
           <li>Invisalign® and Invisalign Teen®</li>
         </ul>
         <div class="card__foot"><a class="btn btn--secondary" href="orthodontics.html">Explore orthodontic care</a><a class="link-arrow" href="{{TEL_ORTHO}}" data-track="call_ortho_click">{{icon:phone}} <span class="num">{{ORTHO}}</span></a></div>
+        </div>
       </article>
     </div>
     <p class="review-note">{{src:site}} Service lines and descriptions follow the practice's current website.</p>
@@ -64,11 +79,14 @@
       <a class="link-arrow" href="about.html">Meet the doctors {{icon:arrow}}</a>
       <p class="review-note">{{src:site}} From the “What Sets Us Apart” page. <a href="{{ORIG}}/what-sets-us-apart" target="_blank" rel="noopener noreferrer">Read the original</a></p>
     </div>
+    <div class="stack">
+    {{img:room-windows|wide}}
     <ul class="rows">
       <li><div><h4>One roof, two specialties</h4><p class="mb-0 note">With both doctors in the office, a child's growth and development can be monitored so orthodontics can begin at the optimum time.</p></div></li>
       <li><div><h4>Comfort for kids</h4><p class="mb-0 note">Ceiling-mounted TVs show family-friendly shows and movies, and children can visit the toy box after a job well done.</p></div></li>
       <li><div><h4>A board-certified pediatric dentist</h4><p class="mb-0 note">The current website refers to “our board-certified pediatric dentist, Dr. Abbey Sullivan Orozco.”</p><p class="review-note">{{src:site}} {{src:review}}</p></div></li>
     </ul>
+    </div>
   </div>
 </section>
 
@@ -82,7 +100,7 @@
       <article class="doctor">
         <div class="doctor__body">
           <div class="doctor__head">
-            {{ph:Dr. Abbey portrait, approved photo needed|arch|person}}
+            {{img:abbey-portrait|portrait top}}
             <div><span class="spec spec--ped">Pediatric dentistry</span><h3>Dr. Abbey Sullivan Orozco</h3><p class="doctor__role">Pediatric dentist, DMD</p></div>
           </div>
           <p class="mb-0">Dr. Abbey believes every child should get to experience a healthy smile, and she loves showing children that dentistry can be fun.</p>
@@ -101,7 +119,7 @@
       <article class="doctor">
         <div class="doctor__body">
           <div class="doctor__head">
-            {{ph:Dr. Jacob portrait, approved photo needed|arch|person}}
+            {{img:jake-portrait|portrait top}}
             <div><span class="spec spec--ortho">Orthodontics</span><h3>Dr. Jacob Orozco</h3><p class="doctor__role">Orthodontist, DMD, MS</p></div>
           </div>
           <p class="mb-0">Dr. Jake combines cutting-edge technology with treatment plans tailored to each patient, for children and adults.</p>
@@ -160,14 +178,14 @@
     <div class="stack">
       <span class="eyebrow">The office</span>
       <h2 id="tour-h">Take a look inside</h2>
-      <p class="lede">The practice's current website has an eight-photo office tour. Visitors are also welcome to stop by to meet the team and see the treatment areas.</p>
+      <p class="lede">Photos from the practice's own office tour. Visitors are also welcome to stop by to meet the team and see the treatment areas.</p>
       <p><a class="link-arrow" href="reviews.html#office-tour">Explore our office {{icon:arrow}}</a></p>
       <p><a class="link-arrow" href="{{ORIG}}/office-tour" target="_blank" rel="noopener noreferrer">View the current office tour {{icon:external}}</a></p>
     </div>
     <div class="gallery">
-      {{ph:Exterior, approved photo|arch|window}}
-      {{ph:Treatment area, approved photo|arch|arch}}
-      {{ph:Waiting area, approved photo|arch|window}}
+      {{img:exterior|wide}}
+      {{img:room-green|wide}}
+      {{img:office-sign|wide}}
     </div>
   </div>
 </section>

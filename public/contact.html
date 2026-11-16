@@ -10,7 +10,7 @@
 <script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Vollkorn:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -19,13 +19,14 @@
 <div class="topbar">
   <div class="container topbar__in">
     <div class="topbar__left">
-      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chestnut Hill, Philadelphia · 10 W Gravers Lane, Philadelphia, PA 19118</span></a>
+      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>10 W Gravers Lane, Philadelphia, PA 19118</span></a>
       <a href="contact.html#visit">Office info and directions</a>
+      <a href="new-patients.html#forms">Patient forms</a>
     </div>
     <div class="topbar__right">
       <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span> <span class="num">(215) 220-3777</span></a>
       <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric</span> <span class="num">(215) 220-3778</span></a>
-      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 
     </div>
   </div>
@@ -126,12 +127,10 @@
     <div>
       <span class="eyebrow">Find us</span>
       <h2 id="visit-h">Conveniently located in Chestnut Hill</h2>
-      <div class="map-box" role="img" aria-label="Map placeholder for 10 W Gravers Lane, Philadelphia">
-        <strong>Top of the Hill Orthodontics &amp; Pediatric Dentistry</strong>
-        <span>10 W Gravers Lane, Philadelphia, PA 19118</span>
-        <a class="btn btn--primary btn--sm mt-2" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Open in Google Maps <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
-        <span class="review-note"><span class="src">Placeholder, approved asset needed</span> An embedded map can replace this once approved.</span>
-      </div>
+      <figure class="photo photo--wide"><img src="assets/img/practice/exterior.webp" width="600" height="457" alt="The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
+      <p class="mt-4 mb-0"><strong>Top of the Hill Orthodontics &amp; Pediatric Dentistry</strong><br>10 W Gravers Lane, Philadelphia, PA 19118</p>
+      <div class="btn-row mt-4"><a class="btn btn--primary btn--sm" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer">Open in Google Maps <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></div>
+      <p class="review-note"><span class="src">From current website</span> Photo of the building entrance. No embedded map is included; directions open Google Maps.</p>
     </div>
     <div>
       <h3>Getting here</h3>
@@ -257,7 +256,7 @@
       <ul>
         <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
         <li class="review-only">Terms and site privacy policy pending practice approval</li>
-        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 </li>
       </ul>
     </div>

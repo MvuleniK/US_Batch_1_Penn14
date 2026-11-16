@@ -24,7 +24,7 @@ const ACCOUNT = need("account"), ZONE = need("zone"), NAME = need("name"), DOMAI
 const TOKEN = process.env.CLOUDFLARE_API_TOKEN || "injected-by-proxy";
 const API = "https://api.cloudflare.com/client/v4";
 const PUB = join(dirname(fileURLToPath(import.meta.url)), "..", "public");
-const TYPES = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".png": "image/png", ".svg": "image/svg+xml", ".json": "application/json", ".txt": "text/plain" };
+const TYPES = { ".webp": "image/webp", ".jpg": "image/jpeg", ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".png": "image/png", ".svg": "image/svg+xml", ".json": "application/json", ".txt": "text/plain" };
 
 async function cf(path, init = {}, bearer = TOKEN) {
   const res = await fetch(API + path, { ...init, headers: { Authorization: `Bearer ${bearer}`, ...(init.headers || {}) } });

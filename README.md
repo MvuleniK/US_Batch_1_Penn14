@@ -54,43 +54,43 @@ Facts that must never drift (booking URL, both phone numbers, address) live **on
 - Home H1 preserved verbatim; one `h1` per page; alt text; internal links and anchors resolve.
 - No unapproved email, invented hours or prices, or patient-data collection.
 
-## Design direction (unslop pass)
+## Design direction
 
-This pass applies the **unslop** method (see credit below): audit, set a direction, then nine passes
-(spacing, colour, icons, copy, type, layout, details, visuals, motion). Direction was agreed with the owner.
+A clean, clinical medical site in **the practice's own colours**, using its own photography. The first pass used a warm
+cream, terracotta and brass palette that came from the Stitch mock-up's concept colours, not from the practice, and it read
+as boutique rather than medical. It was replaced after the owner questioned it. The real logo (a navy-teal tooth with a
+leaf-green hill, pale sky and a sun) and the green treatment rooms give a better, verifiable palette.
 
 | | |
 |---|---|
-| Product | A combined pediatric dental and orthodontic practice for parents of infants to teens, and for adults considering braces or Invisalign |
-| Feeling (owner's choice) | **Confident and premium**, kept calm and neighbourly |
-| World | Chestnut Hill: arched windows, stone and brick, paper and ink |
-| Signature | The **arch**: a dental arch and a Chestnut Hill window at once. Logo mark, hero drawing and image frames |
-| Moments | The arched-façade hero (its two inner arches are the two specialties) and the real testimonial wall on Reviews |
+| Feeling | Clean, trustworthy, clinical, still friendly for children |
+| Colour source | Sampled from the practice's logo and treatment rooms (confirm exact brand values with the practice) |
+| Signature | The hill (an arch) with a sun dot, echoing the logo; used as the logo mark |
+| Moments | The real photo of the two doctors in the hero, and the real testimonial wall on Reviews |
+| Type | One family, Source Sans 3 (400 to 600). The serif was dropped: it read as editorial, and one family loads faster |
 
-**Colour and emotion.** Dental sites default to clinical blue and white, which reads cold and generic.
-Parents are anxious, children need to feel safe, adults want to look trustworthy and modern, so:
-
-| Colour | Role | Feeling |
+| Colour | Value | Role |
 |---|---|---|
-| Warm stone `#f6f3ed` / `#fcfaf6` | Surfaces | Human, calm, private-practice |
-| Deep navy ink `#16293a` | Text, primary button, dark bands | Competence, authority, steadiness |
-| Brass `#a67c2e` (`#7a5a1c` as text) | The one accent: current page, the 4.8 figure, the arch keystone | Quiet premium, used rarely |
-| Terracotta `#c0703f` / teal `#2f7777` | **Dots only**, marking pediatric / orthodontics | Warmth for children, precision for orthodontics |
-| Muted red `#9a2f25` | Emergency callouts only | Urgency |
+| Cool white and pale green-grey | `#ffffff` / `#f3f7f6` | Surfaces, a clinical feel |
+| Navy-teal ink | `#12303b` | Text and dark bands (the logo wordmark colour) |
+| Leaf green | `#1f7a33` | The one accent: primary buttons, current page, key figure (the logo's green) |
+| Sun amber / teal | `#b97b08` / `#1b7f87` | Dots only, marking pediatric / orthodontics |
+| Muted red | `#9a2f25` | Emergency callouts only |
 
-Contrast is computed, not eyeballed: body text 13.4:1, secondary 6.7:1, muted 4.8:1, brass-as-text 5.7:1, white on navy 14.9:1.
-Palette values are a concept proposal, not verified brand colours.
+Contrast is computed, not eyeballed: body text 12.9:1, secondary 7.3:1, muted 5.3:1, green-as-text 6.7:1, white on the green button 5.4:1.
 
-**What changed from the Stitch mock-up:** one accent instead of two (specialties are marked with dots); sentence-case labels
-and weights 400 to 500 instead of uppercase tracked 700s; no radial wash, glass blur or gradients; a text-led asymmetric hero
-with a coded arch drawing instead of a centred stack with placeholder boxes; editorial lists and ruled steps instead of rows of
-identical icon cards; one icon set at one size and stroke; the 4px spacing scale with no inline styles; one easing curve and no
-looping motion; the five-star row (which implied 5.0) replaced with the real 4.8 figure.
+**Photography.** Every image is one of the practice's own photographs from topofthehillsmiles.com (doctors, treatment rooms,
+building entrance, sign); no stock or AI images. They are processed to WebP with metadata stripped, with alt text and the
+original URL recorded in `src/data/images.json` and `docs/IMAGE-SOURCES.md`. Permission, patient releases and higher-resolution
+originals are open items (the current site's files are small, so they look soft on large screens).
 
-**Review-mode switch.** Source tags ("From current website", "Pending practice review", "Placeholder, approved asset needed",
-"Proposal, not live") are now one calm neutral style. A **Source notes for review** switch (top strip and footer) shows or hides them.
-It is ON by default for the owner review so nothing is hidden; switch it off for a clean, launch-style view. Required public
-disclosures, such as the dated rating snapshot, stay visible in both views.
+The design pass follows the **unslop** method (see Credits): one accent, sentence-case labels, weights 400 to 600, the 4px
+spacing scale with no inline styles, hairline borders, no gradients, glass or looping motion, one icon set at one size and stroke.
+
+**Review-mode switch.** Source tags ("From current website", "Pending practice review", "Proposal, not live", and a small
+"From practice site, permission pending" tag on every photo) are one calm neutral style. A **Source notes** switch (top strip
+and footer) shows or hides them. It is ON by default for the owner review so nothing is hidden; switch it off for a clean,
+launch-style view. Required public disclosures, such as the dated rating snapshot, stay visible in both views.
 
 ## Provenance: everything the owner needs to see
 
@@ -102,11 +102,11 @@ None is independently verified; each is flagged for the practice to confirm.
 
 **Not carried over from Stitch** because it does not appear on the current site: the invented "Verified Record" quotes,
 "Dual Board Leadership", "Invisalign Certified Provider / Platinum", a "HIPAA Compliant" badge, AI-generated doctor and
-office photos, an "Open Appointment Calendar" panel, and a named coordinator avatar.
+office photos (replaced by the practice's real photographs), an "Open Appointment Calendar" panel, and a named coordinator avatar.
 
 ## Open items
 
-Approved logo, photos and bios; confirmation of every credential and testimonial reuse (including children's names and ages);
+Approved logo file (the logo currently exists only as a photo of the wall sign), permission and patient releases for the photographs, higher-resolution originals, and bios; confirmation of every credential and testimonial reuse (including children's names and ages);
 opening hours; whether `info@topofthehillsmiles.com` may be public; re-verify the Google rating; privacy and analytics consent
 (events `appointment_cta_click`, `call_ortho_click`, `call_pedo_click`, `patient_forms_click` are wired but inert until
 `window.TOTH_CONSENT = true`); re-run Lighthouse after deployment (no performance improvement is claimed yet). On the current
@@ -117,4 +117,4 @@ practice. The links here are correct.
 
 The design pass follows **unslop** by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed
 [CC BY 4.0](https://github.com/heydamir/unslop/blob/main/LICENSE): <https://github.com/heydamir/unslop>.
-The checks in `scripts/verify.mjs` encode its checklist. This repo adapts the method; it does not copy the skill's text.
+The checks in `scripts/verify.mjs` encode its checklist, plus image checks (file exists, sized, alt text). This repo adapts the method; it does not copy the skill's text.

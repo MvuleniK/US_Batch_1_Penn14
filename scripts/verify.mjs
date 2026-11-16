@@ -41,6 +41,11 @@ for (const [f, html] of Object.entries(pages)) {
   const imgNoAlt = (html.match(/<img\b(?![^>]*\balt=)[^>]*>/g) || []);
   imgNoAlt.length ? fail(`${imgNoAlt.length} img without alt`) : ok("all images have alt");
   /<html lang="en"/.test(html) ? ok("lang set") : fail("missing lang");
+  // images: file exists, explicit width/height (no layout shift), non-empty alt, no leftover placeholder
+  const imgs = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => m[0]);
+  const badImg = imgs.filter((t) => { const src = (t.match(/src="([^"]+)"/) || [])[1]; return !src || !existsSync(join(PUB, src)) || !/\bwidth="\d+"/.test(t) || !/\bheight="\d+"/.test(t) || /alt=""/.test(t); });
+  badImg.length ? badImg.forEach((t) => fail(`image problem: ${t.slice(0, 90)}`)) : ok(`${imgs.length} image(s) exist, sized, with alt text`);
+  /class="frame|placeholder image/i.test(html) ? fail("leftover image placeholder") : ok("no image placeholders");
 
   // 5. internal links + fragments resolve
   let broken = 0;

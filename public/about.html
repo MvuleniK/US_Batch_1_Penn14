@@ -10,7 +10,7 @@
 <script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Vollkorn:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -19,13 +19,14 @@
 <div class="topbar">
   <div class="container topbar__in">
     <div class="topbar__left">
-      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chestnut Hill, Philadelphia · 10 W Gravers Lane, Philadelphia, PA 19118</span></a>
+      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>10 W Gravers Lane, Philadelphia, PA 19118</span></a>
       <a href="contact.html#visit">Office info and directions</a>
+      <a href="new-patients.html#forms">Patient forms</a>
     </div>
     <div class="topbar__right">
       <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span> <span class="num">(215) 220-3777</span></a>
       <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric</span> <span class="num">(215) 220-3778</span></a>
-      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 
     </div>
   </div>
@@ -95,13 +96,13 @@
       <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span></p>
       <div class="btn-row"><a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment</a><a class="btn btn--secondary" href="tel:+12152203778" data-track="call_pedo_click"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> <span class="num">(215) 220-3778</span></a></div>
     </div>
-    <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Dr. Abbey portrait, approved photo needed"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Dr. Abbey portrait, approved photo needed</figcaption></figure>
+    <figure class="photo photo--tall photo--top"><img src="assets/img/practice/abbey-portrait.webp" width="400" height="432" alt="Dr. Abbey Sullivan Orozco smiling beside a young patient in the dental chair" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
   </div>
 </section>
 
 <section class="section" id="dr-jacob" aria-labelledby="jake-h">
   <div class="container split split--text-right split--top">
-    <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Dr. Jacob portrait, approved photo needed"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Dr. Jacob portrait, approved photo needed</figcaption></figure>
+    <figure class="photo photo--tall photo--top"><img src="assets/img/practice/jake-portrait.webp" width="400" height="432" alt="Dr. Jacob Orozco smiling above a patient reclining in the chair" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
     <div class="stack">
       <span class="spec spec--ortho">Orthodontics</span>
       <h2 id="jake-h">Dr. Jacob Orozco, DMD, MS</h2>
@@ -136,7 +137,22 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="team-h">
+<section class="section" aria-labelledby="then-h">
+  <div class="container split split--text-left">
+    <div class="stack">
+      <span class="eyebrow">Years ago</span>
+      <h2 id="then-h">Dr. Abbey and Dr. Jake, back then</h2>
+      <p class="lede">Two photographs the practice shares on its own doctor pages.</p>
+      <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Captions are the ones printed on the photographs.</p>
+    </div>
+    <div class="pair">
+      <figure class="mb-0"><img src="assets/img/practice/abbey-age-11.webp" width="428" height="604" alt="Dr. Abbey at age 11, smiling with braces" loading="lazy" decoding="async"><figcaption>Dr. Abbey, age 11</figcaption></figure>
+      <figure class="mb-0"><img src="assets/img/practice/jake-age-13.webp" width="428" height="604" alt="Dr. Jake at age 13, smiling with braces" loading="lazy" decoding="async"><figcaption>Dr. Jake, age 13</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface" aria-labelledby="team-h">
   <div class="container">
     <div class="section-head"><div><span class="eyebrow">Meet the team</span><h2 id="team-h">The people you will meet</h2></div><p>Names and roles as listed on the practice's team page. <a href="https://www.topofthehillsmiles.com/meet-the-team" target="_blank" rel="noopener noreferrer">See the original</a></p></div>
     <ul class="team">
@@ -164,9 +180,9 @@
       <a class="link-arrow" href="reviews.html#office-tour">Reviews and office tour <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="gallery">
-      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Office, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg><figcaption class="review-only">Office, approved photo</figcaption></figure>
-      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Treatment area, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg><figcaption class="review-only">Treatment area, approved photo</figcaption></figure>
-      <figure class="frame frame--arch" role="img" aria-label="Placeholder image: Team, approved photo"><svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg><figcaption class="review-only">Team, approved photo</figcaption></figure>
+      <figure class="photo photo--wide"><img src="assets/img/practice/exterior.webp" width="600" height="457" alt="The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
+      <figure class="photo photo--wide"><img src="assets/img/practice/room-green.webp" width="600" height="457" alt="A treatment room with a deep green accent wall and a dental chair" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
+      <figure class="photo photo--wide"><img src="assets/img/practice/office-doctors.webp" width="600" height="457" alt="Dr. Abbey and Dr. Jake standing together in a treatment room" loading="lazy" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>
     </div>
   </div>
 </section>
@@ -259,7 +275,7 @@
       <ul>
         <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
         <li class="review-only">Terms and site privacy policy pending practice approval</li>
-        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 </li>
       </ul>
     </div>

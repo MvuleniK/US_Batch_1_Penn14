@@ -10,7 +10,7 @@
 <script>try{if(localStorage.getItem("toth-review")==="off")document.documentElement.setAttribute("data-review","off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Vollkorn:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -19,13 +19,14 @@
 <div class="topbar">
   <div class="container topbar__in">
     <div class="topbar__left">
-      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chestnut Hill, Philadelphia · 10 W Gravers Lane, Philadelphia, PA 19118</span></a>
+      <a class="tb-addr" href="https://maps.google.com/?q=10+W+Gravers+Lane,+Philadelphia,+PA+19118" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>10 W Gravers Lane, Philadelphia, PA 19118</span></a>
       <a href="contact.html#visit">Office info and directions</a>
+      <a href="new-patients.html#forms">Patient forms</a>
     </div>
     <div class="topbar__right">
       <a href="tel:+12152203777" data-track="call_ortho_click"><span class="spec spec--ortho">Orthodontics</span> <span class="num">(215) 220-3777</span></a>
       <a href="tel:+12152203778" data-track="call_pedo_click"><span class="spec spec--ped">Pediatric</span> <span class="num">(215) 220-3778</span></a>
-      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+      <button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 
     </div>
   </div>
@@ -65,14 +66,17 @@
 <section class="hero hero--sub">
   <div class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">New Patients</li></ol></nav>
-    <div class="stack measure">
-      <h1>Welcome. Here is how your first visit works</h1>
-      <p class="lede">Choose your path, send an appointment request, and our scheduling coordinator will contact you to confirm. This page asks for no health information.</p>
-      <div class="cta">
+    <div class="hero__grid">
+      <div class="stack">
+        <h1>Welcome. Here is how your first visit works</h1>
+        <p class="lede">Choose your path, send an appointment request, and our scheduling coordinator will contact you to confirm. This page asks for no health information.</p>
+        <div class="cta">
   <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an Appointment <svg class="i" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   <p class="helper">Submit an appointment request. Our scheduling coordinator will contact you to confirm.</p>
 </div>
 
+      </div>
+      <div class="hero__art"><figure class="photo photo--hero"><img src="assets/img/practice/exterior.webp" width="600" height="457" alt="The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign" loading="eager" fetchpriority="high" decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure></div>
     </div>
   </div>
 </section>
@@ -226,7 +230,7 @@
       <ul>
         <li><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Notice%20of%20Privacy%20Practices(3).pdf" target="_blank" rel="noopener noreferrer">Notice of Privacy Practices (PDF)</a></li>
         <li class="review-only">Terms and site privacy policy pending practice approval</li>
-        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes for review</span></button>
+        <li><button class="switch" type="button" role="switch" aria-checked="true" data-review-switch><span class="switch__track" aria-hidden="true"></span><span>Source notes</span></button>
 </li>
       </ul>
     </div>

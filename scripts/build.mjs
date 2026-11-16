@@ -48,6 +48,10 @@ const ICONS = {
   file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/>',
   card: '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>',
   train: '<rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 21l2-4M16 21l-2-4"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  layers: '<path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/>',
+  star: '<path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>',
+  check: '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
   alert: '<path d="m10.3 3.9-8.5 14.7A2 2 0 0 0 3.5 22h17a2 2 0 0 0 1.7-3.4L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/>',
 };
 
@@ -64,24 +68,8 @@ const read = (p) => readFileSync(p, "utf8");
 const partial = (n) => read(join(SRC, "partials", `${n}.html`));
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-/* Quiet line art inside image placeholders (no synthetic photography). */
-const ART = {
-  person: '<svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><circle cx="150" cy="150" r="46"/><path d="M62 400c6-74 42-110 88-110s82 36 88 110"/></svg>',
-  window: '<svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M70 360V170a80 80 0 0 1 160 0v190z"/><path d="M150 90v270M70 200h160"/><path d="M40 360h220"/></svg>',
-  arch: '<svg class="frame__art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" fill="none"><path d="M40 330c10-100 60-150 110-150s100 50 110 150"/><path d="M84 330c8-62 34-92 66-92s58 30 66 92" opacity=".6"/></svg>',
-};
-
-/* Hero drawing: Chestnut Hill arched façade. The two inner arches are the two specialties.
-   Decorative only (aria-hidden); the labels beside it are real HTML. */
-function archArt(kind) {
-  const left = `<path class="a-win" d="M44 532V340a90 90 0 0 1 180 0v192"/><path class="a-lines" d="M134 250v170M44 340h180M44 420h180"/><rect class="a-lines" x="64" y="444" width="140" height="72" rx="4"/>`;
-  const right = `<path class="a-win" d="M296 532V340a90 90 0 0 1 180 0v192"/><path class="a-lines" d="M386 250v170M296 340h180M296 420h180"/><rect class="a-lines" x="316" y="444" width="140" height="72" rx="4"/>`;
-  const one = `<path class="a-win" d="M170 532V340a90 90 0 0 1 180 0v192"/><path class="a-lines" d="M260 250v170M170 340h180M170 420h180"/><rect class="a-lines" x="190" y="444" width="140" height="72" rx="4"/>`;
-  let inner, dots;
-  if (kind === "both") { inner = left + right; dots = `<circle class="a-dot-ped" cx="134" cy="232" r="6"/><circle class="a-dot-ortho" cx="386" cy="232" r="6"/>`; }
-  else { inner = one; dots = `<circle class="${kind === "ped" ? "a-dot-ped" : "a-dot-ortho"}" cx="260" cy="232" r="6"/>`; }
-  return `<svg class="arch-art" viewBox="0 0 520 540" aria-hidden="true" focusable="false"><path class="a-outer" d="M8 532V228a252 208 0 0 1 504 0v304z"/><path class="a-mould" d="M22 532V228a238 194 0 0 1 476 0v304"/>${inner}${dots}<circle class="a-key" cx="260" cy="64" r="7"/><path class="a-ground" d="M0 532.5h520"/></svg>`;
-}
+/* Real photographs from the practice's own site, described in src/data/images.json (alt text and source URL). */
+const IMAGES = JSON.parse(read(join(SRC, "data", "images.json")));
 
 /* ---- Token engine ---- */
 function tokens(html, page, extra = {}) {
@@ -103,12 +91,14 @@ function tokens(html, page, extra = {}) {
           return `<span class="src">${SRC_LABEL[arg]}</span>`;
         }
         case "cur": return page.nav === arg ? ' aria-current="page"' : "";
-        case "ph": {
-          // {{ph:Caption|shape|art}}  shape: arch|wide|square   art: person|window|arch
-          const [cap, shape = "arch", art = "window"] = arg.split("|");
-          return `<figure class="frame frame--${shape}" role="img" aria-label="Placeholder image: ${esc(cap)}">${ART[art]}<figcaption class="review-only">${cap}</figcaption></figure>`;
+        case "img": {
+          // {{img:key|variant|eager}}   variant: hero|wide|card|portrait|square|tall   eager: first screen image
+          const [key, variant = "wide", eager] = arg.split("|");
+          const im = IMAGES[key];
+          if (!im) throw new Error(`Unknown image "${key}" in ${page.file}`);
+          const lazy = eager === "eager" ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+          return `<figure class="photo ${variant.split(" ").map((v) => "photo--" + v).join(" ")}"><img src="${im.file}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}" ${lazy} decoding="async"><span class="photo__tag review-only">From practice site, permission pending</span></figure>`;
         }
-        case "arch": return archArt(arg.trim());
         case "testimonials": return renderTestimonials();
         default: changed = false; return m;
       }
