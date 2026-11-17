@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -112,7 +100,7 @@
           <h1 id="hero-h">Pediatric dentistry for infants, children and teens</h1>
           <p class="t-lead">Dr. Abbey Sullivan Orozco and the team explain each step to your child in kid-friendly terms and focus on prevention.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <a class="btn btn--secondary" href="tel:+12152203778" data-track="call_pedo_click">Call (215) 220-3778</a>
           </div>
           <dl class="hero-facts">
@@ -135,9 +123,9 @@
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/dental-care-for-your-baby" target="_blank" rel="noopener noreferrer">Dental care for your baby</a><small>Gums, the first tooth and the first toothbrush</small></span><span class="rows__value">Guide</span></li>
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/thumb-sucking" target="_blank" rel="noopener noreferrer">Thumb sucking</a><small>What is normal and when to ask for a check</small></span><span class="rows__value">Guide</span></li>
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/sports-dentistry" target="_blank" rel="noopener noreferrer">Sports dentistry</a><small>Mouthguards and what to do after a knock</small></span><span class="rows__value">Guide</span></li>
-          <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/pediatric-dental-emergencies" target="_blank" rel="noopener noreferrer">Pediatric dental emergencies</a><small>Call (215) 220-3778 first, then read the practice's guidance</small></span><span class="rows__value">Guide</span></li>
+          <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/pediatric-dental-emergencies" target="_blank" rel="noopener noreferrer">Pediatric dental emergencies</a><small>Call (215) 220-3778 first, then read the practice’s guidance</small></span><span class="rows__value">Guide</span></li>
         </ul>
-        <p class="review-note"><span class="src">From current website</span> Topic list follows the practice's “Pediatric Dentistry” menu. The guides stay on its site so the practice's clinical wording is not repeated here.</p>
+        <p class="review-note"><span class="src">From current website</span> Topic list follows the practice’s “Pediatric Dentistry” menu. The guides stay on its site so the practice’s clinical wording is not repeated here.</p>
       </div>
       <div class="frame frame--photo frame--fill span-6 start-7"><img class="frame__img" src="assets/img/practice/room-bright.webp" width="600" height="457" alt="A bright treatment room with several chairs and tall windows" loading="lazy" data-source="client" data-subject="the practice"></div>
     </div>
@@ -146,15 +134,15 @@
   <section class="section" id="first-visit" aria-labelledby="fv-h">
     <div class="wrap grid grid--top fill">
       <div class="span-6">
-        <div class="section-head"><h2 id="fv-h">Your child's first visit. <span class="muted">Four things happen, in this order.</span></h2></div>
+        <div class="section-head"><h2 id="fv-h">Your child’s first visit. <span class="muted">Four things happen, in this order.</span></h2></div>
         <ul class="rows">
-          <li><span class="rows__name">1. History<small>The team reviews your child's dental and medical history.</small></span></li>
+          <li><span class="rows__name">1. History<small>The team reviews your child’s dental and medical history.</small></span></li>
           <li><span class="rows__name">2. Exam<small>Dr. Abbey counts the teeth and shows your child her mirror. Under age 3, a lap exam sits your child knee to knee with her.</small></span></li>
           <li><span class="rows__name">3. Cleaning<small>A cleaning, fluoride and digital X-rays happen if they are needed.</small></span></li>
           <li><span class="rows__name">4. Plan<small>Dr. Abbey writes an individual plan and answers your questions.</small></span></li>
         </ul>
         <p>Bring your completed <a class="link" href="https://www.topofthehillsmiles.com/new-patient-forms" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">patient information form</a> and your insurance card.</p>
-        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> From the practice's First Pediatric Dental Visit page.</p>
+        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> From the practice’s First Pediatric Dental Visit page.</p>
       </div>
       <div class="frame frame--photo frame--fill span-6 start-7"><img class="frame__img" src="assets/img/practice/room-windows.webp" width="600" height="457" alt="A treatment room with wood floors, dental chairs and large windows" loading="lazy" data-source="client" data-subject="the practice"></div>
     </div>
@@ -173,8 +161,8 @@
             <li>Member, American Academy of Pediatric Dentistry</li>
             <li>Pediatric dental residency, Temple University Hospital</li>
           </ul>
-          <p><a class="link" href="about.html#dr-abbey">Read Dr. Abbey's biography</a></p>
-          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Listed as stated on the practice's website; not independently verified. The age-11 caption is printed on the photograph.</p>
+          <p><a class="link" href="about.html#dr-abbey">Read Dr. Abbey’s biography</a></p>
+          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Listed as stated on the practice’s website; not independently verified. The age-11 caption is printed on the photograph.</p>
         </div>
       </div>
     </div>
@@ -195,7 +183,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">

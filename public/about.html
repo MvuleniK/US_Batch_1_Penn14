@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -112,7 +100,7 @@
           <h1 id="hero-h">Meet the pediatric dentist and orthodontist at Top of the Hill</h1>
           <p class="t-lead">Dr. Abbey and Dr. Jake are a husband-and-wife team who met at Temple University School of Dentistry. Together they run one office in Chestnut Hill.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <button class="btn btn--secondary" type="button" data-open-call>Call the office</button>
           </div>
           <dl class="hero-facts">
@@ -120,7 +108,7 @@
             <div><dt>Orthodontics</dt><dd>Dr. Jake, DMD, MS</dd></div>
             <div><dt>Team</dt><dd>Ten people</dd></div>
           </dl>
-          <p class="review-note"><span class="src">From current website</span> Biographies are condensed from the practice's website and need practice approval before launch.</p>
+          <p class="review-note"><span class="src">From current website</span> Biographies are condensed from the practice’s website and need practice approval before launch.</p>
         </div>
         <div class="hero-visual frame frame--photo span-6 start-7"><img class="frame__img" src="assets/img/practice/office-doctors.webp" width="600" height="457" alt="Dr. Abbey and Dr. Jake standing together in a treatment room" fetchpriority="high" data-source="client" data-subject="the practice"></div>
       </div>
@@ -141,7 +129,7 @@
             <li>Omicron Kappa Upsilon, National Dental Honor Society, inducted 2007</li>
           </ul>
           <p>For anxious and special-needs patients, the practice states she offers nitrous oxide analgesia, conscious sedation and, where necessary, general anesthesia in a hospital setting.</p>
-          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Stated on <a href="https://www.topofthehillsmiles.com/meet-dr-abbey-orozco" target="_blank" rel="noopener noreferrer">the practice's website</a>; not independently verified. Confirm with the practice and the relevant boards before publishing. The age-11 caption is printed on the photograph.</p>
+          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Stated on <a href="https://www.topofthehillsmiles.com/meet-dr-abbey-orozco" target="_blank" rel="noopener noreferrer">the practice’s website</a>; not independently verified. Confirm with the practice and the relevant boards before publishing. The age-11 caption is printed on the photograph.</p>
         </div>
       </div>
     </div>
@@ -160,7 +148,7 @@
             <li>Member, Middle Atlantic Society of Orthodontists and Greater Philadelphia Society of Orthodontists</li>
             <li>The practice is a certified Invisalign Teen® provider</li>
           </ul>
-          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Stated on <a href="https://www.topofthehillsmiles.com/meet-dr-jacob-orozco" target="_blank" rel="noopener noreferrer">the practice's website</a>; not independently verified.</p>
+          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Stated on <a href="https://www.topofthehillsmiles.com/meet-dr-jacob-orozco" target="_blank" rel="noopener noreferrer">the practice’s website</a>; not independently verified.</p>
         </div>
       </div>
     </div>
@@ -182,7 +170,7 @@
           <li><strong>James, R.D.H.</strong><span>Dental Hygienist</span></li>
           <li><strong>Ahmani</strong><span>EFDA</span></li>
         </ul>
-        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Names and roles as listed on the practice's <a href="https://www.topofthehillsmiles.com/meet-the-team" target="_blank" rel="noopener noreferrer">team page</a>. Confirm current staffing and permission to publish names.</p>
+        <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Names and roles as listed on the practice’s <a href="https://www.topofthehillsmiles.com/meet-the-team" target="_blank" rel="noopener noreferrer">team page</a>. Confirm current staffing and permission to publish names.</p>
       </div>
       <div class="frame frame--photo frame--fill span-6 start-7"><img class="frame__img" src="assets/img/practice/room-windows.webp" width="600" height="457" alt="A treatment room with wood floors, dental chairs and large windows" loading="lazy" data-source="client" data-subject="the practice"></div>
     </div>
@@ -203,7 +191,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">

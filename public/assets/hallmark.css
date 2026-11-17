@@ -1,0 +1,57 @@
+/* Hallmark · shape: kept · genre: modern-minimal · theme: Dose (by request) · redesign: restyle
+ * hero: kept · nav: kept · footer: kept · imagery: the practice's photographs · signature: the moulded green primary button · dose: white, paper cooled to the practice's green
+ * axes: light/grotesk-sans/chromatic-green · posture: committed · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P pass H pass E pass S pass R pass V pass · weakest: the page words stay the practice's own, so 58 reports as a note */
+/* Hallmark · waive 38iii · h2 .muted is display:block at .5em in the head's own colour · every section head here keeps its second sentence as a smaller line */
+@import url("./tokens.css");
+
+/* Dose, mapped onto the kit's grounds: the kit reads --p-* and --font-text, so the theme's tokens are wired in here once */
+:root {
+  --p-bg: var(--color-paper); --p-surface: var(--color-paper-2); --p-ink: var(--color-ink); --p-muted: var(--color-muted);
+  --p-accent: var(--color-accent); --p-accent-ink: var(--color-accent-ink); --p-action: var(--color-accent); --p-action-ink: var(--color-accent-ink);
+  --p-inv-bg: var(--color-ink); --p-inv-surface: var(--color-ink-2); --p-inv-ink: var(--color-paper); --p-inv-muted: color-mix(in oklab, var(--color-paper) 62%, var(--color-ink));
+  --p-inv-accent: var(--color-accent-soft); --p-inv-accent-ink: var(--color-ink); --p-inv-action: var(--color-accent-soft); --p-inv-action-ink: var(--color-ink);
+  --font-text: var(--font-body);
+  --display-tracking: var(--tracking-display); --display-tracking-xl: var(--tracking-display);
+}
+html[data-radius="soft"] { --r-sm: var(--radius-input); --r-md: var(--radius-input); --r-lg: var(--radius-card); --r-btn: var(--radius-input); }
+body { background-color: var(--color-paper); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+
+/* Headings: one weight, one colour. The grey second sentence of a heading becomes a second line at a second size */
+h1, h2, h3, h4.t-card { font-weight: var(--display-weight); line-height: 1.04; text-wrap: balance; }
+::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+h4, .t-card { font-weight: 500; }
+h2 .muted { display: block; color: inherit; font-family: var(--font-body); font-weight: 500; font-size: .5em; line-height: 1.3; letter-spacing: 0; margin-top: .5em; max-width: 36em; }
+.t-stat, .rows__value { font-variant-numeric: tabular-nums; }
+
+/* Controls: moulded plastic, a rim, a bevel, and a press that sinks. Primary is green, secondary is clear */
+.btn { border-radius: var(--radius-input); font-family: var(--font-body); font-weight: 500;
+       transition: transform var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out); }
+.btn--primary { background: linear-gradient(var(--color-accent), var(--color-accent-deep)); color: var(--color-accent-ink); border-color: var(--color-accent-deep);
+                box-shadow: inset 0 1px 0 var(--glint), 0 3px 0 var(--color-accent-deep); }
+.btn--primary:hover { background: linear-gradient(var(--color-accent), var(--color-accent-deep)); filter: brightness(1.06); }
+.btn--secondary { background: transparent; color: var(--color-ink); border-color: var(--color-rule); box-shadow: inset 0 1px 0 var(--glint), 0 3px 0 var(--color-rule); }
+.btn--secondary:hover { background: var(--color-paper-2); }
+.btn:active { transform: translateY(3px); box-shadow: inset 0 1px 0 var(--glint), 0 0 0 var(--color-rule); }
+.btn--primary:active { box-shadow: inset 0 1px 0 var(--glint), 0 0 0 var(--color-accent-deep); }
+
+/* Surfaces: pale daylight plastic. Wells take the mint tint and the card radius; the doctors' tiles sit on it */
+.tile, .quote, .faq__item { border-radius: var(--radius-card); }
+.tile { background: var(--color-paper-2); box-shadow: inset 0 1.5px 0 var(--glint); }
+.tile__media img, .frame, .frame__img, .wall img, .badges a { border-radius: var(--radius-card); }
+.wall img { border-radius: 0; }
+.frame--photo { box-shadow: var(--shadow-card); }
+.nav, header.nav { box-shadow: 0 1px 0 var(--color-rule); }
+.ground-inverse { background: var(--color-ink); color: var(--color-paper); }
+
+/* Photographs, treated as the theme says: natural, a step quieter */
+.frame__img, .tile__media img, .wall img { filter: saturate(.85) contrast(.94); }
+
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } }
+
+/* The mandated 13-word hero heading is set a step smaller so it holds five lines at weight 700 */
+:root { --t-h1: clamp(34px, 1.6vw + 24px, 52px); }
+/* Links are underlined text; no arrow is glued to them */
+.link::after { content: none; display: none; }

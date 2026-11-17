@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -110,9 +98,9 @@
       <div class="hero-text grid hero-split">
         <div class="hero-copy span-6">
           <h1 id="hero-h">Reviews of the pediatric dentist and orthodontist at Top of the Hill</h1>
-          <p class="t-lead">Google rates the practice 4.8 out of 5 from 147 reviews. Below are all 103 testimonials from the practice's own site, in the patients' words, and the office tour.</p>
+          <p class="t-lead">Google rates the practice 4.8 out of 5 from 147 reviews. Below are all 103 testimonials from the practice’s own site, in the patients' words, and the office tour.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <a class="btn btn--secondary" href="#tour">See the office tour</a>
           </div>
           <dl class="hero-facts">
@@ -184,7 +172,7 @@
 <figure class="quote"><blockquote>“Everyone is very nice-easy check-ups!”</blockquote><figcaption>Laurel C.</figcaption></figure>
 <figure class="quote"><blockquote>“Really clean place. Everyone was super nice and respectful. All my concerns were addressed.”</blockquote><figcaption>Monica</figcaption></figure>
       </div>
-      <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Reproduced as written, with the attribution shown on the practice's <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>. Reuse, and whether children's names and ages are shown, needs the practice's approval.</p>
+      <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Reproduced as written, with the attribution shown on the practice’s <a href="https://www.topofthehillsmiles.com/testimonials" target="_blank" rel="noopener noreferrer">Testimonials page</a>. Reuse, and whether children's names and ages are shown, needs the practice’s approval.</p>
     </div>
   </section>
 
@@ -252,8 +240,8 @@
       <div class="span-6">
         <div class="section-head"><h2 id="cred-h">Credentials of the team. <span class="muted">As the practice states them.</span></h2></div>
         <div class="badges">
-          <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website"></a>
-          <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website"></a>
+          <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice’s current website"></a>
+          <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice’s current website"></a>
         </div>
         <ul class="creds">
           <li>Dr. Abbey: Diplomate, American Board of Pediatric Dentistry; member, American Academy of Pediatric Dentistry</li>
@@ -268,7 +256,7 @@
 
   <section class="section" id="tour" aria-labelledby="tour-h">
     <div class="wrap">
-      <div class="section-head"><h2 id="tour-h">Office photos. <span class="muted">From the practice's own office tour.</span></h2></div>
+      <div class="section-head"><h2 id="tour-h">Office photos. <span class="muted">From the practice’s own office tour.</span></h2></div>
       <div class="wall">
         <img class="frame__img" src="assets/img/practice/exterior.webp" width="600" height="457" alt="The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign" loading="lazy" data-source="client" data-subject="the practice"><img class="frame__img" src="assets/img/practice/room-chair.webp" width="600" height="457" alt="A dental chair, cabinetry and equipment in a treatment room" loading="lazy" data-source="client" data-subject="the practice"><img class="frame__img" src="assets/img/practice/office-doctors.webp" width="600" height="457" alt="Dr. Abbey and Dr. Jake standing together in a treatment room" loading="lazy" data-source="client" data-subject="the practice">
         <img class="frame__img" src="assets/img/practice/abbey-child.webp" width="600" height="457" alt="Dr. Abbey examining a young patient in a dental chair" loading="lazy" data-source="client" data-subject="the practice"><img class="frame__img" src="assets/img/practice/room-green.webp" width="600" height="457" alt="A treatment room with a deep green accent wall and a dental chair" loading="lazy" data-source="client" data-subject="the practice"><img class="frame__img" src="assets/img/practice/jake-portrait.webp" width="400" height="432" alt="Dr. Jacob Orozco smiling above a patient reclining in the chair" loading="lazy" data-source="client" data-subject="the practice">
@@ -292,7 +280,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">

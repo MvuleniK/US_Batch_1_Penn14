@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -112,7 +100,7 @@
           <h1 id="hero-h">Orthodontics for children, teens and adults</h1>
           <p class="t-lead">Dr. Jacob Orozco offers early treatment, metal and clear braces and Invisalign®, with a treatment plan made for each patient.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <a class="btn btn--secondary" href="tel:+12152203777" data-track="call_ortho_click">Call (215) 220-3777</a>
           </div>
           <dl class="hero-facts">
@@ -129,13 +117,13 @@
   <section class="section" id="treatments" aria-labelledby="tx-h">
     <div class="wrap grid grid--top fill">
       <div class="span-6">
-        <div class="section-head"><h2 id="tx-h">Six orthodontic topics. <span class="muted">Guides stay on the practice's own site.</span></h2></div>
+        <div class="section-head"><h2 id="tx-h">Six orthodontic topics. <span class="muted">Guides stay on the practice’s own site.</span></h2></div>
         <ul class="rows">
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/early-treatment" target="_blank" rel="noopener noreferrer">Early treatment</a><small>The AAO recommends an evaluation no later than age seven</small></span><span class="rows__value">Children</span></li>
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/treatment-options" target="_blank" rel="noopener noreferrer">Braces</a><small>Metal and clear ceramic braces, and how to live with them</small></span><span class="rows__value">All ages</span></li>
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/adult-treatment" target="_blank" rel="noopener noreferrer">Adult treatment</a><small>Possible at any age when gums and bone are healthy</small></span><span class="rows__value">Adults</span></li>
           <li id="invisalign"><span class="rows__name"><a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer">Invisalign®</a><small>Removable clear aligners, including Invisalign Teen®</small></span><span class="rows__value">Teens, adults</span></li>
-          <li id="emergencies"><span class="rows__name"><a href="https://www.topofthehillsmiles.com/emergency-care" target="_blank" rel="noopener noreferrer">Orthodontic emergencies</a><small>Call (215) 220-3777 first, then read the practice's guidance</small></span><span class="rows__value">Guide</span></li>
+          <li id="emergencies"><span class="rows__name"><a href="https://www.topofthehillsmiles.com/emergency-care" target="_blank" rel="noopener noreferrer">Orthodontic emergencies</a><small>Call (215) 220-3777 first, then read the practice’s guidance</small></span><span class="rows__value">Guide</span></li>
         </ul>
         <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> No prices, treatment times or outcomes are stated here.</p>
       </div>
@@ -184,11 +172,11 @@
             <li>The practice is a certified Invisalign Teen® provider</li>
           </ul>
           <div class="badges">
-            <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice's current website"></a>
-            <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice's current website"></a>
+            <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign.png" width="177" height="90" alt="Invisalign logo, as shown on the practice’s current website"></a>
+            <a href="https://www.topofthehillsmiles.com/invisalign" target="_blank" rel="noopener noreferrer"><img src="assets/img/original/invisalign-teen.png" width="232" height="90" alt="Invisalign Teen logo, as shown on the practice’s current website"></a>
           </div>
-          <p><a class="link" href="about.html#dr-jake">Read Dr. Jake's biography</a></p>
-          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Credentials, logos and the age-13 photo are as shown on the practice's website; not independently verified. Confirm provider status and logo use before launch.</p>
+          <p><a class="link" href="about.html#dr-jake">Read Dr. Jake’s biography</a></p>
+          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Credentials, logos and the age-13 photo are as shown on the practice’s website; not independently verified. Confirm provider status and logo use before launch.</p>
         </div>
       </div>
     </div>
@@ -202,7 +190,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">

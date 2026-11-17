@@ -133,3 +133,13 @@ practice. The links here are correct.
 - The earlier design pass used **unslop** by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), CC BY 4.0,
   <https://github.com/heydamir/unslop>. `scripts/verify.mjs` encodes parts of its checklist.
 - Photographs and Invisalign logos belong to the practice (from its own website); see `docs/IMAGE-SOURCES.md`.
+
+## Hallmark restyle (Dose theme)
+
+The site was restyled with [Hallmark](https://github.com/Nutlope/hallmark) at **restyle** depth: the kit's layout, motion and content are untouched, only the material changes.
+
+- Theme: **Dose** (health, family, one pharmacy green), with the paper cooled from the theme's warm cream to a cool mint white so it reads clinical, not warm.
+- `public/assets/tokens.css`: Dose's colour, type, radius and shadow tokens only (the shared scale was dropped because it collides with the kit's own names).
+- `public/assets/hallmark.css`: carries the Hallmark stamp and the waiver, maps the tokens onto the kit's `--p-*` palette, and sets headings (Schibsted Grotesk 700), moulded buttons and pale surfaces. The kit's files are unmodified.
+- Removed by the theme's rules: arrows glued to buttons and links, the grey half of section heads (now a second, smaller line in the head's own colour).
+- Known remaining lint findings are in the kit's own CSS, and in the assessment's mandated H1 (its dash and 13 words).

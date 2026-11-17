@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -110,9 +98,9 @@
       <div class="hero-text grid hero-split">
         <div class="hero-copy span-6">
           <h1 id="hero-h">First visits for pediatric dentistry and orthodontics: 4 steps</h1>
-          <p class="t-lead">Choose pediatric dentistry, orthodontics or both, send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
+          <p class="t-lead">Choose pediatric dentistry, orthodontics or both, send the practice’s request form, and the scheduling coordinator will contact you to confirm.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <button class="btn btn--secondary" type="button" data-open-call>Call the office</button>
           </div>
           <dl class="hero-facts">
@@ -133,7 +121,7 @@
         <p class="t-lead">There is no online calendar. You send a request, and the office schedules the visit with you.</p>
         <ul class="rows">
           <li><span class="rows__name">1. Choose your care<small>Pediatric dentistry, orthodontics or both. The form offers Ortho, Pedo or Both.</small></span></li>
-          <li><span class="rows__name">2. Send the request<small>Your name, email, phone and an optional comment, on the practice's own form.</small></span></li>
+          <li><span class="rows__name">2. Send the request<small>Your name, email, phone and an optional comment, on the practice’s own form.</small></span></li>
           <li><span class="rows__name">3. Wait for the confirmation<small>The scheduling coordinator will contact you to confirm a time.</small></span></li>
           <li><span class="rows__name">4. Bring the patient form<small>Print and complete the form for your visit and bring your insurance card.</small></span></li>
         </ul>
@@ -150,7 +138,7 @@
         <div class="tile tile--portrait span-3">
           <div class="tile__media"><img class="frame__img" src="assets/img/practice/abbey-portrait.webp" width="400" height="432" alt="Dr. Abbey Sullivan Orozco smiling beside a young patient in the dental chair" loading="lazy" data-source="client" data-subject="the practice"></div>
           <div class="tile__head"><h3>Pediatric first visit</h3></div>
-          <p>The team reviews history, Dr. Abbey counts your child's teeth, and a cleaning, fluoride and X-rays follow if needed.</p>
+          <p>The team reviews history, Dr. Abbey counts your child’s teeth, and a cleaning, fluoride and X-rays follow if needed.</p>
         </div>
         <div class="tile tile--portrait span-3">
           <div class="tile__media"><img class="frame__img" src="assets/img/practice/jake-portrait.webp" width="400" height="432" alt="Dr. Jacob Orozco smiling above a patient reclining in the chair" loading="lazy" data-source="client" data-subject="the practice"></div>
@@ -171,7 +159,7 @@
     <div class="wrap">
       <div class="grid grid--top">
       <div class="span-6">
-        <div class="section-head"><h2 id="forms-h">Forms for your first visit. <span class="muted">Printable PDFs and financial pages on the practice's own site.</span></h2></div>
+        <div class="section-head"><h2 id="forms-h">Forms for your first visit. <span class="muted">Printable PDFs and financial pages on the practice’s own site.</span></h2></div>
         <ul class="rows">
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Complete%20Peds%20Registration%20Packet(1).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">Pediatric patient form</a><small>Registration packet for pediatric dentistry</small></span><span class="rows__value">PDF</span></li>
           <li><span class="rows__name"><a href="https://www.topofthehillsmiles.com/hub_sites/orozco-jacob2/www/assets/uploads/files/Patient%20Registration%20-%20Ortho(4).pdf" target="_blank" rel="noopener noreferrer" data-track="patient_forms_click">Orthodontic patient form</a><small>Registration form for orthodontics</small></span><span class="rows__value">PDF</span></li>
@@ -190,7 +178,7 @@
   <section class="section statement" id="request" data-moment="word-highlight" aria-label="How requests work">
     <div class="wrap">
       <p class="t-label">How requests work</p>
-      <p class="mo-wh__text" role="group">The practice's online form sends a request, not a booking. The scheduling coordinator contacts you, and your appointment is only set once the office <strong>confirms</strong> it.</p>
+      <p class="mo-wh__text" role="group">The practice’s online form sends a request, not a booking. The scheduling coordinator contacts you, and your appointment is only set once the office <strong>confirms</strong> it.</p>
     </div>
   </section>
 
@@ -202,7 +190,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">

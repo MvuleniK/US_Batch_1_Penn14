@@ -24,24 +24,12 @@
 <script>try{var q=new URLSearchParams(location.search).get("review");if(q==="on"||q==="off")localStorage.setItem("toth-review",q);document.documentElement.setAttribute("data-review",localStorage.getItem("toth-review")==="on"?"on":"off")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400..700&family=Red+Hat+Text:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
 <link rel="stylesheet" href="assets/layout/layout.css">
-<style>
-:root {
-  --p-bg: #f3f7f6; --p-surface: #e6eeec; --p-ink: #12303b; --p-muted: #566a73;
-  --p-accent: #1f7a33; --p-accent-ink: #f3f7f6; --p-action: #1f7a33; --p-action-ink: #f3f7f6;
-  --p-inv-bg: #12303b; --p-inv-surface: #213c47; --p-inv-ink: #f3f7f6; --p-inv-muted: #97a6aa;
-  --p-inv-accent: #f3f7f6; --p-inv-accent-ink: #12303b; --p-inv-action: #f3f7f6; --p-inv-action-ink: #12303b;
-  --font-display: "Red Hat Display", system-ui, sans-serif;
-  --font-text: "Red Hat Text", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.025em;
-  --display-tracking-xl: -0.035em;
-}
-</style>
+<link rel="stylesheet" href="assets/hallmark.css">
 <link rel="stylesheet" href="assets/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -133,7 +121,7 @@
           <h1 id="hero-h">Welcome to Top of The Hill — Dentistry for Children &amp; Orthodontics for All Ages</h1>
           <p class="t-lead">Two doctors, two specialties, one office at 10 W Gravers Lane in Chestnut Hill: pediatric dentistry for infants through teens, and orthodontics for children, teens and adults.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+            <a class="btn btn--primary" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
             <button class="btn btn--secondary" type="button" data-open-call>Call the office</button>
           </div>
           <dl class="hero-facts">
@@ -161,7 +149,7 @@
           <li><span class="rows__name"><a href="orthodontics.html#invisalign">Invisalign®</a><small>Removable clear aligners, including Invisalign Teen®</small></span><span class="rows__value">Teens and adults</span></li>
           <li><span class="rows__name"><a href="pediatric-dentistry.html#urgent">Dental emergencies</a><small>Call the office first, on the pediatric or orthodontic line</small></span><span class="rows__value">Call first</span></li>
         </ul>
-        <p class="review-note"><span class="src">From current website</span> Service lines follow the practice's current website.</p>
+        <p class="review-note"><span class="src">From current website</span> Service lines follow the practice’s current website.</p>
       </div>
       <div class="frame frame--photo frame--fill span-6 start-7">
         <img class="frame__img" src="assets/img/practice/abbey-child.webp" width="600" height="457" alt="Dr. Abbey examining a young patient in a dental chair" loading="lazy" data-source="client" data-subject="the practice">
@@ -188,7 +176,7 @@
         <div class="span-6 stack-4">
           <p class="t-lead">They met at Temple University School of Dentistry. Dr. Abbey sees children from their first tooth, and Dr. Jake treats children, teens and adults.</p>
           <p><a class="link" href="about.html">Meet the doctors and team</a></p>
-          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Credentials are listed as stated on the practice's website and are not independently verified.</p>
+          <p class="review-note"><span class="src">From current website</span> <span class="src">Pending practice review</span> Credentials are listed as stated on the practice’s website and are not independently verified.</p>
         </div>
       </div>
     </div>
@@ -201,7 +189,7 @@
         <ol class="mo-pc__steps">
           <li class="mo-pc__step">
             <h3>Request your visit</h3>
-            <p>Fill in the practice's form with your name, email and phone, and choose Ortho, Pedo or Both.</p>
+            <p>Fill in the practice’s form with your name, email and phone, and choose Ortho, Pedo or Both.</p>
             <figure class="mo-pc__visual"><img class="frame__img" src="assets/img/practice/office-sign.webp" width="600" height="457" alt="The Top of the Hill sign on the office wall: a tooth containing a green hill, sky and sun, above the practice name" loading="lazy" data-source="client" data-subject="the practice"></figure>
           </li>
           <li class="mo-pc__step">
@@ -211,7 +199,7 @@
           </li>
           <li class="mo-pc__step">
             <h3>Prepare for your visit</h3>
-            <p>Print the pediatric or orthodontic form from the practice's site and bring it with your insurance card.</p>
+            <p>Print the pediatric or orthodontic form from the practice’s site and bring it with your insurance card.</p>
             <figure class="mo-pc__visual"><img class="frame__img" src="assets/img/practice/exterior.webp" width="600" height="457" alt="The stone building entrance at 10 W Gravers Lane with the Top of the Hill sign" loading="lazy" data-source="client" data-subject="the practice"></figure>
           </li>
         </ol>
@@ -231,7 +219,7 @@
         <figure class="quote"><blockquote>“Could not love TOTH more. So fast, so gentle and always a friendly face!”</blockquote><figcaption>Kerin D.</figcaption></figure>
         <figure class="quote"><blockquote>“We have loved having Dr. Abbey as our dentist for years! We followed her to her new practice. Now, we are patients of Dr. Abbey &amp; Dr. Jake!”</blockquote><figcaption>Alice H.</figcaption></figure>
         <p><a class="link" href="reviews.html">Read all testimonials</a></p>
-        <p class="review-note"><span class="src">Assessment snapshot</span> The rating is not a live Google integration. <span class="src">From current website</span> Quotes are verbatim from the practice's Testimonials page; practice approval for reuse is still required.</p>
+        <p class="review-note"><span class="src">Assessment snapshot</span> The rating is not a live Google integration. <span class="src">From current website</span> Quotes are verbatim from the practice’s Testimonials page; practice approval for reuse is still required.</p>
       </div>
       <div class="frame frame--photo frame--fill span-6 start-7">
         <img class="frame__img" src="assets/img/practice/room-green.webp" width="600" height="457" alt="A treatment room with a deep green accent wall and a dental chair" loading="lazy" data-source="client" data-subject="the practice">
@@ -242,7 +230,7 @@
   <section class="section statement" id="roof" data-moment="word-highlight" aria-label="Under one roof">
     <div class="wrap">
       <p class="t-label">Under one roof</p>
-      <p class="mo-wh__text" role="group">Children's checkups and orthodontics happen in the same office, so a child's growth and development can be watched and treatment can start at the <strong>right time</strong>, with both doctors in the building.</p>
+      <p class="mo-wh__text" role="group">Children’s checkups and orthodontics happen in the same office, so a child’s growth and development can be watched and treatment can start at the <strong>right time</strong>, with both doctors in the building.</p>
     </div>
   </section>
 
@@ -254,7 +242,7 @@
         <h2 id="close-h">Request an appointment</h2>
         <p>Send the practice's request form, and the scheduling coordinator will contact you to confirm.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="https://www.topofthehillsmiles.com/appointment-request" target="_blank" rel="noopener noreferrer" data-track="appointment_cta_click">Request an appointment</a>
     </div>
     <div class="closing__links">
       <div class="grid">
